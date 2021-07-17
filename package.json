@@ -1,0 +1,19 @@
+{
+  "name": "POO",
+  "version": "0.0.1",
+  "description": "Material de Aula",
+  "main": "index.js",
+  "authors": {
+    "name": "Leandro Souza",
+    "email": "leandro.costa@ifba.edu.br"
+  },
+  "repository": "leandro-costa/vuepresspoo/POO",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
