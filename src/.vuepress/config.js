@@ -4,11 +4,11 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Programação Orientada a Objetos',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
-  description: description,
+  description: 'Material para as aulas da disciplina de Programação Orientada a Objetos',
 
   /**
    * Extra tags to be injected to the page HTML `<head>`
@@ -18,7 +18,8 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css' }]
   ],
 
   /**
@@ -32,32 +33,31 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
     sidebar: {
-      '/guide/': [
+      '/01_paradigmas/': [
         {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
+          title: 'Linguagens e paradigmas de programação',
+          collapsable: false
         }
       ],
-    }
+      '/02_java/': [
+        {
+          title: 'Java',
+          collapsable: false
+        }
+      ],
+    },
+  },
+  
+  markdown: {
+
+    extendMarkdown: md => {
+      md.use(require("markdown-it-plantuml"))
+      md.use(require("markdown-it-footnote"))
+      md.use(require("markdown-it-deflist"))
+      md.use(require("markdown-it-katex"))
+    },
+
   },
 
   /**

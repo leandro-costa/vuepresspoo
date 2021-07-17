@@ -1,15 +1,8 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://portal.ifba.edu.br/santoantonio/imagens-campus-saj/santoantoniodejesus160x240px.jpg
 tagline: Material de Aula
-actionText: Quick Start →
-actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Leandro Souza with ❤️
+actionText: Vamos Começar →
+actionLink: /01_paradigmas/
+footer: Made by Leandro Souza 
 ---

@@ -1167,12 +1167,26 @@
   dependencies:
     lodash.debounce "^4.0.8"
 
+"@vuepress/plugin-back-to-top@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-1.8.2.tgz#e9794409d1d589e4952b0700291270d2696e6d01"
+  integrity sha512-htAf2m8+6cGmYQexWerznGBY10y1E4TBfebYC3Y3wqNjFjvXUmRKcAG/u6Yxvey4OFkQUxbth2ilKi/GlIW8aQ==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 "@vuepress/plugin-last-updated@1.8.2":
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-last-updated/-/plugin-last-updated-1.8.2.tgz#7ce689f8d5050cf0213949bc2e5aa879c09ff4b1"
   integrity sha512-pYIRZi52huO9b6HY3JQNPKNERCLzMHejjBRt9ekdnJ1xhLs4MmRvt37BoXjI/qzvXkYtr7nmGgnKThNBVRTZuA==
   dependencies:
     cross-spawn "^6.0.5"
+
+"@vuepress/plugin-medium-zoom@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.8.2.tgz#0243dd27edf0c710f9a41a234d253d76ab51e625"
+  integrity sha512-Mljso/8E6IbNmIKmwKeC6FDfnhKY3fsOUSs5kEGzz3RQwd54eshqHAMRVwW4LZkYZHhwQXF8+qk7YqoMZB7jjg==
+  dependencies:
+    medium-zoom "^1.0.4"
 
 "@vuepress/plugin-nprogress@1.8.2":
   version "1.8.2"
@@ -4663,6 +4677,13 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+katex@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/katex/-/katex-0.6.0.tgz#12418e09121c05c92041b6b3b9fb6bab213cb6f3"
+  integrity sha1-EkGOCRIcBckgQbazuftrqyE8tvM=
+  dependencies:
+    match-at "^0.1.0"
+
 keyv@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
@@ -4894,10 +4915,32 @@ markdown-it-container@^2.0.0:
   resolved "https://registry.yarnpkg.com/markdown-it-container/-/markdown-it-container-2.0.0.tgz#0019b43fd02eefece2f1960a2895fba81a404695"
   integrity sha1-ABm0P9Au7+zi8ZYKKJX7qBpARpU=
 
+markdown-it-deflist@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-deflist/-/markdown-it-deflist-2.1.0.tgz#50d7a56b9544cd81252f7623bd785e28a8dcef5c"
+  integrity sha512-3OuqoRUlSxJiuQYu0cWTLHNhhq2xtoSFqsZK8plANg91+RJQU1ziQ6lA2LzmFAEes18uPBsHZpcX6We5l76Nzg==
+
 markdown-it-emoji@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-1.4.0.tgz#9bee0e9a990a963ba96df6980c4fddb05dfb4dcc"
   integrity sha1-m+4OmpkKljupbfaYDE/dsF37Tcw=
+
+markdown-it-footnote@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/markdown-it-footnote/-/markdown-it-footnote-3.0.3.tgz#e0e4c0d67390a4c5f0c75f73be605c7c190ca4d8"
+  integrity sha512-YZMSuCGVZAjzKMn+xqIco9d1cLGxbELHZ9do/TSYVzraooV8ypsppKNmUJ0fVH5ljkCInQAtFpm8Rb3eXSrt5w==
+
+markdown-it-katex@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/markdown-it-katex/-/markdown-it-katex-2.0.3.tgz#d7b86a1aea0b9d6496fab4e7919a18fdef589c39"
+  integrity sha1-17hqGuoLnWSW+rTnkZoY/e9YnDk=
+  dependencies:
+    katex "^0.6.0"
+
+markdown-it-plantuml@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/markdown-it-plantuml/-/markdown-it-plantuml-1.4.1.tgz#3bd5e7d92eaa5c6c68eb29802f7b46a8e05ca998"
+  integrity sha512-13KgnZaGYTHBp4iUmGofzZSBz+Zj6cyqfR0SXUIc9wgWTto5Xhn7NjaXYxY0z7uBeTUMlc9LMQq5uP4OM5xCHg==
 
 markdown-it-table-of-contents@^0.4.0:
   version "0.4.4"
@@ -4914,6 +4957,11 @@ markdown-it@^8.4.1:
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
+
+match-at@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/match-at/-/match-at-0.1.1.tgz#25d040d291777704d5e6556bbb79230ec2de0540"
+  integrity sha512-h4Yd392z9mST+dzc+yjuybOGFNOZjmXIPKWjxBd1Bb23r4SmDOsk2NYCU2BMUBGbSpZqwVsZYNq26QS3xfaT3Q==
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -4943,6 +4991,11 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
+
+medium-zoom@^1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.6.tgz#9247f21ca9313d8bbe9420aca153a410df08d027"
+  integrity sha512-UdiUWfvz9fZMg1pzf4dcuqA0W079o0mpqbTnOz5ip4VGYX96QjmbM+OgOU/0uOzAytxC0Ny4z+VcYQnhdifimg==
 
 memory-fs@^0.4.1:
   version "0.4.1"
