@@ -53,7 +53,21 @@ module.exports = {
         '02_Linguagens',
         '03_Paradigmas'
       ],
-      '/02_java/': 'auto'
+      '/02_java/': [
+        '',
+        '01_codificando',
+        '02_if_else',
+        '03_loops',
+        '04_escopo_bloco'
+      ],
+      '/03_conceitos_OO/': [
+        '',
+        '01_abstracao',
+        '02_objeto',
+        '03_classe',
+        '04_referencia',
+        '05_outras_classes'
+      ]
     }
 
   },

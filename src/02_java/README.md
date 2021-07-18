@@ -1,6 +1,5 @@
 ---
 prev: /01_paradigmas/
-next: false
 ---
 
 

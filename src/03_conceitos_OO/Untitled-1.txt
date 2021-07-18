@@ -1,0 +1,469 @@
+
+Construtor da Classe
+Método especial definido na classe e executado no momento que o objeto é instanciado
+Diferente de outro método pois não possui retorno
+Deve ter o mesmo nome da classe.
+Pode receber parâmetros
+Normalmente utilizados para inicializar os valores dos atributos do objeto
+Construtor da Classe
+O que o new faz
+A classe chamada é instanciada
+Memória é alocada
+O construtor da classe é chamado para o objeto
+Construtor é um método especial para criar e inicializar novas instâncias da classe. Construtores podem ser sobrecarregados
+
+Associações
+Forma como uma classe se relaciona com outra classe
+Uma classe pode conter atributos que geram instâncias de outra classe
+Uma classe pode conter outra classe como atributo
+Quando isto ocorre dizemos que uma classe possui outra classe associada a ela
+Associações
+Associações
+Agregação
+A classe contida não é instanciada no escopo da classe principal
+Não depende da principal para existir 
+Normalmente é passada por parâmetro
+Composição
+A classe contida é instanciada pela classe principal 
+Quando uma classe principal é retirada da memória, as outras classes também são.
+Encapsulamento
+Separar o programa em partes, tornando cada parte mais isolada possível uma da outra
+A idéia é tornar o software mais flexível, fácil de modificar e de criar novas implementações
+Encapsulamento
+Permite utilizar o objeto de uma classe sem necessariamente conhecer sua implementação
+Protege o acesso direto aos atributos de uma instância fora da classe onde estes foram criados
+Encapsulamento
+Uma grande vantagem do encapsulamento é que toda parte encapsulada pode ser modificada sem que os usuários da classe em questão sejam afetados
+Modificadores de acesso
+private
+protected
+public
+<padrão> (quando não é especificado nenhum dos 3 acima)
+Modificadores de acesso
+São aplicados a atributos, métodos, construtores e classes
+As classes só podem ser declaradas como public ou padrão
+Uma classe com acesso padrão só pode ser detectada por classes do mesmo pacote
+Uma classe com acesso público pode ser detectada por classes de todos os pacotes
+Modificadores de acesso
+Private
+Os membros privados só podem ser acessados por um código da mesma classe 
+Protected
+Os membros protegidos podem ser acessados por outras classes do mesmo pacote, além de subclasses independente do pacote 
+Modificadores de acesso
+Public
+Os membros públicos podem ser acessados por todas as outras classes, mesmo de pacotes diferentes
+Padrão
+Os membros padrão só podem ser acessados por outras classes do mesmo pacote
+Pacotes
+Forma de organizar classes dentro de uma estrutura de árvores. 
+Podemos entender a estrutura de árvores como os diretórios do sistema operacional. 
+O nome completo de uma classe é definido pelo seu pacote e o nome. 
+Pacotes
+Organizando suas classes e bibliotecas
+Os diretórios estão diretamente relacionados aos chamados pacotes e costumam agrupar classes de funcionalidade parecida
+Pacotes
+No pacote java.util, por exemplo temos as classes Date, SimpleDateFormat e GregorianCalendar; todas elas trabalham com datas de formas diferentes
+Significa que essas classes estão no diretório java/util/
+Pacotes
+A palavra chave package indica qual pacote que contém a classe
+Ex : package java.util;
+O nome da classe na verdade para o compilador é
+java.util.Date
+java.util.SimpleDateFormat
+java.util.GregorianCalendar
+Herança
+É a capacidade de uma classe definir o seu comportamento e sua estrutura aproveitando definições de outra classe, normalmente conhecida como classe base ou classe pai
+As subclasses herdam tudo o que a classe pai possui e acrescenta as suas características particulares
+Herança
+Através do mecanismo de herança é possível definirmos classes genéricas que agreguem um conjunto de definições comuns a um grande número de objetos(Generalização) 
+A partir destas especializações genéricas podemos construir novas classes, mais específicas, que acrescentem novas características e comportamentos aos já existentes (Especialização)
+Herança
+Capacidade que uma classe tem de herdar as características e comportamentos de outra classe
+Classe pai é chamada de superclasse e a filha de subclasse
+Em Java só é permitido herdar de uma única classe, ou seja, não permite herança múltipla
+Herança
+O objetivo da herança é especializar o entendimento de uma classe criando novas características e comportamentos que vão além da superclasse 
+Herança
+Ao mesmo tempo que a especialização amplia o entendimento de uma classe, a generalização vai no sentido inverso e define um modelo menos especializado  e  mais genérico
+Herança
+Herança
+Classe Morcego
+Quais as características de morcego ?
+altura
+peso
+tamanho_presa
+Quais ações o morcego pode fazer ?
+mamar
+voar
+Herança
+Se usarmos os princípios de lógica podemos dizer que todo morcego é mamífero porém NÃO podemos afirmar que todo mamífero é morcego
+Herança
+
+
+Com base no que foi dito até aqui podemos deduzir que o item 2 deve causar um erro já que não é possível garantir que todo mamífero seja um morcego
+Já o item 1 pode parecer estranho, pois a variável é do tipo Mamífero e o objeto para o qual a variável se refere é do tipo Morcego
+Devemos saber que toda variável pode receber um objeto que seja compatível com o seu tipo e neste caso todo Morcego CERTAMENTE é um Mamífero
+Herança
+O código apresentado funciona?
+Herança
+Todo Morcego é um Mamífero, porem não pode realizar todas as ações de um morcego
+A variável que recebe o objeto é do tipo Mamífero
+Para o Morcego voar é necessário criar uma nova variável do tipo Morcego e atribuir o objeto que estava na variável animal_mamifero
+Este tipo de operação recebe o nome de TYPE CAST
+Herança
+Classes abstratas
+Classes abstratas são classes que não produzem instâncias. Elas agrupam características e comportamentos que serão herdados por outras classes
+Fornecem padrões de comportamento que serão implementados nas suas subclasses
+Podem ter métodos com implementação definida
+Classes abstratas
+Não pode ser instanciada diretamente. (new)
+Uma classe abstrata possui características que devem ser implementadas por classes filhas
+Os métodos abstratos são obrigatoriamente implementados pelas classes filhas concretas, quando a mesma herda de uma classe abstrata. 
+Classes abstratas
+Classes abstratas
+Classes abstratas
+Classes abstratas
+Sobrecarga de Métodos
+É a capacidade de definir métodos com o mesmo nome
+Assinatura seja diferente. 
+A mudança na assinatura ocorre alterando a quantidade e/ou tipo de parâmetros que um método recebe
+Sobrecarga de Métodos
+Sobrecarga é a capacidade de um objeto responder à mesma mensagem, com comportamentos (métodos) distintos, a depender dos tipos dos parâmetros recebidos
+aplicarInjecao()
+aplicarInjecao(String)
+Sobrecarga de Métodos
+Polimorfismo
+É a possibilidade de se solicitar um serviço a um objeto, cuja execução vai depender do tipo de objeto instanciado
+Círculo, Retângulo e Quadrado são do tipo figura. 
+Método desenhar()
+O resultado depende do tipo de figura que receber a mensagem
+Polimorfismo
+O polimorfismo permite escrever programas que processam objetos que compartilham a mesma superclasse em uma hierarquia de classe como se todas fossem objetos da superclasse.
+Polimorfismo
+Sistema de simulação de movimento de Animais
+Peixes, Anfíbios, Pássaros
+Superclasse Animal
+Método mover
+Localização x,y
+Todas as subclasses implementam o método mover
+Polimorfismo
+Sistema de simulação de movimento de Animais
+O programa envia a mensagem “mover” para os 3 objetos
+Polimorfismo
+Sistema de simulação de movimento de Animais
+Cada animal responde ao método mover de uma maneira diferente
+o peixe pode nadar 2 metros
+Anfíbio pular 1 metro
+Pássaro voar 3 metros
+Polimorfismo
+Sistema de simulação de movimento de Animais
+Cada objeto irá responder a mensagem “mover” de acordo com sua instancia
+Apesar de todos serem Animais o fato de do método “mover” ter “muitas formas” é a chave do polimorfismo 
+Polimorfismo vem de Polimorfo, “Que é sujeito a mudar de forma”
+
+Interface
+O objetivo de uma interface em Orientação a Objetos é definir um conjunto de comportamentos (métodos) que devem obrigatoriamente ser implementados pelas classes que utilizam a interface. 
+Diferente da herança uma classe Java pode implementar n interfaces.
+Interface
+Padronização
+Diversas empresa fabricam aparelhos elétricos.
+Interface
+Padronização no desenvolvimento
+Contratos
+Num sistema orientado a objetos, os objetos interagem entre si através de chamadas de métodos (troca de mensagens). 
+Podemos dizer que os objetos se "encaixam" através dos métodos públicos assim como um plugue se encaixa em uma tomada através dos pinos.
+Interface
+Um padrão é definido através de especificações ou contratos. Nas aplicações orientadas a objetos, podemos criar um "contrato" para definir um determinado conjunto de métodos que deve ser implementado pelas classes que "assinarem" este contrato. 
+Em orientação a objetos, um contrato é chamado de interface.
+Interface
+As interfaces são estritamente modelos de comportamento
+As interfaces não podem ser instanciadas pois não produzem objetos
+A relação existente entre as classes que implementam uma interface é uma relação do tipo “implementa os métodos de”
+Interface
+Se uma classe é definida por apenas métodos abstratos é melhor defini-lá como uma interface
+Nenhum método de interface pode ter um corpo, ou seja, não tem um algoritmo definido para executar o comportamento.
+São as classes que implementam a Interface que fornecerão os métodos
+Interface
+No sistema do banco, podemos definir uma interface (contrato) para padronizar as assinaturas dos métodos oferecidos pelos objetos que representam as contas do banco.
+Interface
+Interface
+Interface
+Interface
+Caso novos tipos de contas sejam criados (ContaSalario, ContaInvestimento...) todas devem segui o mesmo contrato.
+Interface
+Interface
+Interface
+Interface
+Assim como uma pessoa pode assinar vários contratos, na Orientação à Objetos, uma classe pode implementar varias interfaces
+No java não é permitida herança múltipla, mas é possível implementar varias interfaces
+Interface
+Se uma classe implementa uma interface, podemos aplicar a ideia do polimorfismo assim como quando aplicamos herança.
+
+Em Java, como não há herança múltipla, muitas vezes, interfaces são apresentadas como uma alternativa para obter um grau maior de polimorfismo.
+Interface
+Digamos que os gerentes e as empresas possam acessar o sistema do banco com um nome de usuário e uma senha.
+Interface
+Interface
+Empresa não é um funcionário e o gerente não é cliente. Neste caso, a solução é utilizar interfaces para obter o polimorfismo desejado.
+Interface
+Agora, conseguimos definir oque o método autentica()
+Coleções
+Collections Framework
+É o conjunto de interfaces, implementações e algoritmos para se trabalhar com coleções. O conjunto de classe que define a Collections Framework segue os princípios de O.O. 
+Coleções
+Collection – Interface que define um comportamento comum á todas as classes da Collections Framework. É o topo na hierarquia das coleções.
+Coleções
+List – Interface  que  herda  as  características  de  Collection.  Define  uma  coleção  ordenada podendo ter elementos duplicados. A manipulação do elemento é feito pelo índice que inicia de 0. Possui as seguintes implementações concretas: 
+ArrayList, LinkedList e Vector.
+Coleções
+Set – Também herda as características de Collection. Não garante ordem entre os elementos. Armazena os elementos em qualquer posição em uma tabela hash. Não obtém os objetos pelo índice. Possui as seguintes implementações concretas: HashSet e TreeSet.
+Coleções
+Map – Interface para mapeamento de chave e valores. Não permite chaves duplicadas sendo assim cada chave leva a somente 1 elemento. Possui as seguintes classe concretas: HashMap e TreeMap.
+Coleções
+Iterando Objetos de Collections
+As coleções que acessam seus objetos pelo índice podem ser listadas através de uma estrutura de repetição que incremente o índice e obtenha o objeto. Ex:
+
+Coleções
+Coleções
+As coleções que armazenam objetos através de chaves e valores não são acessadas pelo índice e por este motivo precisam ser percorridas de outra forma. Podemos percorrer através do objeto Iterator:
+Coleções
+
+
+
+Mesmo uma coleção que acessa seus objetos pelo índice também pode ser iterada.
+Coleções
+Generics
+Como já vimos, uma classe do tipo Coleção pode armazenar objetos de qualquer outra classe e para recuperar o objeto é necessário fazer um CAST. Isto e necessário  para garantir o retorno de um tipo definido. Quando usamos Generics podemos definir coleções para um tipo especifico. Ex:
+
+Coleções
+Coleções
+Observe que definimos uma coleção especifica para o tipo Usuario. Temos um ArrayList do tipo Usuario e o objeto usuarios que por sua vez só aceita receber o tipo Usuario. Por este motivo não é necessário  fazer  o  CAST  no  momento  de  obter  o  objeto  da  coleção.  Em  Java  podemos  utilizar Generics para diversas outras finalidades porém neste momento vamos nos ater a este.
+Threads
+Threads são linhas de execuções que realizam tarefas simultâneas (caso tenhamos mais de 1 processador) ou de forma a compartilhar o processamento. 
+Cada thread é como um programa individual que tem total poder sobre a CPU.
+Threads
+Java suporta explicitamente como parte da linguagem( ao contrário de C e C++, por exemplo)
+Dividir o programa em dois ou mais processos que podem rodar de forma paralela
+Threads
+Multithreading implica em duas ou mais tarefas rodando de forma concorrente (aparentemente em paralelo) dentro de um mesmo programa
+Alguns programas necessitam fazer várias tarefas que requerem recursos computacionais diversos. Se estas tarefas podem ser feitas independentemente, então pode-se usar threads para que o programa não fique limitado a performance dos recursos lentos
+Threads
+Threads
+Threads
+Existem duas formas para criar um thread: 
+Extendendo a classe Thread
+Implementando a interface Runnable. 
+Nos dois casos é necessário sobrescrever o método run() que é o " main()" do thread. 
+O método run deve conter a execução que irá rodar pelo tempo de vida do thread. Quando o método terminar, o thread morre. 
+Threads
+Para iniciar o thread é necessário chamar o métod o start() . 
+É a maquina virtual quem controla a execução e o ciclo de vida do thread. 
+Threads
+Herdando a classe Thread
+Threads
+Implementando a interface Runnable
+Threads
+Threads
+Estendendo a classe Thread significa que a subclasse não pode estender qualquer outra classe, enquanto que a classe que implementa a interface Runnable tem essa opção.
+Threads – Synchronized
+Permite que blocos sensíveis ao acesso simultâneo sejam protegidos de corrupção
+Impede que objetos os utilizem ao mesmo tempo. 
+Se um recurso crítico está sendo usado, só um thread tem acesso. 
+É preciso que os outros esperem até que o recurso esteja livre. 
+Threads – Synchronized
+Métodos sincronizados são métodos que são usados para controlar o acesso a um objeto. 
+Uma thread apenas executa um método sincronizado depois que adquiriu o bloqueio para o objeto do método ou classe. 
+Threads – Synchronized
+Se o bloqueio já está em poder de outra thread, a thread chamada aguarda. 
+Uma thread abandona o bloqueio simplesmente ao finalizar do método sincronizado, permitindo que a próxima thread esperando por este bloqueio possa prosseguir. 
+Métodos sincronizados são úteis em situações em que os métodos podem manipular o estado de um objeto de formas que podem corromper o estado, se executados simultaneamente. 
+Threads
+Threads
+Estados de uma Thread
+Nova Thread
+Rodando
+Não Rodando
+Morta
+Thread
+Nova Thread
+Quando uma Thread é criada mas não foi chamado o start()
+Rodando
+Quando o método start() é chamado em uma nova thread ela altera o seu estado para em execução é chamando o método run()
+
+
+Threads
+Não Execução
+Uma thread interrompe sua execução quando um quatro seguintes eventos ocorrem:
+Quando o método sleep() é chamado e ele dorme por um período de tempo especificado
+Quando o método suspend() é invocado
+Quando o método wait () é chamado e a thread espera para a notificação de um recurso livre ou aguarda a conclusão de outra thread ou espera para adquirir um bloqueio de um objeto.
+A thread está bloqueado em I / O e aguarda a sua conclusão
+Threads
+Thread.currentThread() pode retornar uma saída como Thread [threadA, 5, main]
+Sendo
+nome da Thread
+prioridade da thread 
+nome do grupo a que pertence
+Threads
+Prioridade de Execução
+Nas threads a prioridade pode ser setada a qualquer momento
+setPriority()
+getPriority()
+Thread 
+MIN_PRIORITY (0)
+NORM_PRIORITY (5)
+MAX_PRIORITY (10)
+
+Threads
+Dormir e acordar
+A classe thread contém um método estático chamado sleep () que faz a thread em execução no momento pause sua execução e mude para o estado de sono. A thread vai dormir por pelo menos o tempo especificado em seu parâmetro, antes de entrar no estado executável. 
+
+Threads
+Waiting and Notifying
+Esperando e notificando fornecer os meios de comunicação entre as thread que sincroniza sobre o mesmo objeto. 
+As threads executam os métodos wait() e notify() (ou notifyAll()) no objeto compartilhado para esta finalidade. 
+Threads
+Waiting and Notifying
+O notifyAll (), notify () e wait () são métodos da classe Object. Estes métodos podem ser chamados apenas a partir de dentro de um contexto sincronizado (método sincronizado ou bloco sincronizado), caso contrário, a chamada irá resultar em um IllegalMonitorStateException. 
+O notifyAll () método acorda todas as threads em espera no recurso. Nesta situação, as threads despertadas competem para o recurso. Uma threads recebe o recurso e os outros vão voltar a esperar.
+
+Static
+Membros de instancia e Membros de classes
+Variáveis de Classe
+Quando um número de objetos são criados a partir de uma mesma classe, cada um tem suas próprias cópias distintas de variáveis de instância. 
+No caso de a classe de bicicleta, são as variáveis de instância engrenagem e velocidade. Cada objeto de bicicleta tem seus próprios valores para essas variáveis, armazenadas em diferentes locais de memória.
+
+Static
+Às vezes, é necessário ter variáveis que são comuns a todos os objetos. 
+Isto é conseguido com o modificador Static. 
+Os campos que têm o modificador static em sua declaração são chamados de campos estáticos ou variáveis de classe. 
+
+Static
+Eles estão associados com a classe. Cada instância compartilha uma variável de classe, que está em um local fixo na memória. 
+Qualquer objeto pode alterar o valor de uma variável de classe, mas variáveis de classe também pode ser manipulado sem criar uma instância da classe.
+
+Static
+exemplo:
+Caso seja necessário criar um número de objetos de bicicleta e atribuir a cada um número de série, começando com 1 para o primeiro objeto. 
+Esse número de identificação é única para cada objeto e é, portanto, uma variável de instância. 
+
+Static
+Ao mesmo tempo, você precisa de um campo para manter o controle de quantos objetos bicicletas foram criadas para que você saiba o ID para atribuir ao próximo. 
+Esse campo não está relacionada a qualquer objeto individual, mas para a classe como um todo. 
+Para isso, você precisa de uma variável de classe, numeroDeBicicletas:
+Static
+Static
+Variáveis de classe são referenciados pelo próprio nome da classe:
+
+*Também é possível consultar a campos estáticos com uma referência de objeto como minhaBicicleta.numeroDeBicicletas mas isso não deixa claro que é um atributo de classe e não de instancia, é recomendado que sempre que for acessar um atributo de classe acessar pela classe
+
+Static
+No construtor da Bicicleta pode ser setado o valor do atributo ID incrementar a variável de classe numeroDeBicicletas:
+Static
+Métodos estáticos
+A linguagem de programação Java suporta métodos estáticos, bem como variáveis estáticas. 
+Os métodos estáticos, que têm o modificador static em suas declarações, deve ser chamado com o nome da classe, sem a necessidade de criação de uma instância da classe
+
+
+Static
+Um uso comum para métodos estáticos é acessar campos estáticos. Por exemplo, nós poderíamos adicionar um método estático para a classe de bicicleta para acessar o campo estático numeroDeBicicletas:
+
+Static
+Nem todas as combinações de variáveis e métodos de classe e de instância são permitidas:
+Métodos de instância podem acessar variáveis de instância e métodos de instância diretamente.
+Métodos de instância podem acessar variáveis de classe e métodos de classe diretamente.
+Métodos de classe podem acessar variáveis de classe e métodos de classe diretamente.
+Métodos de classe não podem acessar variáveis de instância ou métodos de instância diretamente, eles devem usar uma referência de objeto. Além disso, métodos de classe não pode usar a palavra-chave this.
+Static
+Constantes
+O modificador static, em combinação com o modificador final, é também usado para definir constantes. 
+O modificador final indica que o valor deste campo não pode mudar.
+Static
+Staic final
+Por exemplo, a seguinte declaração variável define uma constante chamada PI, cujo valor é uma aproximação do pi
+Static
+Constantes
+Constantes definidas desta forma não pode ser alteradas, um erro de compilação ocorrerá caso seu programa tenta fazer isso. 
+Por convenção, os nomes dos valores constantes estão escritas em letras maiúsculas. 
+Se o nome for composto por mais de uma palavra, as palavras são separadas por um sublinhado (_).
+Pilha de Execução
+Pilha de Execução
+O método main chama metodo1
+O método metodo1 chama o metodo2
+Cada um desses métodos pode ter suas próprias variáveis locais, sendo que, por exemplo, o metodo1 não enxerga as variáveis declaradas dentro do main
+Pilha de Execução
+Toda invocação de método é empilhada em uma estrutura de dados que isola a área de memória de cada um
+Quando um método termina (retorna), ele volta para o método que o invocou. Ele descobre isso através da pilha de execução (stack )
+Pilha de Execução
+Pilha de Execução
+Executando o código uma exceção é lançada
+
+
+Essa é o conhecido rastro da pilha (stacktrace)
+Pilha de Execução
+Quando um erro (exceção) ocorre, o JVM entra em estado de alerta e procura dento do metodo se existe algum tratamento especial para o problema
+Como o metodo2 não tem nenhum tratamento a JVM interrompo sua execução e volta um nível na pilha e verifica novamente
+Como o metodo1 também não faz nenhum tratamento a JVM sobe mais um nivel até chegar no main
+Como o main também não faz nenhum trabamento a Thread morre
+Exception
+O tratamento de erros em Java é feito em tempo de execução através do tratamento de exceção. 
+Exceções são classes que seguem o modelo O.O. e são lançadas quando o sistema encontra um problema. 
+Utilizadas também para validar regras de negócio. 
+Exception
+Exception(exceção) significa "condição excepcional", e é uma ocorrência que altera o fluxo normal do programa.
+Quando um evento excepcional ocorre em java, diz-se que uma exceção será lançada.
+Exception
+Métodos podem capturar ou deixar passar exceções que ocorrerem em seu corpo, mas para isto é obrigatório que o método declare a sua decisão. 
+Para repassar o tratamento de erro para quem chama o método utilizamos o throws. 
+throws declara que o método pode provocar exceções do tipo declarado (ou de qualquer subtipo).
+public void validar() throws Excecao1, Excecao2 {…}
+Exception
+Para tratar a exceção no método utilizamos o try/catch.
+Exception
+Executando o código novamente
+Exception
+Modificando o try para dentro do for qual será o comportamento?
+E na chamada do metodo2?
+E na chamada do metodo1?
+Divisão por 0
+Referência Nula
+
+Exception
+A partir do momento que uma exception foi catched (pega, tratada, capturada , handled), a execução volta ao normal a partir daquele ponto.
+ArrayIndexOutOfBoundsException ou um NullPointerException poderia ser facilmente evitado com o for corretamente escrito ou com ifs que checariam os limites da array.
+tais problemas provavelmente poderiam ser evitados pelo programador
+Exception
+Existem dois tipos de exception
+Checadas (Verificadas) –> o compilador verifica e obriga os usuários que chamam o método ou construtor a tratar a exceção
+Não – checadas –> o compilador não verifica, são os subtipos de Error e RuntimeException
+Exception
+Exception
+Abrir um arquivo para leitura
+
+
+
+O código acima não compila e o compilador avisa que é necessário tratar o FileNotFoundException que pode ocorrer:
+Exception
+Para compilar e fazer o programa funcionar, temos duas maneiras que podemos tratar o problema. A primeira é tratá-lo com o try e catch e a segunda forma de tratar esse erro, é delegar ele para quem chamou o nosso método, isto é, passar para a frente.
+Exception
+Exception
+Para tratar a exceção no método utilizamos o try/catch.
+Exception
+Não há uma regra para decidir em que momento do seu programa deve-se tratar a exceção. Isso vai depender de em que ponto se tem condições de tomar uma decisão em relação a aquele erro. Enquanto não for o momento, provavelmente será melhor delegar a responsabilidade para o método que invocou
+Exception
+Exception
+Exception
+Para lançar a Exceção utilizamos o throw e criamos o objeto Exception
+Exception
+Exercício
+Modificar o sistema de controle de contas correntes para lançar uma exceção de SaldoInsufucienteException caso o valor de saque seja maior que o saldo disponível
+Exception
+Os blocos try e catch podem conter uma terceira cláusula chamada finally que indica o que deve ser feito após o término do bloco try ou de um catch
+O bloco try deve ser precedido por um catch ou finalliy
+O finally quer dizer que dando erro ou não o trecho de código compreendido nele será executado
+O catch será executa somente se naquele trecho dentro do try resultar em algum erro
+
+Exception
+Exception
+RuntimeException é a exception mãe de todas as exceptions não verificadas
+IllegalArgumentException é uma exceção do pacote do java que podemos utilizar para tratar valores indevidos para chamadas de métodos

@@ -6,3 +6,4 @@ actionText: Vamos Começar →
 actionLink: /01_paradigmas/
 footer: Made by Leandro Souza 
 ---
+
