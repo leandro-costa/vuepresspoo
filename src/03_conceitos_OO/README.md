@@ -1,7 +1,3 @@
----
-prev: /02_java/
----
-
 # Paradigma de Programação OO
 
 - Paradigma que mais reflete os problemas atuais
@@ -25,7 +21,7 @@ prev: /02_java/
 
 ## Funcional x OO
 
-
+<figure>
 @startuml
 skinparam roundcorner 25
 
@@ -44,11 +40,12 @@ rectangle "Paradigma OO" {
         rectangle "Métodos"  as metodos
         atributos <-> metodos
     }
-
 }
 
 @enduml  
 
+<figcaption> Comparação entre o paradigma funcional e OO.</figcaption>
+</figure>
 
 ### Objeto
 

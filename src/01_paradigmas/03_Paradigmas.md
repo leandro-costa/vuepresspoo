@@ -1,7 +1,3 @@
----
-next: /02_java/
----
-
 # Paradigmas das linguagens de programação
 Quando uma linguagem de programação é criada, a partir das suas características, ela é categorizada em um ou mais paradigmas.
 

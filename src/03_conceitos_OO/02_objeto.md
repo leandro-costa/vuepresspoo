@@ -4,6 +4,7 @@
 - Em um sistema Bancário teríamos objetos do tipo: Cliente, Conta, Conta Corrente, Dependente, etc.
 - Um objeto também pode ser visto como um agregado de outros objetos (suas partes)
 
+<figure>
 @startuml
 
 rectangle "Apartamento"{
@@ -17,6 +18,9 @@ c -[hidden]> b
 }
 
 @enduml  
+<figcaption> Um objeto como um conjuto de outros objetos.</figcaption>
+</figure>
+
 
 - Um Objeto é uma entidade independente que armazena dados, encapsula serviços, troca mensagens com outros objetos e é modelado para executar as funções do sistema
 - Um Objeto pode ser descrito pela identificação de dois elementos básicos: estrutura e comportamento

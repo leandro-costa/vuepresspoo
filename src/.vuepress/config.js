@@ -45,30 +45,19 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     sidebarDepth: 2,
-    displayAllHeaders: true,
-    sidebar: {
-      '/01_paradigmas/': [
-        '',
-        '01_introducao',
-        '02_Linguagens',
-        '03_Paradigmas'
-      ],
-      '/02_java/': [
-        '',
-        '01_codificando',
-        '02_if_else',
-        '03_loops',
-        '04_escopo_bloco'
-      ],
-      '/03_conceitos_OO/': [
-        '',
-        '01_abstracao',
-        '02_objeto',
-        '03_classe',
-        '04_referencia',
-        '05_dominio_aplicacao'        
-      ]
-    }
+    sidebar: [
+      'home',
+      '/01_paradigmas/',
+      '/01_paradigmas/01_introducao',
+      '/01_paradigmas/02_Linguagens',
+      '/01_paradigmas/03_Paradigmas',
+      '/02_java/',
+      '/02_java/01_codificando',
+      '/03_conceitos_OO/',
+      '/03_conceitos_OO/01_abstracao',
+      '/03_conceitos_OO/02_objeto',
+      '/03_conceitos_OO/03_classe',
+      '/03_conceitos_OO/04_referencia']
 
   },
 

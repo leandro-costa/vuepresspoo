@@ -13,6 +13,7 @@ class Programa{
 
 - c1 uma variável que "aponta" para o objeto(referência).
 
+<figure>
 @startuml
 
 rectangle "Memoria"{
@@ -26,6 +27,10 @@ rectangle "Memoria"{
 
 @enduml  
 
+<figcaption> Representação da memória com duas instancias de Conta.</figcaption>
+</figure>
+
+
 ```java
 class Programa{
   public static void main(String[] args){
@@ -36,6 +41,7 @@ class Programa{
 }
 ```
 
+<figure>
 @startuml
 
 rectangle "Memoria"{
@@ -46,7 +52,11 @@ rectangle "Memoria"{
     c1m<--c2
 }
 
-@enduml  
+@enduml
+
+<figcaption> Representação da memória com apenas uma instancia de Conta.</figcaption>
+</figure>
+
 
 ```java
 public static void main(String args[]) {

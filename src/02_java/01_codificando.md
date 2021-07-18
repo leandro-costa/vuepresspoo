@@ -129,4 +129,227 @@ Exercícios: Variáveis e tipos primitivos
 
 
 
-[^camel]: Oracle. Code Conventions for the Java Programming Language: 9. Naming Conventions https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html (Acessado em 17/07/2021)
+[^camel]: Oracle. Code Conventions for the Java Programming Language: 9. Naming Conventions [https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html) (Acessado em 17/07/2021)
+
+## O if e o else
+
+A sintaxe do if no Java é a seguinte:
+```java
+if (condicaoBooleana) {
+    codigo;
+}
+```
+Uma **condição booleana** é qualquer expressão que retorne `true` ou `false`. Para isso, você pode usar os operadores `<`, `>`, `<=`, `>=` e outros. Um exemplo:
+
+```java
+int idade = 15;
+if (idade < 18) {
+    System.out.println("Não pode entrar");
+}
+```
+
+Além disso, você pode usar a cláusula else para indicar o comportamento que deve ser executado no caso da expressão booleana ser falsa:
+```java
+int idade = 15;
+if (idade < 18) {
+    System.out.println("Não pode entrar");
+} else {
+    System.out.println("Pode entrar");
+}
+```
+Você pode concatenar expressões booleanas através dos operadores lógicos "E" e "OU". O "E" é representado pelo `&&` e o "OU" é representado pelo `||`.
+
+Um exemplo seria verificar se ele tem menos de 18 anos e se ele não é amigo do dono:
+```java
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 && amigoDoDono == false) {
+    System.out.println("Não pode entrar");
+}
+else {
+    System.out.println("Pode entrar");
+}
+```
+Esse código poderia ficar ainda mais legível, utilizando-se o operador de negação, o !. Esse operador transforma o resultado de uma expressão `booleana` de `false` para `true` e vice versa.
+
+```java
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 && !amigoDoDono) {
+    System.out.println("Não pode entrar");
+} else {
+    System.out.println("Pode entrar");
+}
+```
+
+Repare na linha 3 que o trecho `amigoDoDono == false` virou `!amigoDoDono`. Eles têm o mesmo valor.
+
+Para comparar se uma variável tem o mesmo valor que outra variável ou valor, utilizamos o operador `==`. Repare que utilizar o operador `=` dentro de um `if` vai retornar um erro de compilação, já que o operador `=` é o de atribuição.
+```java
+int mes = 1;
+if (mes == 1) {
+    System.out.println("Você deveria estar de férias");
+}
+```
+
+## Loops
+
+### O While
+O while é um comando usado para fazer um laço (loop), isto é, repetir um trecho de código algumas vezes. A ideia é que esse trecho de código seja repetido enquanto uma determinada condição permanecer verdadeira.
+```java
+int idade = 15;
+while (idade < 18) {
+    System.out.println(idade);
+    idade = idade + 1;
+}
+```
+
+O trecho dentro do bloco do while será executado até o momento em que a condição `idade < 18` passe a ser `falsa`. E isso ocorrerá exatamente no momento em que `idade == 18`, o que não o fará imprimir `18`.
+
+```java
+int i = 0;
+while (i < 10) {
+    System.out.println(i);
+    i = i + 1;
+}
+```
+
+Já o while acima imprime de 0 a 9.
+
+### O For
+Outro comando de loop extremamente utilizado é o for. A ideia é a mesma do while: fazer um trecho de código ser repetido enquanto uma condição continuar verdadeira. Mas além disso, o for isola também um espaço para inicialização de variáveis e o modificador dessas variáveis. Isso faz com que quem mais legíveis,
+as variáveis que são relacionadas ao loop:
+
+```java
+for (inicializacao; condicao; incremento) {
+    codigo;
+}
+```
+
+Um exemplo é o a seguir:
+
+```java
+for (int i = 0; i < 10; i = i + 1) {
+    System.out.println("olá!");
+}
+```
+
+Repare que esse for poderia ser trocado por:
+
+```java
+while (i < 10) {
+int i = 0;
+    System.out.println("olá!");
+    i = i + 1;
+}
+```
+
+
+Porém, o código do for indica claramente que a variável `i` serve, em especial, para controlar a quantidade de laços executados. Quando usar o for? Quando usar o while? Depende do gosto e da ocasião.
+
+### Controlando loops
+
+Apesar de termos condições booleanas nos nossos laços, em algum momento, podemos decidir parar o loop por algum motivo especial sem que o resto do laço seja executado.
+```java
+for (int i = x; i < y; i++) {
+    if (i % 19 == 0) {
+        System.out.println("Achei um número divisível por 19 entre x e y");
+        break;
+    }
+}
+```
+O código acima vai percorrer os números de `x` a `y` e parar quando encontrar um número divisível por `19`, uma vez que foi utilizada a palavra chave **break.**
+
+Da mesma maneira, é possível obrigar o loop a executar o próximo laço. Para isso usamos a palavra chave **continue.**
+```java
+for (int i = 0; i < 100; i++) {
+    if (i > 50 && i < 60) {
+        continue;
+    }
+    System.out.println(i);
+}
+```
+::: warning ?
+O código acima não vai imprimir alguns números. (Quais exatamente?)
+:::
+
+## Escopos e Blocos
+
+### Escopo das variáveis
+No Java, podemos declarar variáveis a qualquer momento. Porém, dependendo de onde você as declarou, ela vai valer de um determinado ponto a outro.
+
+```java
+// aqui a variável i não existe
+int i = 5;
+// a partir daqui ela existe
+``` 
+
+O **escopo da variável** é o nome dado ao trecho de código em que aquela variável existe e onde é possível acessá-la.
+
+Quando abrimos um novo bloco com as chaves, as variáveis declaradas ali dentro **só valem até o fim daquele bloco**.
+
+```java
+// aqui a variável i não existe
+int i = 5;
+// a partir daqui ela existe
+while (condicao) {
+    // o i ainda vale aqui
+    int j = 7;
+    // o j passa a existir
+}
+// aqui o j não existe mais, mas o i continua dentro do escopo
+```
+
+No bloco acima, a variável `j` pára de existir quando termina o bloco onde ela foi declarada. Se você tentar acessar uma variável fora de seu escopo, ocorrerá um erro de compilação.
+
+O mesmo vale para um if:
+```java
+if (algumBooleano) {
+    int i = 5;
+} else {
+    int i = 10;
+}
+System.out.println(i); // cuidado!
+```
+
+Aqui a variável `i` não existe fora do `if` e do `else`! Se você declarar a variável antes do `if`, vai haver outro erro
+de compilação: dentro do `if` e do `else` a variável está sendo redeclarada! Então o código para compilar e fazer sentido fica:
+
+```java
+int i;
+if (algumBooleano) {
+    i = 5;
+} else {
+    i = 10;
+}
+System.out.println(i);
+```
+
+Uma situação parecida pode ocorrer com o for:
+```java 
+for (int i = 0; i < 10; i++) {
+    System.out.println("olá!");
+}
+System.out.println(i); // cuidado!
+```
+Neste for, a variável i morre ao seu término, não podendo ser acessada de fora do for, gerando um erro de
+compilação. Se você realmente quer acessar o contador depois do loop terminar, precisa de algo como:
+```java 
+int i;
+for (i = 0; i < 10; i++) {
+    System.out.println("olá!");
+}
+System.out.println(i);
+```
+
+### Um bloco dentro do outro
+
+Um bloco também pode ser declarado dentro de outro. Isto é, um `if` dentro de um `for`, ou um `for` dentro de um `for`, algo como:
+
+```java 
+while (condicao) {
+    for (int i = 0; i < 10; i++) {
+    // código
+    }
+}
+```

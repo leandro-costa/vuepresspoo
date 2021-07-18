@@ -1,20 +1,24 @@
 # Classe
 
+## Origem do termo
 - A palavra classe vem da taxonomia da biologia. 
   - Todos os seres vivos de uma mesma classe biológica têm uma série de atributos e comportamentos em comum, mas não são iguais, podem variar nos valores desses atributos e como realizam esses comportamentos.
 - Homo Sapiens define um grupo de seres que possuem características em comum
   - Homo Sapiens é um ser humano?
   - Tudo está especificado na classe Homo Sapiens, mas se quisermos mandar alguém correr, comer, pular, precisaremos de uma instância de Homo Sapiens, ou então de um objeto do tipo Homo Sapiens.
+## Analogias
 - Uma receita de bolo. 
   - Você come uma receita de bolo? 
     - Precisamos instaciá-la, criar um objeto bolo a partir dessa especificação (a classe) para utilizá-la. 
     - Podemos criar centenas de bolos a partir dessa classe (a receita, no caso), eles podem ser bem semelhantes, alguns até idênticos, mas são objetos diferentes.
 - A planta de uma casa é uma casa?...
+## Conceito
 - Uma classe é uma descrição de um conjunto que compartilham os mesmos atributos(características), operações, relacionamentos e semântica
 - Todos os objetos são instâncias de classes, onde a classe descreve as propriedades e comportamentos daquele objeto
-- Atributos são propriedades de uma classe, que descreve um intervalo de valores que as instâncias podem apresentar. Uma Classe pode ter qualquer número de atributos ou nenhum
-- Operações correspondem aos processos que a classe pode realizar
+- **Atributos** são propriedades de uma classe, que descreve um intervalo de valores que as instâncias podem apresentar. Uma Classe pode ter qualquer número de atributos ou nenhum
+- **Operações** correspondem aos processos que a classe pode realizar
   
+<figure>
 @startuml
 rectangle "Especificação \nde uma conta" as conta
 
@@ -46,6 +50,8 @@ conta -> Obj3
 Obj1 --[hidden]> Obj2
 Obj2 --[hidden]> Obj3
 @endtuml
+<figcaption> Representação de vários objetos de uma mesma estrutura.</figcaption>
+</figure>
 
 
  - Estrutura (molde) que define os atributos e/ou estados de um conjunto de objetos com características similares.
@@ -220,12 +226,17 @@ class Programa{
 
 ## Estereótipo de uma Classe em UML
 
+<figure>
+
 @startuml
 class NomeDaClasse{
     atributos
     metodos()
 }
 @enduml
+<figcaption>Modelo de uma classe em UML.</figcaption>
+</figure>
+
 
 ## Estrutura básica de uma classe
 
@@ -251,8 +262,9 @@ public class Carro {
 }
 
 ```
-### Representação UML
+## Representação UML
 
+<figure>
 @startuml
 class Carro {
 
@@ -265,6 +277,8 @@ class Carro {
     +void parar()
 }
 @enduml
+<figcaption> UML da classe carro.</figcaption>
+</figure>
 
 - A UML é uma notação que podemos utilizar para representar classes e objetos em modelos computacionais
 
@@ -276,3 +290,38 @@ class Carro {
 O diagrama que representa a descrição das classes é o **Diagrama de Classes**
 
 
+## Domínio de Aplicação
+
+- Um domínio é composto pelas entidades, informações e processos relacionados a um determinado contexto.
+- Uma aplicação pode ser desenvolvida para automatizar ou tornar factível as tarefas de um domínio. 
+- Portanto, uma aplicação é basicamente o "reflexo" de um domínio.
+- Para exemplificar, suponha que estamos interessados em desenvolver uma aplicação para facilitar as tarefas do cotidiano de um banco. Podemos identificar clientes, funcionários, agências e contas como entidades desse domínio. Assim como podemos identificar as informações e os processos relacionados a essas entidades.
+
+### Outras classes do domínio de um sistema bancário
+
+<figure>
+@startuml
+
+class  Cliente {
+  String  nome
+  int  codigo
+}
+
+class  CartaoDeCredito {
+  int  numero
+  String  dataDeValidade
+}
+
+class Agencia{
+  int numero
+}
+
+class Conta{
+  int numero
+  String cliente
+  double saldo
+  double limite
+}
+@enduml  
+<figcaption> UML de classes do domínio bancários.</figcaption>
+</figure>

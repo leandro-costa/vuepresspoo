@@ -1,8 +1,3 @@
----
-prev: /01_paradigmas/
----
-
-
 # Java
 
 Nesse capítulo teremos um compilado de informações que foram reunidas de vários lugares ([^Deitel], [^Dornelles], [^Oracle], [^Santos]). Bons Estudos.
