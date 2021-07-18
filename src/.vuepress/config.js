@@ -2,6 +2,8 @@ const { description } = require('../../package')
 
 module.exports = {
   base: '/vuepresspoo/',
+  
+  dest:'docs',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
