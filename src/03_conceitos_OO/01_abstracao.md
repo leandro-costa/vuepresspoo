@@ -7,8 +7,9 @@
 - Somente as características necessárias para atender a um determinado problema
 - Representação de um determinado ponto de vista ou abstração do problema
 
-!!! note 
-    Para desenvolver aplicações O.O. é necessário identificar os objetos na vida real, extrair a classe que aquele objeto pertence e selecionar os atributos e métodos que serão necessários levando em consideração o modelo computacional que está sendo desenvolvido
+::: warning Atenção
+Para desenvolver aplicações O.O. é necessário identificar os objetos na vida real, extrair a classe que aquele objeto pertence e selecionar os atributos e métodos que serão necessários levando em consideração o modelo computacional que está sendo desenvolvido
+:::
 
 - O modelo O.O. é o conjunto de classes que visam resolver um problema computacional levando em consideração como este problema é abordado no mundo real
   

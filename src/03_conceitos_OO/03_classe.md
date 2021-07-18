@@ -229,7 +229,7 @@ class NomeDaClasse{
 
 ## Estrutura básica de uma classe
 
-```java{3-5,7-10,12-17}
+```java{3-5,7-11,13-18}
 public class Carro {
 
     private String cor;

@@ -21,16 +21,17 @@ c -[hidden]> b
 - Um Objeto é uma entidade independente que armazena dados, encapsula serviços, troca mensagens com outros objetos e é modelado para executar as funções do sistema
 - Um Objeto pode ser descrito pela identificação de dois elementos básicos: estrutura e comportamento
 
-!!! note Exemplo 
-    Objeto do tipo **Pessoa**
-    - **Estrutura** : nome, cpf, idade
-    - **Comportamento** : trabalhar, descansar
+::: tip Exemplo 
+Objeto do tipo **Pessoa**
+- **Estrutura** : nome, cpf, idade
+- **Comportamento** : trabalhar, descansar
+:::
 
-!!! note Exemplo
-    Objeto do tipo **Conta**
-    - **Estrutura:** titular, código, saldo
-    - **Comportamento:** debitarValor, adicionarValor
-
+::: tip Exemplo
+Objeto do tipo **Conta**
+- **Estrutura:** titular, código, saldo
+- **Comportamento:** debitarValor, adicionarValor
+:::
 
 ## Mensagens
 
@@ -47,11 +48,5 @@ c -[hidden]> b
 - Normalmente se diz que um objeto é uma instância de uma Classe.
 - O que é uma Classe ?
 
-## Domínio de Aplicação
-
-- Um domínio é composto pelas entidades, informações e processos relacionados a um determinado contexto.
-- Uma aplicação pode ser desenvolvida para automatizar ou tornar factível as tarefas de um domínio. 
-- Portanto, uma aplicação é basicamente o "reflexo" de um domínio.
-- Para exemplificar, suponha que estamos interessados em desenvolver uma aplicação para facilitar as tarefas do cotidiano de um banco. Podemos identificar clientes, funcionários, agências e contas como entidades desse domínio. Assim como podemos identificar as informações e os processos relacionados a essas entidades.
 
 
