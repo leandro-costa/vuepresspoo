@@ -2,8 +2,9 @@ const { description } = require('../../package')
 
 module.exports = {
   base: '/vuepresspoo/',
-  
-  dest:'docs',
+
+  dest: 'docs',
+
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
@@ -41,11 +42,28 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+
+
+    smoothScroll: true,
+
+
+
+
+
+    // Assumes GitHub. Can also be a full GitLab url.
+    repo: 'leandro-costa/vuepresspoo',
+    // Customising the header label
+    // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
+    repoLabel: 'Contribute!',
+    // if your docs are not at the root of the repo:
+    docsDir: 'src',
+    // defaults to false, set to true to enable
+    editLinks: true,
+    // custom text for edit link. Defaults to "Edit this page"
+    editLinkText: 'Edit!',
+
+
+    lastUpdated: true,
     sidebarDepth: 2,
     sidebar: [
       'home',
