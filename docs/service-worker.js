@@ -27,27 +27,27 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "01_paradigmas/01_introducao.html",
-    "revision": "5a943e0df0a21862c6babb74a379d865"
+    "revision": "051a7e42d84ab0c3afac776f808ad36e"
   },
   {
     "url": "01_paradigmas/02_Linguagens.html",
-    "revision": "cd7009cc5f06172123ef5f1ca126102c"
+    "revision": "997b83311b5eb2726fda3b4af04d4a7c"
   },
   {
     "url": "01_paradigmas/03_Paradigmas.html",
-    "revision": "31aa77d8b558ce5e06280099ee82155f"
+    "revision": "0e96489d5d8ba3853d4320b9d9b4ffb9"
   },
   {
     "url": "01_paradigmas/index.html",
-    "revision": "2674827f50abf5c252a6dd6c46896929"
+    "revision": "63424cdd0c746ccb89c78baefee361dc"
   },
   {
     "url": "02_java/index.html",
-    "revision": "4db2a07ab2cc33c77051b86d0c68a018"
+    "revision": "c225645218f2b0783f6525e7b26611cb"
   },
   {
     "url": "404.html",
-    "revision": "bae7e7dcce9b69830ec8c28793be01cb"
+    "revision": "3cd1b74ef27a92bffc666537ce88eb18"
   },
   {
     "url": "assets/css/0.styles.0105b20d.css",
@@ -122,8 +122,8 @@ self.__precacheManifest = [
     "revision": "d6dc812de2614e0d9f65ea7a849f68c7"
   },
   {
-    "url": "assets/js/app.a6f094eb.js",
-    "revision": "6166b9650abc1c531dbe088084692ac0"
+    "url": "assets/js/app.2960fc2d.js",
+    "revision": "fdadf479b331fcc4c138cf42d9b24403"
   },
   {
     "url": "icon-192x192.png",
@@ -143,7 +143,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "6ae7b3f0100fcdf87090ebbb5b145493"
+    "revision": "461472ed4f97c8025f6d107aaf0ef261"
   },
   {
     "url": "logo.png",
