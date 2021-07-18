@@ -66,8 +66,7 @@ module.exports = {
         '02_objeto',
         '03_classe',
         '04_referencia',
-        '05_dominio_aplicacao
-        '
+        '05_dominio_aplicacao'        
       ]
     }
 
