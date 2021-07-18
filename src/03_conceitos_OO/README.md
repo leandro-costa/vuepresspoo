@@ -22,7 +22,9 @@
 ## Funcional x OO
 
 <figure>
+
 @startuml
+
 skinparam roundcorner 25
 
 rectangle "Paradigma funcional"{

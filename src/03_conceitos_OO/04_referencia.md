@@ -14,6 +14,7 @@ class Programa{
 - c1 uma variável que "aponta" para o objeto(referência).
 
 <figure>
+
 @startuml
 
 rectangle "Memoria"{
@@ -42,6 +43,7 @@ class Programa{
 ```
 
 <figure>
+
 @startuml
 
 rectangle "Memoria"{

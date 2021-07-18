@@ -77,7 +77,15 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    [
+      '@vuepress/medium-zoom',
+      {
+        options: {
+          margin: 200,
+          background: '#252525'
+        }
+      }
+    ],
     [
       '@vuepress/pwa',
       {

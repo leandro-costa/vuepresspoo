@@ -19,7 +19,9 @@
 - **Operações** correspondem aos processos que a classe pode realizar
   
 <figure>
+
 @startuml
+
 rectangle "Especificação \nde uma conta" as conta
 
 rectangle Obj1[
@@ -49,7 +51,9 @@ conta -> Obj3
 
 Obj1 --[hidden]> Obj2
 Obj2 --[hidden]> Obj3
+
 @endtuml
+
 <figcaption> Representação de vários objetos de uma mesma estrutura.</figcaption>
 </figure>
 
@@ -262,9 +266,11 @@ public class Carro {
 }
 
 ```
+
 ## Representação UML
 
 <figure>
+
 @startuml
 class Carro {
 
@@ -300,6 +306,7 @@ O diagrama que representa a descrição das classes é o **Diagrama de Classes**
 ### Outras classes do domínio de um sistema bancário
 
 <figure>
+
 @startuml
 
 class  Cliente {
@@ -323,5 +330,6 @@ class Conta{
   double limite
 }
 @enduml  
+
 <figcaption> UML de classes do domínio bancários.</figcaption>
 </figure>

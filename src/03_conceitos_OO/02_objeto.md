@@ -5,6 +5,7 @@
 - Um objeto também pode ser visto como um agregado de outros objetos (suas partes)
 
 <figure>
+
 @startuml
 
 rectangle "Apartamento"{
