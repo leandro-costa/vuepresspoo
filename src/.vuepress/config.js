@@ -33,22 +33,20 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    sidebarDepth: 2,
+    displayAllHeaders: true,
     sidebar: {
       '/01_paradigmas/': [
-        {
-          title: 'Linguagens e paradigmas de programação',
-          collapsable: false
-        }
+        '',
+        '01_introducao',
+        '02_Linguagens',
+        '03_Paradigmas'
       ],
-      '/02_java/': [
-        {
-          title: 'Java',
-          collapsable: false
-        }
-      ],
-    },
+      '/02_java/': 'auto'
+    }
+
   },
-  
+
   markdown: {
 
     extendMarkdown: md => {
