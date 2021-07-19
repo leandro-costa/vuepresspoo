@@ -42,28 +42,14 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-
-
     smoothScroll: true,
-
-
-
-
-
-    // Assumes GitHub. Can also be a full GitLab url.
     repo: 'leandro-costa/vuepresspoo',
-    // Customising the header label
-    // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-    repoLabel: 'Contribute!',
-    // if your docs are not at the root of the repo:
+    //repoLabel: '',
     docsDir: 'src',
-    // defaults to false, set to true to enable
     editLinks: true,
-    // custom text for edit link. Defaults to "Edit this page"
     editLinkText: 'Edit!',
-
-
     lastUpdated: true,
+
     sidebarDepth: 2,
     sidebar: [
       'home',
@@ -77,7 +63,11 @@ module.exports = {
       '/03_conceitos_OO/01_abstracao',
       '/03_conceitos_OO/02_objeto',
       '/03_conceitos_OO/03_classe',
-      '/03_conceitos_OO/04_referencia']
+      '/03_conceitos_OO/04_referencia',
+      '/03_conceitos_OO/05_assossiacao',
+      '/03_conceitos_OO/06_encapsulamento',
+      '/03_conceitos_OO/07_pacotes'
+    ]
 
   },
 
@@ -97,15 +87,20 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    [
-      '@vuepress/medium-zoom',
-      {
-        options: {
-          margin: 200,
-          background: '#252525'
-        }
+    ['@vuepress/plugin-medium-zoom', {
+      options: {
+        margin: 0,
+        background: '#252525'
       }
-    ],
+    }],
+    ['container', {
+      type: 'col-wrapper',
+      defaultTitle: '',
+    }],
+    ['container', {
+      type: 'col-half',
+      defaultTitle: '',
+    }],
     [
       '@vuepress/pwa',
       {

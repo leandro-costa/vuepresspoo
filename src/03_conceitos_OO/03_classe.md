@@ -226,6 +226,20 @@ class Programa{
   }
 }
 ```
+## Construtor
+
+- Método especial definido na classe e executado no momento que o objeto é instanciado
+- Diferente de outro método pois não possui retorno
+- Deve ter o mesmo nome da classe.
+- Pode receber parâmetros
+  - Normalmente utilizados para inicializar os valores dos atributos do objeto
+
+### O que o new faz?
+
+- A classe chamada é instanciada
+- Memória é alocada
+- Os passos definidos dentro do método construtor da classe são executados
+  - Construtor é um método especial para criar e inicializar novas instâncias da classe. Construtores podem ser sobrecarregados
 
 
 ## Estereótipo de uma Classe em UML
