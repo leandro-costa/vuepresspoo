@@ -52,7 +52,7 @@ conta -> Obj3
 Obj1 --[hidden]> Obj2
 Obj2 --[hidden]> Obj3
 
-@endtuml
+@enduml
 
 <figcaption> Representação de vários objetos de uma mesma estrutura.</figcaption>
 </figure>
@@ -72,7 +72,7 @@ class Conta{
 }
 ```
 
-- Usando a classe
+### Usando a classe
 
 ```java
 class Programa{
