@@ -10,6 +10,7 @@
   "repository": "leandro-costa/vuepresspoo/POO",
   "scripts": {
     "dev": "vuepress dev src",
+    "postinstall": "patch-package",
     "build": "vuepress build src"
   },
   "license": "MIT",
