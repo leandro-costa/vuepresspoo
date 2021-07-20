@@ -27,63 +27,63 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "01_paradigmas/01_introducao.html",
-    "revision": "28dc790c2a27c34c311b0d6f63de9846"
+    "revision": "701b195d00d3e199c076bee909321e8a"
   },
   {
     "url": "01_paradigmas/02_Linguagens.html",
-    "revision": "e85466072561ee1f1e03ba4cb385f2bf"
+    "revision": "f9dc4eb8d53bef288bbba0d8d51e9fbc"
   },
   {
     "url": "01_paradigmas/03_Paradigmas.html",
-    "revision": "c467ff988b1b07b431806d3ffb34bc60"
+    "revision": "d47025d04508eac4b0fe171b021ad151"
   },
   {
     "url": "01_paradigmas/index.html",
-    "revision": "d26dbb946251cca046691e37fdc7d094"
+    "revision": "39e9bad99dd2f37d4447ab0f0a000f37"
   },
   {
     "url": "02_java/01_codificando.html",
-    "revision": "526a27a952cd3855c47f105ec068c743"
+    "revision": "6bb72e0d5df59aa4dbe3d4093bb7b670"
   },
   {
     "url": "02_java/index.html",
-    "revision": "aed825b94c08e5ebdadb2b8dfd3d68fa"
+    "revision": "a0e74d369128c680856ac8589c046f0e"
   },
   {
     "url": "03_conceitos_OO/01_abstracao.html",
-    "revision": "57ca2e2d8b1b64feb52c425789e2c88b"
+    "revision": "44eef14f1547d467e0e8e4bd5f11e30d"
   },
   {
     "url": "03_conceitos_OO/02_objeto.html",
-    "revision": "0da95f5a79412589e000c0e9316c821a"
+    "revision": "ca82f095f9b33402202152003c5325a1"
   },
   {
     "url": "03_conceitos_OO/03_classe.html",
-    "revision": "576fef0816c8ef47ed7fb637b65346ca"
+    "revision": "de4d83b441fdf7509301d21040184ef8"
   },
   {
     "url": "03_conceitos_OO/04_referencia.html",
-    "revision": "bfa665e78d0ed6b265bf20ea0b54b2a5"
+    "revision": "87f22c454ed673e620f00c051467447d"
   },
   {
     "url": "03_conceitos_OO/05_assossiacao.html",
-    "revision": "d8ded183b1a8274924235b7502ca0b19"
+    "revision": "c557553e708a1c7b5b3ae312b07a777b"
   },
   {
     "url": "03_conceitos_OO/06_encapsulamento.html",
-    "revision": "ec195e55c2a7f413e229b821fd40c7fd"
+    "revision": "ad5fac26dd88c837e7ea751f29d3b8dd"
   },
   {
     "url": "03_conceitos_OO/07_pacotes.html",
-    "revision": "a667d146e16fb3348493049e07463d5f"
+    "revision": "03f95537cc52a1f8e35789bcbf944b96"
   },
   {
     "url": "03_conceitos_OO/index.html",
-    "revision": "91fa65a3dfadf969ee3e5546885df36b"
+    "revision": "582ea08277879a1869303f5b47c6ec63"
   },
   {
     "url": "404.html",
-    "revision": "4d24f88574c863606ea6ef3b38efc2da"
+    "revision": "5825d06a693acbae0bec2492c6732e57"
   },
   {
     "url": "assets/css/0.styles.b538a564.css",
@@ -102,20 +102,20 @@ self.__precacheManifest = [
     "revision": "3ff1a815b4d8aa63490a08239a0af083"
   },
   {
-    "url": "assets/js/12.420385a4.js",
-    "revision": "98eeed3ca705c53e55302a2333a6cba6"
+    "url": "assets/js/12.c0c23d7b.js",
+    "revision": "37f2d7f9841097510db93dee1496f8dc"
   },
   {
-    "url": "assets/js/13.03ac556b.js",
-    "revision": "7951237895c4e60eeb0abc1fd54ea893"
+    "url": "assets/js/13.bf750345.js",
+    "revision": "2279e41a3ad6d070c721efde019f9678"
   },
   {
-    "url": "assets/js/14.beba5f01.js",
-    "revision": "f6540a477bdd41dc90bf9cc46c96cec8"
+    "url": "assets/js/14.40b842ca.js",
+    "revision": "dd2dca5e308337e9b76559d36d407319"
   },
   {
-    "url": "assets/js/15.69ddde05.js",
-    "revision": "e97ae0c246066384afbc2e16c4f61a76"
+    "url": "assets/js/15.49bc92a8.js",
+    "revision": "118f3729cbc498386c3ed2632217feb6"
   },
   {
     "url": "assets/js/16.3045d62b.js",
@@ -198,12 +198,12 @@ self.__precacheManifest = [
     "revision": "58c3a34ed6878416da40b434602bcb1b"
   },
   {
-    "url": "assets/js/app.b613d567.js",
-    "revision": "e50540713eb337b5f487721f694bd2c6"
+    "url": "assets/js/app.fc429959.js",
+    "revision": "811bea436aafa9b0b73a9ccdd7ae154d"
   },
   {
     "url": "home.html",
-    "revision": "3b711c95e03628893cf1d042523d33b4"
+    "revision": "55adcfe824519ae49c9a71d2b314faa3"
   },
   {
     "url": "icon-192x192.png",
@@ -223,7 +223,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b07ea268b1b4a94e037112837ef003f6"
+    "revision": "33f20eacd4cee5667c30d1613a9048e1"
   },
   {
     "url": "logo.png",
