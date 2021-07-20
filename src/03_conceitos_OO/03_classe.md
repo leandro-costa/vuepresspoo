@@ -226,6 +226,7 @@ class Programa{
   }
 }
 ```
+
 ## Construtor
 
 - Método especial definido na classe e executado no momento que o objeto é instanciado
@@ -241,6 +242,38 @@ class Programa{
 - Os passos definidos dentro do método construtor da classe são executados
   - Construtor é um método especial para criar e inicializar novas instâncias da classe. Construtores podem ser sobrecarregados
 
+## Sobrecarga 
+
+- É a capacidade de definir métodos com o mesmo nome
+  - Assinatura seja diferente. 
+  - A mudança na assinatura ocorre alterando a quantidade e/ou tipo de parâmetros que um método recebe
+
+
+- Sobrecarga é a capacidade de um objeto responder à mesma mensagem, com comportamentos (métodos) distintos, a depender dos tipos dos parâmetros recebidos
+  - aplicarInjecao()
+  - aplicarInjecao(String nomeRemedio)
+
+
+```java
+
+public int somar(int v1, int v2){ 
+    return v1 + v2; 
+} 
+
+public int operar(int v1, int v2){ 
+    return somar(v1, v2); 
+} 
+
+public int operar (char op, int v1, int v2){ 
+  switch(op){ 
+    case '+': 
+      return somar(v1, v2); 
+      break; 
+    case '-': 
+      return subtrair(v1, v2); 
+  } 
+}
+```
 
 ## Estereótipo de uma Classe em UML
 
