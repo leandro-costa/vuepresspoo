@@ -27,7 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install
-    - run: yarn patch-package medium-zoom
     - run: yarn build
     - uses: EndBug/add-and-commit@v7
       with:
