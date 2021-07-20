@@ -3,6 +3,8 @@
 - Uma classe pode conter atributos que geram instâncias de outra classe
     - Uma classe pode conter outra classe como atributo
     - Quando isto ocorre dizemos que uma classe possui outra classe associada a ela
+
+    
 <figure>
 
 @startuml

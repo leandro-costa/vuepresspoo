@@ -22,5 +22,9 @@
     "markdown-it-katex": "^2.0.3",
     "markdown-it-plantuml": "^1.4.1",
     "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0"
   }
 }
