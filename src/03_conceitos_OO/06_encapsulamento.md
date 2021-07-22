@@ -124,6 +124,7 @@ No entanto, ao tentar acessar um atributo *private,* obtemos um erro:
 Em vez disso, usamos os métodos getNome()e setNome()para acessar e atualizar a variável:
 
 Exemplo
+```java
 public class Main {
   public static void main(String[] args) {
     Pessoa pessoa = new Pessoa();
@@ -131,7 +132,7 @@ public class Main {
     System.out.println(pessoa.getNome());
   }
 }
-
+```
 saida 
 
     "João"
