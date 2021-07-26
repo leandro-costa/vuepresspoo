@@ -264,7 +264,7 @@ public int operar(int v1, int v2){
     return somar(v1, v2); 
 } 
 
-public int operar (char op, int v1, int v2){ 
+public int operar(char op, int v1, int v2){ 
   switch(op){ 
     case '+': 
       return somar(v1, v2); 
@@ -310,6 +310,16 @@ public class Carro {
     public void parar(){
         velocidade = 0; 
     }
+}
+
+```
+
+```java
+class Programa{
+  public static void main(String[] args){
+    Carro c1 = new Carro("vermelha","BMW");
+    //Carro c2 = new Carro();// ERRO
+  }
 }
 
 ```
