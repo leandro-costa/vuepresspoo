@@ -11,4 +11,4 @@ dist
 config.local.js
 basement_dist
 predeploy.sh
-**/*.pdf
+material
