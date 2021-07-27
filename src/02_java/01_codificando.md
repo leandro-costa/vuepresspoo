@@ -475,3 +475,5 @@ Podemos preencher todas as posições de um array com um valor específico utili
 int[] numeros = new int[10];
 java.util.Arrays.fill(numeros,5) ;
 ```
+
+!!!include(src/ref.md)!!!
