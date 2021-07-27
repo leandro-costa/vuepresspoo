@@ -353,3 +353,125 @@ while (condicao) {
     }
 }
 ```
+
+## Array 
+
+[^k19oo]
+
+- Em Java, os arrays são criados através do comando new.
+
+```java
+int[] numeros = new int[100];
+```
+
+A variável `numeros` armazena a referência de um array criado na memória do computador através
+do comando `new.` Na memória, o espaço ocupado por esse array está dividido em 100 "pedaços"
+iguais numerados de 0 até 99. Cada "pedaço" pode armazenar um valor do tipo int.
+
+### Modificando o conteúdo de um array
+
+Para modificar o conteúdo de um array, devemos escolher uma ou mais posições que devem ser alteradas e utilizar a sintaxe abaixo:
+
+```java
+int[] numeros = new int[100];
+numeros [0] = 136;
+numeros [99] = 17;
+```
+
+Também podemos definir os valores de cada posição de um array no momento da sua criação utilizando as sintaxes abaixo:
+
+```java
+int[] numeros = new int[]{100 ,87};
+int[] numeros = {100 ,87};
+```
+
+
+### Acessando o conteúdo de um array
+
+
+Para acessar o conteúdo de um array, devemos escolher uma ou mais posições e utilizar a sintaxe abaixo:
+
+```java
+int[] numeros = {100 ,87};
+System.out.println(numeros[0]);
+System.out.println(numeros[1]);
+```
+
+
+### Percorrendo um Array
+
+Quando trabalhamos com um array, uma das tarefas mais comuns é acessarmos todas ou algumas de suas posições sistematicamente. Geralmente, fazemos isso para resgatar todos ou alguns dos valores armazenados e realizar algum processamento sobre tais informações. Para percorrermos um array, utilizaremos a instrução de repetição `for.` Podemos utilizar a instrução `while` também. Porém, logo perceberemos que a sintaxe da instrução `for,` em geral, é mais apropriada quando estamos trabalhando com arrays.
+
+```java
+int[] numeros = new int[100];
+for(int i = 0; i < 100; i ++) {
+    numeros[i] = i ;
+}
+```
+
+Para percorrer um array, é necessário saber a quantidade de posições do mesmo. Essa quantidade é definida quando o array é criado através do comando new. Nem sempre essa informação está explícita no código. Por exemplo, considere um método que imprima na saída padrão os valores armazenados em um array. Provavelmente, esse método receberá como parâmetro um array e a quantidade de posições desse array não estará explícita no código fonte.
+
+```java
+void imprimeArray (int[] numeros ) {
+    // implementação
+}
+```
+
+Podemos recuperar a quantidade de posições de um array acessando o seu atributo `length.`
+
+```java
+void imprimeArray (int[] numeros ) {
+    for(int i = 0; i < numeros.length; i++) {
+        System.out.println(numeros[i]) ;
+    }
+}
+```
+
+
+### foreach
+
+Para acessar todos os elementos de um array, é possível aplicar o comando for com uma sintaxe um pouco diferente.
+```java
+void imprimeArray (int[] numeros ) {
+    for(int numero : numeros ) {
+        System.out.println(numero) ;
+    }
+}
+```
+
+### Operações
+
+Nas bibliotecas da plataforma Java, existem métodos que realizam algumas tarefas úteis relacionadas a arrays. Veremos esses métodos a seguir.
+
+#### Ordenando um Array
+
+Considere um array de String criado para armazenar nomes de pessoas. Podemos ordenar esses nomes através do método `Arrays.sort().`
+
+```java
+String [] nomes = new String []{" rafael cosentino ", " jonas hirata ", " marcelo martins "};
+Arrays.sort(nomes) ;
+
+for( String nome : nomes ) {
+    System.out.println(nome) ;
+}
+```
+
+Analogamente, também podemos ordenar números.
+
+#### Duplicando um Array
+
+Para copiar o conteúdo de um array para outro com maior capacidade, podemos utilizar o método `Arrays.copyOf().`
+
+```java
+String[] nomes = new String[] {" rafael ", " jonas ", " marcelo "};
+String[] nomesDuplicados = Arrays.copyOf( nomes , 10) ;
+```
+
+#### Preenchendo um Array
+
+Podemos preencher todas as posições de um array com um valor específico utilizando o método `Arrays.fill().`
+
+```java
+int[] numeros = new int[10];
+java.util.Arrays.fill(numeros,5) ;
+```

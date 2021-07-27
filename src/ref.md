@@ -23,5 +23,8 @@
 
 [^GAMMA]: GAMMA, Erich. et al. Padrões de projetos: Soluções reutilizáveis de software orientados a objetos Bookman editora, 2009.
 
-[^java16]:Oracle. Oracle Announces Java 16 [https://www.oracle.com/news/announcement/oracle-announces-java-16-031621.html](https://www.oracle.com/news/announcement/oracle-announces-java-16-031621.html) (Acessado em 15/07/2021) 
+[^java16]: Oracle. Oracle Announces Java 16 [https://www.oracle.com/news/announcement/oracle-announces-java-16-031621.html](https://www.oracle.com/news/announcement/oracle-announces-java-16-031621.html) (Acessado em 15/07/2021) 
 
+[^k19oo]: K19-Treinamentos. (2013). Orientação a Objetos em Java, 220.
+
+[^caelumoo]: Caelum. Java e Orientaçao a Objetos - Curso fj-11.
