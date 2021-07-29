@@ -1,44 +1,54 @@
+Exercicio heranca
 
-Herança
-É a capacidade de uma classe definir o seu comportamento e sua estrutura aproveitando definições de outra classe, normalmente conhecida como classe base ou classe pai
-As subclasses herdam tudo o que a classe pai possui e acrescenta as suas características particulares
-Herança
-Através do mecanismo de herança é possível definirmos classes genéricas que agreguem um conjunto de definições comuns a um grande número de objetos(Generalização) 
-A partir destas especializações genéricas podemos construir novas classes, mais específicas, que acrescentem novas características e comportamentos aos já existentes (Especialização)
-Herança
-Capacidade que uma classe tem de herdar as características e comportamentos de outra classe
-Classe pai é chamada de superclasse e a filha de subclasse
-Em Java só é permitido herdar de uma única classe, ou seja, não permite herança múltipla
-Herança
-O objetivo da herança é especializar o entendimento de uma classe criando novas características e comportamentos que vão além da superclasse 
-Herança
-Ao mesmo tempo que a especialização amplia o entendimento de uma classe, a generalização vai no sentido inverso e define um modelo menos especializado  e  mais genérico
-Herança
-Herança
-Classe Morcego
-Quais as características de morcego ?
-altura
-peso
-tamanho_presa
-Quais ações o morcego pode fazer ?
-mamar
-voar
-Herança
-Se usarmos os princípios de lógica podemos dizer que todo morcego é mamífero porém NÃO podemos afirmar que todo mamífero é morcego
-Herança
+Passo 1: Criar uma classe abstrata chamada Operacao com o atributo valor do tipo double e um método abstrato chamado operar() que retora um valor do tipo double.
+Passo 2: Crie uma classe Debito e outra Credito que herda as caraterísticas de Operacao. O construtor de Debito e Credito deve receber o valor da operação e atribuir este valor a variável definida em Operacao (superclasse). Estas classes (Debito e Credito) devem ter um método operar() que deve ser programado de acordo com sua finalidade: operar() da classe Debito retorna o valor negativo pois a operação deve ser um debito enquanto a o método operar() de Credito retorna o valor positivo.
+Passo 3: Criar a classe ContaCorrente com o atributo valor do tipo double que inicia com 0. Esta classe possui um método executarOperacao(Operacao opr) que recebe um parâmetro do tipo Operacao que vai operar o valor da conta correte (se for debito diminui, se for credito soma). Esta classe também possui o método getSaldo() que retorna o valor do saldo atual.
+Passo 4: Crie a classe Correntista com os seguintes atributos: nome (do tipo String) e conta (do tipo ContaCorrente). O construtor de Correntista deve receber seu nome. A classe deve ter 2 métodos: public String getNome() e public ContaCorrente getContacorrente(). Estes métodos retornam o nome e a conta respectivamente.
+Passo 5: Crie a classe Banco como descrito no código abaixo:
+```java
+public class Banco {
+    Correntista c1, c2, c3;
 
+    public Banco(String correntista1, String correntista2, String correntista3) {
+        c1 = new Correntista(correntista1);
+        c2 = new Correntista(correntista2);
+        c3 = new Correntista(correntista3);
+    }
 
-Com base no que foi dito até aqui podemos deduzir que o item 2 deve causar um erro já que não é possível garantir que todo mamífero seja um morcego
-Já o item 1 pode parecer estranho, pois a variável é do tipo Mamífero e o objeto para o qual a variável se refere é do tipo Morcego
-Devemos saber que toda variável pode receber um objeto que seja compatível com o seu tipo e neste caso todo Morcego CERTAMENTE é um Mamífero
-Herança
-O código apresentado funciona?
-Herança
-Todo Morcego é um Mamífero, porem não pode realizar todas as ações de um morcego
-A variável que recebe o objeto é do tipo Mamífero
-Para o Morcego voar é necessário criar uma nova variável do tipo Morcego e atribuir o objeto que estava na variável animal_mamifero
-Este tipo de operação recebe o nome de TYPE CAST
-Herança
+    public Correntista getCorrentista(String nome) {
+        if (c1.getNome().equals(nome)) {
+            return c1;
+        }
+        if (c2.getNome().equals(nome)) {
+            return c2;
+        }
+        if (c3.getNome().equals(nome)) {
+            return c3;
+        }
+        return null;
+    }
+
+    public void debitar(String nomeCorrentista, double valor) {
+        Debito d = new Debito(valor);
+        getCorrentista(nomeCorrentista).getContacorrente().executarOperacao(d);
+    }
+
+    public void creditar(String nomeCorrentista, double valor) {
+        Credito c = new Credito(valor);
+        getCorrentista(nomeCorrentista).getContacorrente().executarOperacao(c);
+    }
+
+    public double getSaldo(String nomeCorrentista) {
+        return getCorrentista(nomeCorrentista).getContacorrente().getSaldo();
+    }
+
+    public void transferir(String nomeCorrentistaOrigem, String nomeCorrentistaDestino, double valor) {
+        debitar(nomeCorrentistaOrigem, valor);
+        creditar(nomeCorrentistaDestino, valor);
+    }
+}
+```
+
 Classes abstratas
 Classes abstratas são classes que não produzem instâncias. Elas agrupam características e comportamentos que serão herdados por outras classes
 Fornecem padrões de comportamento que serão implementados nas suas subclasses

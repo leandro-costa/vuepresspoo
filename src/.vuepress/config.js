@@ -66,7 +66,8 @@ module.exports = {
       '/03_conceitos_OO/04_referencia',
       '/03_conceitos_OO/05_assossiacao',
       '/03_conceitos_OO/06_encapsulamento',
-      '/03_conceitos_OO/07_pacotes'
+      '/03_conceitos_OO/07_pacotes',
+      '/03_conceitos_OO/08_Heranca'      
     ]
 
   },
