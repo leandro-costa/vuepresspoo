@@ -139,8 +139,8 @@
         ],
         "description": "imagem via live server"
     },
-    "figure": {
-        "prefix": "figure",
+    "plantuml": {
+        "prefix": "figure plantuml",
         "body": [
             "<figure>",
             "",
@@ -154,18 +154,14 @@
         "description": "figure vuepress"
     },
 
-    "plantuml": {
-        "prefix": "plantuml",
+    "java": {
+        "prefix": "java",
         "body": [
-            "```plantuml",
-            "@startuml",
-            "$1.",
-            "@enduml",
+            "```java",
             "```"
         ],
-        "description": "plantuml diagram"
+        "description": "java code block"
     },
-
 
     "span": {
         "prefix": "span",

@@ -27,4 +27,7 @@
 
 [^k19oo]: K19-Treinamentos. (2013). Orientação a Objetos em Java, 220.
 
-[^caelumoo]: Caelum. Java e Orientaçao a Objetos - Curso fj-11.
+[^caelumoo]: Caelum. Java e Orientação a Objetos - Curso fj-11.
+
+[^Takenami]: Takenami, Igor. Introdução a Programação
+Orientada a Objetos. Salvador. 2011. (Apostila).
