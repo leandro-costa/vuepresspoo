@@ -70,34 +70,6 @@ Sobrecarga é a capacidade de um objeto responder à mesma mensagem, com comport
 aplicarInjecao()
 aplicarInjecao(String)
 Sobrecarga de Métodos
-Polimorfismo
-É a possibilidade de se solicitar um serviço a um objeto, cuja execução vai depender do tipo de objeto instanciado
-Círculo, Retângulo e Quadrado são do tipo figura. 
-Método desenhar()
-O resultado depende do tipo de figura que receber a mensagem
-Polimorfismo
-O polimorfismo permite escrever programas que processam objetos que compartilham a mesma superclasse em uma hierarquia de classe como se todas fossem objetos da superclasse.
-Polimorfismo
-Sistema de simulação de movimento de Animais
-Peixes, Anfíbios, Pássaros
-Superclasse Animal
-Método mover
-Localização x,y
-Todas as subclasses implementam o método mover
-Polimorfismo
-Sistema de simulação de movimento de Animais
-O programa envia a mensagem “mover” para os 3 objetos
-Polimorfismo
-Sistema de simulação de movimento de Animais
-Cada animal responde ao método mover de uma maneira diferente
-o peixe pode nadar 2 metros
-Anfíbio pular 1 metro
-Pássaro voar 3 metros
-Polimorfismo
-Sistema de simulação de movimento de Animais
-Cada objeto irá responder a mensagem “mover” de acordo com sua instancia
-Apesar de todos serem Animais o fato de do método “mover” ter “muitas formas” é a chave do polimorfismo 
-Polimorfismo vem de Polimorfo, “Que é sujeito a mudar de forma”
 
 Interface
 O objetivo de uma interface em Orientação a Objetos é definir um conjunto de comportamentos (métodos) que devem obrigatoriamente ser implementados pelas classes que utilizam a interface. 

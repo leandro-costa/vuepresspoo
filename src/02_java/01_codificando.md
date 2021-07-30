@@ -93,7 +93,7 @@ char letra = 'a';
 System.out.println(letra);
 ```
 
-Variáveis do tipo `char` são pouco usadas no dia a dia Veremos mais a frente o uso das Strings, que usamos constantemente, porém estas não são denidas por um tipo primitivo.
+Variáveis do tipo `char` são pouco usadas no dia a dia Veremos mais a frente o uso das Strings, que usamos constantemente, porém estas não são definidas por um tipo primitivo.
 
 
 ## Tipos primitivos e valores
@@ -182,9 +182,9 @@ if (idade < 18 && !amigoDoDono) {
 }
 ```
 
-Repare na linha 3 que o trecho `amigoDoDono == false` virou `!amigoDoDono`. Eles têm o mesmo valor.
+Perceba na linha 3 que o trecho `amigoDoDono == false` virou `!amigoDoDono`. Eles têm o mesmo valor.
 
-Para comparar se uma variável tem o mesmo valor que outra variável ou valor, utilizamos o operador `==`. Repare que utilizar o operador `=` dentro de um `if` vai retornar um erro de compilação, já que o operador `=` é o de atribuição.
+Para comparar se uma variável tem o mesmo valor que outra variável ou valor, utilizamos o operador `==`. Perceba que utilizar o operador `=` dentro de um `if` vai retornar um erro de compilação, já que o operador `=` é o de atribuição.
 ```java
 int mes = 1;
 if (mes == 1) {
@@ -217,7 +217,7 @@ while (i < 10) {
 Já o while acima imprime de 0 a 9.
 
 ### O For
-Outro comando de loop extremamente utilizado é o for. A ideia é a mesma do while: fazer um trecho de código ser repetido enquanto uma condição continuar verdadeira. Mas além disso, o for isola também um espaço para inicialização de variáveis e o modificador dessas variáveis. Isso faz com que quem mais legíveis,
+Outro comando de loop extremamente utilizado é o for. A ideia é a mesma do while: fazer um trecho de código ser repetido enquanto uma condição continuar verdadeira. Mas além disso, o for isola também um espaço para inicialização de variáveis e o modificador dessas variáveis. Isso faz com que fiquem mais legíveis,
 as variáveis que são relacionadas ao loop:
 
 ```java
@@ -234,7 +234,7 @@ for (int i = 0; i < 10; i = i + 1) {
 }
 ```
 
-Repare que esse for poderia ser trocado por:
+Perceba que esse for poderia ser trocado por:
 
 ```java
 while (i < 10) {
@@ -365,7 +365,7 @@ int[] numeros = new int[100];
 ```
 
 A variável `numeros` armazena a referência de um array criado na memória do computador através
-do comando `new.` Na memória, o espaço ocupado por esse array está dividido em 100 "pedaços"
+do comando `new`. Na memória, o espaço ocupado por esse array está dividido em 100 "pedaços"
 iguais numerados de 0 até 99. Cada "pedaço" pode armazenar um valor do tipo int.
 
 ### Modificando o conteúdo de um array
@@ -400,7 +400,7 @@ System.out.println(numeros[1]);
 
 ### Percorrendo um Array
 
-Quando trabalhamos com um array, uma das tarefas mais comuns é acessarmos todas ou algumas de suas posições sistematicamente. Geralmente, fazemos isso para resgatar todos ou alguns dos valores armazenados e realizar algum processamento sobre tais informações. Para percorrermos um array, utilizaremos a instrução de repetição `for.` Podemos utilizar a instrução `while` também. Porém, logo perceberemos que a sintaxe da instrução `for,` em geral, é mais apropriada quando estamos trabalhando com arrays.
+Quando trabalhamos com um array, uma das tarefas mais comuns é acessarmos todas ou algumas de suas posições sistematicamente. Geralmente, fazemos isso para resgatar todos ou alguns dos valores armazenados e realizar algum processamento sobre tais informações. Para percorrermos um array, utilizaremos a instrução de repetição `for`. Podemos utilizar a instrução `while` também. Porém, logo perceberemos que a sintaxe da instrução `for`, em geral, é mais apropriada quando estamos trabalhando com arrays.
 
 ```java
 int[] numeros = new int[100];
@@ -417,7 +417,7 @@ void imprimeArray (int[] numeros ) {
 }
 ```
 
-Podemos recuperar a quantidade de posições de um array acessando o seu atributo `length.`
+Podemos recuperar a quantidade de posições de um array acessando o seu atributo `length`.
 
 ```java
 void imprimeArray (int[] numeros ) {
@@ -445,7 +445,7 @@ Nas bibliotecas da plataforma Java, existem métodos que realizam algumas tarefa
 
 #### Ordenando um Array
 
-Considere um array de String criado para armazenar nomes de pessoas. Podemos ordenar esses nomes através do método `Arrays.sort().`
+Considere um array de String criado para armazenar nomes de pessoas. Podemos ordenar esses nomes através do método `Arrays.sort()`.
 
 ```java
 String [] nomes = new String []{" rafael cosentino ", " jonas hirata ", " marcelo martins "};
@@ -460,7 +460,7 @@ Analogamente, também podemos ordenar números.
 
 #### Duplicando um Array
 
-Para copiar o conteúdo de um array para outro com maior capacidade, podemos utilizar o método `Arrays.copyOf().`
+Para copiar o conteúdo de um array para outro com maior capacidade, podemos utilizar o método `Arrays.copyOf()`.
 
 ```java
 String[] nomes = new String[] {" rafael ", " jonas ", " marcelo "};
@@ -469,7 +469,7 @@ String[] nomesDuplicados = Arrays.copyOf( nomes , 10) ;
 
 #### Preenchendo um Array
 
-Podemos preencher todas as posições de um array com um valor específico utilizando o método `Arrays.fill().`
+Podemos preencher todas as posições de um array com um valor específico utilizando o método `Arrays.fill()`.
 
 ```java
 int[] numeros = new int[10];

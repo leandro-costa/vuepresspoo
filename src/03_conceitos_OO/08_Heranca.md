@@ -186,7 +186,7 @@ Dizemos que a classe `Gerente` **herda** todos os atributos e métodos da classe
 
 
 ::: tip Super e Sub classe
-A nomenclatura mais encontrada é que `Funcionario` é a superclasse de `Gerente,` e `Gerente` é a subclasse de `Funcionario`. Dizemos também que todo `Gerente` **é um** `Funcionario`. Outra forma é dizer que `Funcionario` é classe mãe de `Gerente` e `Gerente` é classe filha de `Funcionario`.
+A nomenclatura mais encontrada é que `Funcionario` é a superclasse de `Gerente`, e `Gerente` é a subclasse de `Funcionario`. Dizemos também que todo `Gerente` **é um** `Funcionario`. Outra forma é dizer que `Funcionario` é classe mãe de `Gerente` e `Gerente` é classe filha de `Funcionario`.
 :::
 
 E se precisamos acessar os atributos que herdamos? Não gostaríamos de deixar os atributos de `Funcionario` **public**, pois dessa maneira qualquer um poderia alterar os atributos dos objetos deste tipo. Existe um outro modificador de acesso, o **protected**, que fica entre o **private** e o **public**. Um atributo **protected** só pode ser acessado (visível) pela própria classe e por suas subclasses (e mais algumas outras classes, mas veremos isso mais adiante).
@@ -466,7 +466,7 @@ public double getBonificacao() {
 }
 ```
 
-Perceba que, por questões de compatibilidade, isso não é obrigatório. Mas caso um método esteja anotado com `@Override,` ele necessariamente precisa estar reescrevendo um método da classe mãe.
+Perceba que, por questões de compatibilidade, isso não é obrigatório. Mas caso um método esteja anotado com `@Override`, ele necessariamente precisa estar reescrevendo um método da classe mãe.
 :::
 
 #### Invocando o método reescrito
@@ -515,7 +515,7 @@ class Emprestimo extends Servico {
 }
 ```
 
-Para os objetos da classe `Emprestimo,` devemos chamar o método `calculaTaxaDeEmprestimo()`.
+Para os objetos da classe `Emprestimo`, devemos chamar o método `calculaTaxaDeEmprestimo()`.
 Para todos os outros serviços, devemos chamar o método `calculaTaxa()`.
 
 Mesmo assim, nada impediria que o método `calculaTaxa()` fosse chamado em um objeto da
