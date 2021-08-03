@@ -49,6 +49,22 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit!',
     lastUpdated: true,
+    
+    nav: [
+      {
+        text: 'Praticar',
+        items: [
+          { text: 'Modelagem', items: [
+            { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
+            { text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
+          ] 
+          },
+          { text: 'Herança', items: [
+            { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' }
+          ] }
+        ]
+      }
+    ],
 
     sidebarDepth: 2,
     sidebar: [
