@@ -29,7 +29,6 @@ Fica evidente a partir deste exemplo que existe uma organização hierárquica n
 
 <figure>
 
-```plantuml
 @startuml
 
 Animalia <|-- Chordata 
@@ -59,7 +58,7 @@ hide empty methods
 hide circle
 
 @enduml
-```
+
 <figcaption>Organização hierárquica nas classificações para o homem, cão e mosca.</figcaption>
 </figure>
 
