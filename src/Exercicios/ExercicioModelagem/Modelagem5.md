@@ -4,7 +4,7 @@
 
 Uma `Instituicao` de ensino está desenvolvendo um sistema acadêmico onde cada `Pessoa` possue `nome` e `CPF`. Caso a pessoa seja um `Aluno` deverá ter também o número da `matricula` mas, se for um `Professor` deverá ter número do SIAPE. A manipulação do `CPF` deve ser exclusivo de `Pessoa`. 
 
-Além disso, na `Instituicao` deverá existir `Turma` com no máximo 40 AlunoMatriculado e apenas um professor. Cada AlunoMatriculado deverá conter um Aluno, a quantidade de faltas e 3 notas. 
+Além disso, na `Instituicao` deverá existir `Turma` com no máximo 40 `AlunoMatriculado` e apenas um professor. Cada `AlunoMatriculado` deverá conter um `Aluno`, a quantidade de faltas e 3 notas. 
 
 A quantidade de `Turma` deve ser definida no momento em que a `Instituicao` for construída bem como seu nome. Seu modelo de classe deve ser possível rodar a simulação abaixo e exibir o mesmo resultado.
 
@@ -33,8 +33,9 @@ public class Simulacao {
         System.out.println(professor);
         System.out.println(professor.equals(aluno));
 
-        aluno = new Aluno("111.111.111 -11", matricula);
-        professor = new Professor("222.222.222 -22", SIAPE);
+        aluno = new Aluno("111.111.111-11", matricula);
+        aluno.setNome("Aluno");
+        professor = new Professor("222.222.222-22", SIAPE);
 
         Instituicao instituicao = new Instituicao("IFBA",5);
 
@@ -59,7 +60,7 @@ Aluno 1 [000.000.000-00][2012045123]
 true
 Professor 1 [000.000.000-00][1865418]
 true
-Aluno [000.000.000-00][2012045123][Faltas :0][Nota1:0, Nota2:0, Nota3:0]
+Aluno [111.111.111-11][2012045123][Faltas :0][Nota1:0, Nota2:0, Nota3:0]
 1
 4
 ```

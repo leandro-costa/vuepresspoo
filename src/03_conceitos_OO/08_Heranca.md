@@ -510,7 +510,7 @@ Suponha que o valor da taxa administrativa do serviço de empréstimo é diferen
 class Emprestimo extends Servico {
     // ATRIBUTOS
     public double calculaTaxaDeEmprestimo () {
-        return this . valor * 0.1;
+        return this.valor * 0.1;
     }
 }
 ```
@@ -527,7 +527,7 @@ Seria mais seguro "substituir" a implementação do método `calculaTaxa()` herd
 class Emprestimo extends Servico {
     // ATRIBUTOS
     public double calculaTaxa () {
-        return this . valor * 0.1;
+        return this.valor * 0.1;
     }
 }
 ```
@@ -545,7 +545,7 @@ do serviço. Por exemplo, o preço do serviço de empréstimo é 5 reais mais um
 class Emprestimo extends Servico {
     // ATRIBUTOS
     public double calculaTaxa () {
-        return 5 + this . valor * 0.1;
+        return 5 + this.valor * 0.1;
     }
 }
 ```
@@ -554,7 +554,7 @@ class Emprestimo extends Servico {
 class SeguraDeVeiculo extends Servico {
 // ATRIBUTOS
     public double calculaTaxa () {
-        return 5 + this . veiculo . getTaxa () * 0.05;
+        return 5 + this.veiculo.getTaxa () * 0.05;
     }
 }
 ```
@@ -573,7 +573,7 @@ class Servico {
 class Emprestimo extends Servico {
 // ATRIBUTOS
     public double calculaTaxa () {
-        return super . calculaTaxa () + this . valor * 0.1;
+        return super.calculaTaxa () + this.valor * 0.1;
     }
 }
 ```

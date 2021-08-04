@@ -1,6 +1,30 @@
 # Polimorfismo
 
 - É a possibilidade de se solicitar um serviço a um objeto, cuja execução vai depender do tipo de objeto instanciado
+
+    <figure>
+
+    @startuml
+    class Figura{
+        desenhar()
+    }
+    class Circulo{
+        desenhar()
+    }
+    class Retangulo{
+        desenhar()
+    }
+    class Quadrado{
+        desenhar()
+    }
+    Figura <|-- Circulo
+    Figura <|-- Retangulo
+    Figura <|-- Quadrado
+    @enduml
+
+    <figcaption>UML da relação entre Figura, Circulo, Retangulo e Quadrado.</figcaption>
+    </figure>
+
     - Círculo, Retângulo e Quadrado são do tipo figura. 
         - Método desenhar()
     - O resultado depende do tipo de figura que receber a mensagem
@@ -8,6 +32,32 @@
 - O polimorfismo permite escrever programas que processam objetos que compartilham a mesma superclasse em uma hierarquia de classe como se todas fossem objetos da superclasse.
 
 - Sistema de simulação de movimento de Animais
+
+    <figure>
+
+    @startuml
+    class Animal{
+        int x
+        int y
+        mover()
+    }
+    class Peixe{
+        mover()
+    }
+    class Anfibio{
+        mover()
+    }
+    class Passaro{
+        mover()
+    }
+    Animal <|-- Peixe
+    Animal <|-- Anfibio
+    Animal <|-- Passaro
+    @enduml
+
+    <figcaption>UML da relação entre Animal, Peixe, Anfíbio e Pássaro.</figcaption>
+    </figure>
+
     - Peixes, Anfíbios, Pássaros
         - Superclasse Animal
             - Método mover
@@ -33,6 +83,8 @@
     - Apesar de todos serem Animais o fato do método "mover" ter "muitas formas" é a chave do polimorfismo 
         - Polimorfismo vem de Polimorfo, "Que é sujeito a mudar de forma"
 
+
+::: tip Definição
 
 ## Caelum 
 
@@ -128,8 +180,7 @@ Perceba que quem criou `ControleDeBonificacoes` pode nunca ter imaginado a cria�
 
 
 ::: warning Herança versus acoplamento
-Note que o uso de herança aumenta o acoplamento entre as classes, isto é, o quanto uma classe
-depende de outra. A relação entre classe mãe e filha é muito forte e isso acaba fazendo com que o programador das classes filhas tenha que conhecer a implementação da classe pai e vice-versa. Fica difícil fazer uma mudança pontual no sistema.
+Note que o uso de herança aumenta o acoplamento entre as classes, isto é, o quanto uma classe depende de outra. A relação entre classe mãe e filha é muito forte e isso acaba fazendo com que o programador das classes filhas tenha que conhecer a implementação da classe pai e vice-versa. Fica difícil fazer uma mudança pontual no sistema.
 
 Por exemplo, imagine se tivermos que mudar algo na nossa classe Funcionario, mas não quiséssemos que todos os funcionários sofressem a mesma mudança. Precisaríamos passar por cada uma das filhas de Funcionario verificando se ela se comporta como deveria ou se devemos sobrescrever o tal método modificado.
 
