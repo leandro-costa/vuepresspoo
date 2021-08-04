@@ -85,6 +85,8 @@
 
 
 ::: tip Definição
+Polimorfismo possibilita tratar objetos de tipos mais especializados de forma genérica
+:::
 
 ## Caelum 
 
