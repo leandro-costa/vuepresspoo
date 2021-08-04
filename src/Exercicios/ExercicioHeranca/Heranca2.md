@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # Exercício de Herança 2
 
 [^UFF]

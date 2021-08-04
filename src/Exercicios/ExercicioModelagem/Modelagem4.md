@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # Exercício de Modelagem 4
 
 1. No nosso *campus* Santo Antônio de Jesus temos a lanchonete *FreeTime* que está passando por um processo de informatização no qual irá disponibilizar a realização de pedidos através de um aplicativo mobile. Nesse aplicativo o cliente poderá escolher os itens da lanchonete, realizar o pagamento e apresentar o comprovante (um QRCode de autorização) para retirar o seu lanche sem precisar pegar a fila para comprar a ficha. 

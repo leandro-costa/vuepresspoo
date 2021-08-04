@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # Exercício de Modelagem 1
 
 [^UFF]

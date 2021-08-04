@@ -1,14 +1,14 @@
 Animal a5 = new Cachorro();
 a5.mover();
 a5.mamar();
-Cachorro c5 = (Cachorro)a5;
+Cachorro c5 = (Cachorro) a5;
 c5.mover();
 c5.mamar();
 
 Mamifero m5 = new Morcego();
 m5.mover();
 m5.mamar();
-Morcego mo5 = (Morcego)m5;
+Morcego mo5 = (Morcego) m5;
 mo5.mover();
 mo5.mamar();
 

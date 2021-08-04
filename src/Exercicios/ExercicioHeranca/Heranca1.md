@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # Exercício de Herança 1
 
 1. Considere o código abaixo, que utiliza as classes da UML apresentada, e indique, caso exista algum erro, a linha e qual o erro.
