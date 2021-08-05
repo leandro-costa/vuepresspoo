@@ -69,8 +69,9 @@ hide circle
 
 Neste exercício: 
 1. Represente por meio de classes Java a hierarquia de classificação que envolve homem, cão e mosca na taxonomia de Lineu; 
-1. Em sua modelagem verifique se faz sentido todas as classes serem concretas ou se é preciso definir alguma(s) delas como abstrata(s);
+1. ~~Em sua modelagem verifique se faz sentido todas as classes serem concretas ou se é preciso definir alguma(s) delas como abstrata(s);~~
 1. Implemente o método `String toString()` em `Animalia` e sobreescreva este método em toda subclasse, de modo que quando invocado retornará toda a taxonomia de uma dada instância, por exemplo, para uma instância de Homo sapiens seria: 
+1. Reescreva seu código, mantendo o mesmo comportamento, mas sem utilizar herança.
 
 ```shell
 Reino Aimalia 
