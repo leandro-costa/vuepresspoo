@@ -72,6 +72,7 @@ Neste exercício:
 1. Em sua modelagem verifique se faz sentido todas as classes serem concretas ou se é preciso definir alguma(s) delas como abstrata(s);
 1. Implemente o método `String toString()` em `Animalia` e sobreescreva este método em toda subclasse, de modo que quando invocado retornará toda a taxonomia de uma dada instância, por exemplo, para uma instância de Homo sapiens seria: 
 
+```shell
 Reino Aimalia 
 Filo Chordata
 Classe Mammalia 
@@ -79,6 +80,7 @@ Ordem Primata
 Família Hominidae 
 Gênero Homo 
 Espécie Homo sapiens 
+```
 
 
 [^UFF]: Leandro A. F. Fernandes, Marcos Lage, Isabel Rosseti. 2ª Lista de Exercícios Orientação a Objetos. Universidade Federal Fluminense, Instituto de Computação, Departamento de Ciência da Computação,Programação de Computadores II

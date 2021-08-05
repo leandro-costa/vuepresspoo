@@ -6,7 +6,7 @@ sidebar: false
 
 1. Forneça o modelo de classes em Java para um programa funcional que atenda a seguinte situação: 
 
-Uma `Instituicao` de ensino está desenvolvendo um sistema acadêmico onde cada `Pessoa` possue `nome` e `CPF`. Caso a pessoa seja um `Aluno` deverá ter também o número da `matricula` mas, se for um `Professor` deverá ter número do SIAPE. A manipulação do `CPF` deve ser exclusivo de `Pessoa`. 
+Uma `Instituicao` de ensino está desenvolvendo um sistema acadêmico onde cada `Pessoa` possue `nome` e `CPF`. Caso a pessoa seja um `Aluno` deverá ter também o número da `matricula` mas, se for um `Professor` deverá ter número do `SIAPE`. A manipulação do `CPF` deve ser exclusivo de `Pessoa`. 
 
 Além disso, na `Instituicao` deverá existir `Turma` com no máximo 40 `AlunoMatriculado` e apenas um professor. Cada `AlunoMatriculado` deverá conter um `Aluno`, a quantidade de faltas e 3 notas. 
 
