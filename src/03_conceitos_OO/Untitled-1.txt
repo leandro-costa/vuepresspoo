@@ -3,7 +3,7 @@ Exercicio heranca
 Passo 1: Criar uma classe abstrata chamada Operacao com o atributo valor do tipo double e um método abstrato chamado operar() que retora um valor do tipo double.
 Passo 2: Crie uma classe Debito e outra Credito que herda as caraterísticas de Operacao. O construtor de Debito e Credito deve receber o valor da operação e atribuir este valor a variável definida em Operacao (superclasse). Estas classes (Debito e Credito) devem ter um método operar() que deve ser programado de acordo com sua finalidade: operar() da classe Debito retorna o valor negativo pois a operação deve ser um debito enquanto a o método operar() de Credito retorna o valor positivo.
 Passo 3: Criar a classe ContaCorrente com o atributo valor do tipo double que inicia com 0. Esta classe possui um método executarOperacao(Operacao opr) que recebe um parâmetro do tipo Operacao que vai operar o valor da conta correte (se for debito diminui, se for credito soma). Esta classe também possui o método getSaldo() que retorna o valor do saldo atual.
-Passo 4: Crie a classe Correntista com os seguintes atributos: nome (do tipo String) e conta (do tipo ContaCorrente). O construtor de Correntista deve receber seu nome. A classe deve ter 2 métodos: public String getNome() e public ContaCorrente getContacorrente(). Estes métodos retornam o nome e a conta respectivamente.
+Passo 4: Crie a classe Correntista com os seguintes atributos: nome (do tipo String) e conta (do tipo ContaCorrente). O construtor de Correntista deve receber seu nome. A classe deve ter 2 métodos: public String getNome() e public ContaCorrente getContaCorrente(). Estes métodos retornam o nome e a conta respectivamente.
 Passo 5: Crie a classe Banco como descrito no código abaixo:
 ```java
 public class Banco {
@@ -30,16 +30,16 @@ public class Banco {
 
     public void debitar(String nomeCorrentista, double valor) {
         Debito d = new Debito(valor);
-        getCorrentista(nomeCorrentista).getContacorrente().executarOperacao(d);
+        getCorrentista(nomeCorrentista).getContaCorrente().executarOperacao(d);
     }
 
     public void creditar(String nomeCorrentista, double valor) {
         Credito c = new Credito(valor);
-        getCorrentista(nomeCorrentista).getContacorrente().executarOperacao(c);
+        getCorrentista(nomeCorrentista).getContaCorrente().executarOperacao(c);
     }
 
     public double getSaldo(String nomeCorrentista) {
-        return getCorrentista(nomeCorrentista).getContacorrente().getSaldo();
+        return getCorrentista(nomeCorrentista).getContaCorrente().getSaldo();
     }
 
     public void transferir(String nomeCorrentistaOrigem, String nomeCorrentistaDestino, double valor) {
@@ -50,73 +50,7 @@ public class Banco {
 ```
 
 Classes abstratas
-Classes abstratas são classes que não produzem instâncias. Elas agrupam características e comportamentos que serão herdados por outras classes
-Fornecem padrões de comportamento que serão implementados nas suas subclasses
-Podem ter métodos com implementação definida
-Classes abstratas
-Não pode ser instanciada diretamente. (new)
-Uma classe abstrata possui características que devem ser implementadas por classes filhas
-Os métodos abstratos são obrigatoriamente implementados pelas classes filhas concretas, quando a mesma herda de uma classe abstrata. 
-Classes abstratas
-Classes abstratas
-Classes abstratas
-Classes abstratas
-Sobrecarga de Métodos
-É a capacidade de definir métodos com o mesmo nome
-Assinatura seja diferente. 
-A mudança na assinatura ocorre alterando a quantidade e/ou tipo de parâmetros que um método recebe
-Sobrecarga de Métodos
-Sobrecarga é a capacidade de um objeto responder à mesma mensagem, com comportamentos (métodos) distintos, a depender dos tipos dos parâmetros recebidos
-aplicarInjecao()
-aplicarInjecao(String)
-Sobrecarga de Métodos
 
-Interface
-O objetivo de uma interface em Orientação a Objetos é definir um conjunto de comportamentos (métodos) que devem obrigatoriamente ser implementados pelas classes que utilizam a interface. 
-Diferente da herança uma classe Java pode implementar n interfaces.
-Interface
-Padronização
-Diversas empresa fabricam aparelhos elétricos.
-Interface
-Padronização no desenvolvimento
-Contratos
-Num sistema orientado a objetos, os objetos interagem entre si através de chamadas de métodos (troca de mensagens). 
-Podemos dizer que os objetos se "encaixam" através dos métodos públicos assim como um plugue se encaixa em uma tomada através dos pinos.
-Interface
-Um padrão é definido através de especificações ou contratos. Nas aplicações orientadas a objetos, podemos criar um "contrato" para definir um determinado conjunto de métodos que deve ser implementado pelas classes que "assinarem" este contrato. 
-Em orientação a objetos, um contrato é chamado de interface.
-Interface
-As interfaces são estritamente modelos de comportamento
-As interfaces não podem ser instanciadas pois não produzem objetos
-A relação existente entre as classes que implementam uma interface é uma relação do tipo “implementa os métodos de”
-Interface
-Se uma classe é definida por apenas métodos abstratos é melhor defini-lá como uma interface
-Nenhum método de interface pode ter um corpo, ou seja, não tem um algoritmo definido para executar o comportamento.
-São as classes que implementam a Interface que fornecerão os métodos
-Interface
-No sistema do banco, podemos definir uma interface (contrato) para padronizar as assinaturas dos métodos oferecidos pelos objetos que representam as contas do banco.
-Interface
-Interface
-Interface
-Interface
-Caso novos tipos de contas sejam criados (ContaSalario, ContaInvestimento...) todas devem segui o mesmo contrato.
-Interface
-Interface
-Interface
-Interface
-Assim como uma pessoa pode assinar vários contratos, na Orientação à Objetos, uma classe pode implementar varias interfaces
-No java não é permitida herança múltipla, mas é possível implementar varias interfaces
-Interface
-Se uma classe implementa uma interface, podemos aplicar a ideia do polimorfismo assim como quando aplicamos herança.
-
-Em Java, como não há herança múltipla, muitas vezes, interfaces são apresentadas como uma alternativa para obter um grau maior de polimorfismo.
-Interface
-Digamos que os gerentes e as empresas possam acessar o sistema do banco com um nome de usuário e uma senha.
-Interface
-Interface
-Empresa não é um funcionário e o gerente não é cliente. Neste caso, a solução é utilizar interfaces para obter o polimorfismo desejado.
-Interface
-Agora, conseguimos definir oque o método autentica()
 Coleções
 Collections Framework
 É o conjunto de interfaces, implementações e algoritmos para se trabalhar com coleções. O conjunto de classe que define a Collections Framework segue os princípios de O.O. 
