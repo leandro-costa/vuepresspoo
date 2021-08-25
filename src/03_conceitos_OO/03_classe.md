@@ -453,10 +453,21 @@ ClassName.methodName(args)
 
 - Um uso comum para métodos estáticos é acessar campos estáticos. Por exemplo, nós poderíamos adicionar um método estático para a classe de bicicleta para acessar o campo estático numeroDeBicicletas:
 
-```java
-public static int getNumberOfBicycles() {
- return numberOfBicycles;
+```java{10-12}
+public class Bicicleta {
+  ... 
+  private static int numeroDeBicicletas = 0;
+  public Bicicleta(){
+    id = ++numeroDeBicicletas;
+  }
+  public int getID() {
+    return id;
+  }
+  public static int getNumeroDeBicicletas() {
+    return numeroDeBicicletas;
+  }
 }
+
 ```
 - Nem todas as combinações de variáveis e métodos de classe e de instância são permitidas:
   - Métodos de instância podem acessar variáveis de instância e métodos de instância diretamente.
@@ -478,5 +489,5 @@ static final double PI = 3.141592653589793;
 ```
 
 - Constantes definidas desta forma não pode ser alteradas, um erro de compilação ocorrerá caso seu programa tenta fazer isso. 
-- Por convenção, os nomes dos valores constantes estão escritas em letras maiúsculas. 
+- Por convenção, os nomes das constantes estão escritas em letras maiúsculas. 
 - Se o nome for composto por mais de uma palavra, as palavras são separadas por um sublinhado (_).
