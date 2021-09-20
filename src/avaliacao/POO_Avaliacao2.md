@@ -1,4 +1,10 @@
-# POO Avaliação 2
+---
+title: Avaliação 2
+display: home
+tag: poo
+category: avaliacao
+sidebar: false
+---
 
 ## Campeonato de futebol
 

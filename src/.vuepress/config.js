@@ -41,6 +41,8 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  //theme: 'ououe',
+
   themeConfig: {
     smoothScroll: true,
     repo: 'leandro-costa/vuepresspoo',
@@ -51,20 +53,20 @@ module.exports = {
     lastUpdated: true,
     
     nav: [
-      {
-        text: 'Praticar',
-        items: [
-          { text: 'Modelagem', items: [
-            { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
-            { text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
-          ] 
-          },
-          { text: 'Herança', items: [
-            { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
-            { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
-          ] }
-        ]
-      }
+    //  {
+    //    text: 'Praticar',
+    //    items: [
+    //      { text: 'Modelagem', items: [
+    //        { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
+    //        { text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
+    //      ] 
+    //      },
+    //      { text: 'Herança', items: [
+    //        { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
+    //        { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+    //      ] }
+    //    ]
+    //  }
     ],
 
     sidebarDepth: 2,

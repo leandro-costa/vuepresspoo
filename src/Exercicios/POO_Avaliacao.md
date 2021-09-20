@@ -1,3 +1,7 @@
+---
+sidebar: false
+---
+
 # POO Avaliação
 
 1. Vamos elaborar um código para desenvolver um jogo de tabuleiro (apenas classes para modelar o problema, não será jogável nem terá interface gráfica) considerando o tabuleiro padrão do Xadrez. Esse tabuleiro pode ser utilizado para 3 jogos diferentes:

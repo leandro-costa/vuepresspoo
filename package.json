@@ -27,5 +27,7 @@
     "postinstall-postinstall": "^2.1.0",
     "vuepress": "^1.5.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuepress-theme-ououe": "^1.5.3"
+  }
 }
