@@ -3,7 +3,7 @@ home: true
 heroImage: https://portal.ifba.edu.br/santoantonio/imagens-campus-saj/santoantoniodejesus160x240px.jpg
 tagline: Material de Aula
 actionText: Vamos Começar →
-actionLink: avaliacao\POO_Avaliacao2.md
+actionLink: home
 footer: Criado por Leandro Souza 
 ---
 
