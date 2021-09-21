@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Threads | Programação Orientada a Objetos</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <link rel="icon" href="/vuepresspoo/logo.png">
+    <link rel="manifest" href="/vuepresspoo/manifest.json">
+    <link rel="apple-touch-icon" href="/vuepresspoo/icon-192x192.png">
+    <link rel="mask-icon" href="/vuepresspoo/icon-192x192.png" color="#3eaf7c">
+    <meta name="description" content="Material para as aulas da disciplina de Programação Orientada a Objetos">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/vuepresspoo/assets/css/0.styles.59d573e8.css" as="style"><link rel="preload" href="/vuepresspoo/assets/js/app.5f241f97.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/2.7db14258.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/30.c12bb828.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/3.ec25fcd2.js" as="script"><link rel="prefetch" href="/vuepresspoo/assets/js/10.7b4ca033.js"><link rel="prefetch" href="/vuepresspoo/assets/js/11.508eae32.js"><link rel="prefetch" href="/vuepresspoo/assets/js/12.fe1a513b.js"><link rel="prefetch" href="/vuepresspoo/assets/js/13.32e9e060.js"><link rel="prefetch" href="/vuepresspoo/assets/js/14.83526831.js"><link rel="prefetch" href="/vuepresspoo/assets/js/15.a6b3b415.js"><link rel="prefetch" href="/vuepresspoo/assets/js/16.9c2a40db.js"><link rel="prefetch" href="/vuepresspoo/assets/js/17.08411dd6.js"><link rel="prefetch" href="/vuepresspoo/assets/js/18.4a23eb07.js"><link rel="prefetch" href="/vuepresspoo/assets/js/19.a1db8bee.js"><link rel="prefetch" href="/vuepresspoo/assets/js/20.3f5284fa.js"><link rel="prefetch" href="/vuepresspoo/assets/js/21.ea713bbb.js"><link rel="prefetch" href="/vuepresspoo/assets/js/22.c284fd61.js"><link rel="prefetch" href="/vuepresspoo/assets/js/23.b920c29c.js"><link rel="prefetch" href="/vuepresspoo/assets/js/24.ea75aba0.js"><link rel="prefetch" href="/vuepresspoo/assets/js/25.74497802.js"><link rel="prefetch" href="/vuepresspoo/assets/js/26.f660bdad.js"><link rel="prefetch" href="/vuepresspoo/assets/js/27.0ffc53db.js"><link rel="prefetch" href="/vuepresspoo/assets/js/28.e3384104.js"><link rel="prefetch" href="/vuepresspoo/assets/js/29.01198fd6.js"><link rel="prefetch" href="/vuepresspoo/assets/js/31.153355be.js"><link rel="prefetch" href="/vuepresspoo/assets/js/32.8cf55bc4.js"><link rel="prefetch" href="/vuepresspoo/assets/js/33.819ffc5d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/34.833d920d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/35.20c54ece.js"><link rel="prefetch" href="/vuepresspoo/assets/js/36.664f5938.js"><link rel="prefetch" href="/vuepresspoo/assets/js/37.d4428260.js"><link rel="prefetch" href="/vuepresspoo/assets/js/38.28181be3.js"><link rel="prefetch" href="/vuepresspoo/assets/js/39.ab0142e7.js"><link rel="prefetch" href="/vuepresspoo/assets/js/4.676b4c9b.js"><link rel="prefetch" href="/vuepresspoo/assets/js/40.8bbe1cf9.js"><link rel="prefetch" href="/vuepresspoo/assets/js/41.60849ede.js"><link rel="prefetch" href="/vuepresspoo/assets/js/42.957f8086.js"><link rel="prefetch" href="/vuepresspoo/assets/js/5.dad11dfe.js"><link rel="prefetch" href="/vuepresspoo/assets/js/6.1ecd167c.js"><link rel="prefetch" href="/vuepresspoo/assets/js/7.38b68977.js"><link rel="prefetch" href="/vuepresspoo/assets/js/8.830e6465.js"><link rel="prefetch" href="/vuepresspoo/assets/js/9.2bfc82bd.js">
+    <link rel="stylesheet" href="/vuepresspoo/assets/css/0.styles.59d573e8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepresspoo/" class="home-link router-link-active"><!----> <span class="site-name">Programação Orientada a Objetos</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/leandro-costa/vuepresspoo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/leandro-costa/vuepresspoo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/vuepresspoo/home.html" class="sidebar-link">Programação Orientada a Objetos</a></li><li><a href="/vuepresspoo/01_paradigmas/" class="sidebar-link">Linguagens e paradigmas de programação</a></li><li><a href="/vuepresspoo/01_paradigmas/01_introducao.html" class="sidebar-link">Introdução</a></li><li><a href="/vuepresspoo/01_paradigmas/02_Linguagens.html" class="sidebar-link">Linguagens de alto nível</a></li><li><a href="/vuepresspoo/01_paradigmas/03_Paradigmas.html" class="sidebar-link">Paradigmas das linguagens de programação</a></li><li><a href="/vuepresspoo/02_java/" class="sidebar-link">Java</a></li><li><a href="/vuepresspoo/02_java/01_codificando.html" class="sidebar-link">Codificando com JAVA</a></li><li><a href="/vuepresspoo/03_conceitos_OO/" class="sidebar-link">Paradigma de Programação OO</a></li><li><a href="/vuepresspoo/03_conceitos_OO/01_abstracao.html" class="sidebar-link">Abstração</a></li><li><a href="/vuepresspoo/03_conceitos_OO/02_objeto.html" class="sidebar-link">Objeto</a></li><li><a href="/vuepresspoo/03_conceitos_OO/03_classe.html" class="sidebar-link">Classe</a></li><li><a href="/vuepresspoo/03_conceitos_OO/04_referencia.html" class="sidebar-link">Referência ao Objeto</a></li><li><a href="/vuepresspoo/03_conceitos_OO/05_assossiacao.html" class="sidebar-link">Associações</a></li><li><a href="/vuepresspoo/03_conceitos_OO/06_encapsulamento.html" class="sidebar-link">Encapsulamento</a></li><li><a href="/vuepresspoo/03_conceitos_OO/07_pacotes.html" class="sidebar-link">Pacotes</a></li><li><a href="/vuepresspoo/03_conceitos_OO/08_Heranca.html" class="sidebar-link">Herança</a></li><li><a href="/vuepresspoo/03_conceitos_OO/09_polimorfismo.html" class="sidebar-link">Polimorfismo</a></li><li><a href="/vuepresspoo/03_conceitos_OO/10_abstratas_interface.html" class="sidebar-link">Classes Abstratas</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="threads"><a href="#threads" class="header-anchor">#</a> Threads</h1> <ul><li>Threads são linhas de execuções que realizam tarefas simultâneas (caso tenhamos mais de 1 processador) ou de forma a compartilhar o processamento.</li> <li>Cada thread é como um programa individual que tem total poder sobre a CPU.</li> <li>Java suporta explicitamente como parte da linguagem.</li> <li>Com o uso de Threads é possível dividir o programa em dois ou mais processos que podem rodar de forma paralela.</li> <li>Multithreading implica em duas ou mais tarefas rodando de forma concorrente (aparentemente em paralelo) dentro de um mesmo programa.</li> <li>Alguns programas necessitam fazer várias tarefas que requerem recursos computacionais diversos. Se estas tarefas podem ser feitas independentemente, então é possível usar threads para que o programa não fique limitado a performance dos recursos lentos (I/O).</li></ul> <div class="language-plantuml line-numbers-mode"><pre class="language-text"><code>@startgantt
+
+[T1] lasts 5 days
+[T2] lasts 3 days
+[T2] starts at [T1]'s end
+[T3] lasts 5 days
+[T3] starts at [T2]'s end
+
+
+[T1.1] as [T4] lasts 6 days
+[T4] displays on same row as [T1]
+[T4] starts at [T3]'s end
+
+[T3.1] as [T5] lasts 4 days
+[T5] displays on same row as [T3]
+[T5] starts at [T4]'s end
+
+	
+[T2.1] as [T6] lasts 3 days
+[T6] displays on same row as [T2]
+[T6] starts at [T5]'s end
+
+	
+
+@endgantt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><br> <div class="language-plantuml line-numbers-mode"><pre class="language-text"><code>@startuml
+
+state nascimento
+state pronta
+state executando
+state bloqueada
+state esperando
+state dormindo
+state morta #brown
+
+nascimento --&gt; pronta : start()
+pronta --&gt; executando: run()
+executando --&gt; esperando : wait()
+executando --&gt; dormindo : sleep()
+executando --&gt; morta : fim do run()
+executando --&gt; bloqueada : I/O
+bloqueada --&gt; pronta : fim I/O
+esperando --&gt; pronta : notify()
+dormindo --&gt; pronta : fim tempo 
+
+
+@enduml
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><ul><li>Existem duas formas para criar um thread:
+<ul><li>Extendendo a classe Thread</li> <li>Implementando a interface Runnable.</li></ul></li> <li>Nos dois casos é necessário sobrescrever o método run() que é o &quot; main()&quot; do thread.</li> <li>O método run deve conter a execução que irá rodar pelo tempo de vida do thread. Quando o método terminar, o thread morre.</li> <li>Para iniciar o thread é necessário chamar o métod o start() .</li> <li>É a maquina virtual quem controla a execução e o ciclo de vida do thread.</li></ul> <h2 id="herdando-a-classe-thread"><a href="#herdando-a-classe-thread" class="header-anchor">#</a> Herdando a classe Thread</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ThreadA</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span> <span class="token punctuation">{</span> 
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>x<span class="token operator">&lt;</span><span class="token number">1000000</span><span class="token punctuation">;</span>x<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;A: &quot;</span><span class="token operator">+</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="implementando-a-interface-runnable"><a href="#implementando-a-interface-runnable" class="header-anchor">#</a> Implementando a interface Runnable</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ThreadB</span> <span class="token keyword">implements</span> <span class="token class-name">Runnable</span> <span class="token punctuation">{</span> 
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>x<span class="token operator">&lt;</span><span class="token number">1000000</span><span class="token punctuation">;</span>x<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span> 
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;B: &quot;</span><span class="token operator">+</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span> 
+    <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TesteThread</span><span class="token punctuation">{</span> 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        <span class="token class-name">ThreadA</span> ta <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ThreadA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token class-name">Thread</span> tb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ThreadB</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        ta<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        tb<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><ul><li>Estendendo a classe Thread significa que a subclasse não pode estender qualquer outra classe, enquanto que a classe que implementa a interface Runnable tem essa opção.</li></ul> <h2 id="synchronized"><a href="#synchronized" class="header-anchor">#</a> Synchronized</h2> <ul><li>Permite que blocos sensíveis ao acesso simultâneo sejam protegidos de corrupção</li> <li>Impede que objetos os utilizem ao mesmo tempo.
+<ul><li>Se um recurso crítico está sendo usado, só um thread tem acesso.</li> <li>É preciso que os outros esperem até que o recurso esteja livre.</li></ul></li> <li>Métodos sincronizados são métodos que são usados para controlar o acesso a um objeto.</li> <li>Uma thread apenas executa um método sincronizado depois que adquiriu o bloqueio para o objeto do método ou classe.</li> <li>Se o bloqueio já está em poder de outra thread, a thread chamada aguarda.</li> <li>Uma thread abandona o bloqueio simplesmente ao finalizar do método sincronizado, permitindo que a próxima thread esperando por este bloqueio possa prosseguir.</li> <li>Métodos sincronizados são úteis em situações em que os métodos podem manipular o estado de um objeto de formas que podem corromper o estado, se executados simultaneamente.</li></ul> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">metodo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">synchronized</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token comment">// conteudo do metodo</span>
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">synchronized</span> <span class="token keyword">void</span> <span class="token function">metodo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token comment">// conteudo do metodo</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>Estados de uma Thread
+Nova Thread
+Rodando
+Não Rodando
+Morta
+Thread</p> <p>Nova Thread
+Quando uma Thread é criada mas não foi chamado o start()
+Rodando
+Quando o método start() é chamado em uma nova thread ela altera o seu estado para em execução é chamando o método run()</p> <p>Threads
+Não Execução
+Uma thread interrompe sua execução quando um quatro seguintes eventos ocorrem:
+Quando o método sleep() é chamado e ele dorme por um período de tempo especificado
+Quando o método suspend() é invocado
+Quando o método wait () é chamado e a thread espera para a notificação de um recurso livre ou aguarda a conclusão de outra thread ou espera para adquirir um bloqueio de um objeto.
+A thread está bloqueado em I / O e aguarda a sua conclusão
+Threads
+Thread.currentThread() pode retornar uma saída como Thread [threadA, 5, main]
+Sendo
+nome da Thread
+prioridade da thread
+nome do grupo a que pertence
+Threads
+Prioridade de Execução
+Nas threads a prioridade pode ser setada a qualquer momento
+setPriority()
+getPriority()
+Thread
+MIN_PRIORITY (0)
+NORM_PRIORITY (5)
+MAX_PRIORITY (10)</p> <p>Threads
+Dormir e acordar
+A classe thread contém um método estático chamado sleep () que faz a thread em execução no momento pause sua execução e mude para o estado de sono. A thread vai dormir por pelo menos o tempo especificado em seu parâmetro, antes de entrar no estado executável.</p> <p>Threads
+Waiting and Notifying
+Esperando e notificando fornecer os meios de comunicação entre as thread que sincroniza sobre o mesmo objeto.
+As threads executam os métodos wait() e notify() (ou notifyAll()) no objeto compartilhado para esta finalidade.
+Threads
+Waiting and Notifying
+O notifyAll (), notify () e wait () são métodos da classe Object. Estes métodos podem ser chamados apenas a partir de dentro de um contexto sincronizado (método sincronizado ou bloco sincronizado), caso contrário, a chamada irá resultar em um IllegalMonitorStateException.
+O notifyAll () método acorda todas as threads em espera no recurso. Nesta situação, as threads despertadas competem para o recurso. Uma threads recebe o recurso e os outros vão voltar a esperar.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/leandro-costa/vuepresspoo/edit/master/src/06_threads/README.md" target="_blank" rel="noopener noreferrer">Edit!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/21/2021, 10:58:01 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/vuepresspoo/assets/js/app.5f241f97.js" defer></script><script src="/vuepresspoo/assets/js/2.7db14258.js" defer></script><script src="/vuepresspoo/assets/js/30.c12bb828.js" defer></script><script src="/vuepresspoo/assets/js/3.ec25fcd2.js" defer></script>
+  </body>
+</html>
