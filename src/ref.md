@@ -29,5 +29,4 @@
 
 [^caelumoo]: Caelum. Java e Orientação a Objetos - Curso fj-11.
 
-[^Takenami]: Takenami, Igor. Introdução a Programação
-Orientada a Objetos. Salvador. 2011. (Apostila).
+[^Takenami]: Takenami, Igor. Introdução a Programação Orientada a Objetos. Salvador. 2011. (Apostila).
