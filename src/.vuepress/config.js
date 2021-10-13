@@ -48,9 +48,9 @@ module.exports = {
     repo: 'leandro-costa/vuepresspoo',
     //repoLabel: '',
     docsDir: 'src',
-    editLinks: true,
-    editLinkText: 'Edit!',
-    lastUpdated: true,
+    //editLinks: true,
+    //editLinkText: 'Edit!',
+    //lastUpdated: true,
     
     nav: [
     //  {
@@ -64,6 +64,10 @@ module.exports = {
     //      { text: 'Herança', items: [
     //        { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
     //        { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+    //      ] },
+    //      { text: 'Avaliações', items: [
+    //        { text: 'Avaliação 1', link: '/avaliacao/POO_Avaliacao.md' },
+    //        { text: 'Avaliação 2', link: '/avaliacao/POO_Avaliacao2.md' }
     //      ] }
     //    ]
     //  }
@@ -71,24 +75,24 @@ module.exports = {
 
     sidebarDepth: 2,
     sidebar: [
-      'home',
-      '/01_paradigmas/',
-      '/01_paradigmas/01_introducao',
-      '/01_paradigmas/02_Linguagens',
-      '/01_paradigmas/03_Paradigmas',
-      '/02_java/',
-      '/02_java/01_codificando',
-      '/03_conceitos_OO/',
-      '/03_conceitos_OO/01_abstracao',
-      '/03_conceitos_OO/02_objeto',
-      '/03_conceitos_OO/03_classe',
-      '/03_conceitos_OO/04_referencia',
-      '/03_conceitos_OO/05_assossiacao',
-      '/03_conceitos_OO/06_encapsulamento',
-      '/03_conceitos_OO/07_pacotes',
-      '/03_conceitos_OO/08_Heranca',
-      '/03_conceitos_OO/09_polimorfismo',
-      '/03_conceitos_OO/10_abstratas_interface.md',
+      'home'//,
+      //'/01_paradigmas/',
+      //'/01_paradigmas/01_introducao',
+      //'/01_paradigmas/02_Linguagens',
+      //'/01_paradigmas/03_Paradigmas',
+      //'/02_java/',
+      //'/02_java/01_codificando',
+      //'/03_conceitos_OO/',
+      //'/03_conceitos_OO/01_abstracao',
+      //'/03_conceitos_OO/02_objeto',
+      //'/03_conceitos_OO/03_classe',
+      //'/03_conceitos_OO/04_referencia',
+      //'/03_conceitos_OO/05_assossiacao',
+      //'/03_conceitos_OO/06_encapsulamento',
+      //'/03_conceitos_OO/07_pacotes',
+      //'/03_conceitos_OO/08_Heranca',
+      //'/03_conceitos_OO/09_polimorfismo',
+      //'/03_conceitos_OO/10_abstratas_interface.md',
       
     ]
 

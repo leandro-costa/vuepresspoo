@@ -1,0 +1,18 @@
+Trabalhar com lista no lugar de vetores;
+Se Estoque vai guardar a quantidade de vários produtos (esta como vetor) então ele deveria armazenar private int quantidadeItens; e private double valorProduto;
+Não faz muito sentido Pessoa. Poderia ter uma superclasse para PessoaFisica e PessoaJuridica e uma interface cliente que o vendedor iria implementar (no texto ainda esta escrito "se comporta como")
+Em Orçamento vende apenas para pessoafisica? novamente deveria utilizar lista
+Quando não tiver o item na hora do pagamento?
+===
+
+Vendedor não é um cliente, ele se comporta como um  (interface)
+PessoaFisica e Juridica?
+if(produto.equals(nome)){// equals de produto com string?
+quando se tem um atributo quantidade não precisa criar instancias do mesmo produto para representar essa quantidade a menos que cada produto tenha um id para ser identificado de forma diferente dentre os outros do mesmo nome.
+return getNome() == teste;??? equals!
+
+public void realizarPagamento(Estoque estoque){
+// implementar metodo para identificar os
+// produtos no estoque e retornar se a
+// transação será possível
+}retorn sem return e não lanca exception
