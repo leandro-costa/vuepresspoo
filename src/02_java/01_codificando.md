@@ -356,6 +356,51 @@ while (condicao) {
 
 ## Array 
 
+[^caelumoo]
+
+### O problema
+
+Dentro de um bloco, podemos declarar diversas variáveis e usá-las:
+```java
+int idade1;
+int idade2;
+int idade3;
+int idade4;
+```
+
+Isso pode se tornar um problema quando precisamos mudar a quantidade de variáveis a serem declaradas de acordo com um parâmetro. Esse parâmetro pode variar, como por exemplo, a quantidade de número contidos num bilhete de loteria. Um jogo simples possui 6 números, mas podemos comprar um bilhete mais caro, com 7 números ou mais.
+
+Para facilitar esse tipo de caso podemos declarar um **vetor (array)** de inteiros:
+
+```java
+int[] idades;
+```
+
+O que fazemos foi criar uma array de int de 10 posições e atribuir o endereço no qual ela foi criada. Podemos ainda acessar as posições do array:
+
+```java
+idades[5] = 10;
+```
+<figure>
+
+@startuml
+title
+  idades
+  | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+  |  |  |  |  |  | 10 |  |  |  |  |
+end title
+
+@enduml
+
+<figcaption>Representação do vetor idade.</figcaption>
+</figure>
+
+O código acima altera a sexta posição do array. No Java, os índices do array vão de 0 a n-1, onde n é o tamanho dado no momento em que você criou o array. 
+
+::: danger
+Se você tentar acessar uma posição fora desse alcance, um erro ocorrerá durante a execução.
+:::
+
 [^k19oo]
 
 - Em Java, os arrays são criados através do comando new.
