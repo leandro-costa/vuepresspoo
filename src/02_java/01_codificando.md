@@ -83,8 +83,10 @@ boolean verdade = true;
 
 `true` e `false` são palavras reservadas do Java. É comum que um boolean seja determinado através de uma expressão booleana, isto é, um trecho de código que retorna um booleano, como o exemplo:
 
+```java
 int idade = 30;
 boolean menorDeIdade = idade < 18;
+```
 
 O tipo `char` guarda um, e apenas um, caractere. Esse caractere deve estar entre aspas simples. Não se esqueça dessas duas características de uma variável do tipo `char`! Por exemplo, ela não pode guardar um código como " pois o vazio não é um caractere!
 
@@ -114,7 +116,7 @@ Apesar da linha `2` fazer `j = i`, a partir desse momento essas variáveis não 
 
 
 
-Exercícios: Variáveis e tipos primitivos
+### Exercícios: Variáveis e tipos primitivos
 
 1. Na empresa onde trabalhamos, há tabelas com o quanto foi gasto em cada mês. Para fechar o balanço do primeiro trimestre, precisamos somar o gasto total. Sabendo que, em Janeiro, foram gastos 15000 reais, em Fevereiro, 23000 reais e em Março, 17000 reais, faça um programa que calcule e imprima o gasto total no trimestre. Siga esses passos:
     1. Crie uma classe chamada BalancoTrimestral com um bloco main, como nos exemplos anteriores;
@@ -170,7 +172,7 @@ else {
     System.out.println("Pode entrar");
 }
 ```
-Esse código poderia ficar ainda mais legível, utilizando-se o operador de negação, o !. Esse operador transforma o resultado de uma expressão `booleana` de `false` para `true` e vice versa.
+Esse código poderia ficar ainda mais legível, utilizando-se o operador de negação, o `!`. Esse operador transforma o resultado de uma expressão `booleana` de `false` para `true` e vice versa.
 
 ```java
 int idade = 15;
@@ -237,8 +239,8 @@ for (int i = 0; i < 10; i = i + 1) {
 Perceba que esse for poderia ser trocado por:
 
 ```java
-while (i < 10) {
 int i = 0;
+while (i < 10) {
     System.out.println("olá!");
     i = i + 1;
 }
