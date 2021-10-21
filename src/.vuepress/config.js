@@ -53,6 +53,12 @@ module.exports = {
     //lastUpdated: true,
     
     nav: [
+          {
+            text: 'Praticar',
+            items: [
+              { text: 'Exercícios Java', link: '/Exercicios/Java/' }
+            ]
+          }
     //  {
     //    text: 'Praticar',
     //    items: [
