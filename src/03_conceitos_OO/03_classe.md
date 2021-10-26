@@ -289,7 +289,7 @@ class Conta{
 
 
 ```java
-
+//...
 public int somar(int v1, int v2){ 
     return v1 + v2; 
 } 
@@ -307,6 +307,7 @@ public int operar(char op, int v1, int v2){
       return subtrair(v1, v2); 
   } 
 }
+//...
 ```
 
 
@@ -330,8 +331,9 @@ class Programa{
   public static void main(String[] args){
     Conta minhaConta1;
     minhaConta1 = new Conta();
+    minhaConta1.cliente = "Leandro1";
     Conta minhaConta2;
-    minhaConta2 = new Conta("Leandro");   
+    minhaConta2 = new Conta("Leandro2");   
   }
 }
 ```
@@ -419,3 +421,29 @@ public static void main(String args[]) {
 
 
 
+### equals
+
+```java
+public static void main(String args[]) {
+  Conta c1 = new Conta();
+  c1.cliente = "Leandro";    
+  c1.saldo = 100.0;    
+  Conta c2 = new Conta();    
+  c2.cliente = "Leandro";    
+  c2.saldo = 100.0;    
+  if (c1.equals(c2)) {
+    System.out.println("Contas iguais");    
+  }
+}
+```
+
+```java
+class Conta {
+  //...
+  boolean equals(Object obj){
+    return this.cliente.equals(((Conta)obj).cliente) && this.saldo == (((Conta)obj).saldo);
+  }
+  //...
+  
+}
+```

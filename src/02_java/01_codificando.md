@@ -525,4 +525,8 @@ int[] numeros = new int[10];
 java.util.Arrays.fill(numeros,5) ;
 ```
 
+## Entrada e Saida de Dados
+
+
+
 !!!include(src/ref.md)!!!
