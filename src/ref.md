@@ -32,3 +32,6 @@
 [^Takenami]: Takenami, Igor. Introdução a Programação Orientada a Objetos. Salvador. 2011. (Apostila).
 
 [^Tedesco]:Kennedy Tedesco. Linguagens e paradigmas de programação - Blog da TreinaWeb.[https://www.treinaweb.com.br/blog/linguagens-e-paradigmas-de-programacao/](https://www.treinaweb.com.br/blog/linguagens-e-paradigmas-de-programacao/). (Acessado em 07/08/2019).
+
+[^Bacala]:Bacalá, Sílvio. Página do Professor Sílvio Bacalá Júnior. [http://www.facom.ufu.br/~bacala/POO/](http://www.facom.ufu.br/~bacala/POO/)
+

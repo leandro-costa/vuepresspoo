@@ -123,8 +123,8 @@ class Conta{
   - Quando um número de objetos são criados a partir de uma mesma classe, cada um tem suas próprias cópias distintas de variáveis de instância. 
   - No caso de a classe de bicicleta, são as variáveis de instância engrenagem e velocidade. Cada objeto de bicicleta tem seus próprios valores para essas variáveis, armazenadas em diferentes locais de memória.
 - Às vezes, é necessário ter variáveis que são comuns a todos os objetos. 
-- Isto é conseguido com o modificador Static. 
-- Os campos que têm o modificador static em sua declaração são chamados de **campos estáticos ou variáveis de classe.** 
+- Isto é conseguido com o modificador `static`. 
+- Os campos que têm o modificador `static` em sua declaração são chamados de **campos estáticos ou variáveis de classe.** 
 - Eles estão associados com a classe. Cada instância compartilha uma variável de classe, que está em um local fixo na memória. 
 - Qualquer objeto pode alterar o valor de uma variável de classe, mas variáveis de classe também pode ser manipulado sem criar uma instância da classe.
   - exemplo:
@@ -160,7 +160,7 @@ public class Bicicleta {
   ... 
   private static int numeroDeBicicletas = 0;
   public Bicicleta(){
-    id = ++numeroDeBicicletas;
+    this.id = ++numeroDeBicicletas;
   }
   public int getID() {
     return id;
@@ -182,7 +182,7 @@ public class Bicicleta {
   ... 
   private static int numeroDeBicicletas = 0;
   public Bicicleta(){
-    id = ++numeroDeBicicletas;
+    this.id = ++numeroDeBicicletas;
   }
   public int getID() {
     return id;

@@ -528,5 +528,141 @@ java.util.Arrays.fill(numeros,5) ;
 ## Entrada e Saida de Dados
 
 
+Quando falamos em entrada e saída, estamos nos referindo a qualquer troca de informação entre uma aplicação e o seu exterior.
+
+A leitura do que o usuário digita no teclado, o conteúdo obtido de um arquivo ou os dados recebidos pela rede são exemplos de entrada de dados. A impressão de mensagens no console, a escrita de texto em um arquivo ou envio de dados pela rede são exemplos de saída de dados.
+
+A plataforma Java oferece diversas classes e interfaces para facilitar o processo de entrada e saída. Em determinadas situações, uma aplicação precisa fazer a entrada e saída byte a byte mas, nem sempre isso é necessário. Sendo assim, é mais simples utilizar a classe `Scanner` do pacote `java.util` do Java. Essa classe possui métodos mais sofisticados para obter os dados de uma entrada.
+
+Veja um exemplo de leitura do teclado com a classe Scanner:
+
+```java
+import java.util.Scanner;
+
+public class TestaDeclaracaoScanner {
+  public static void main(String[] args) {
+    //Lê a partir da linha de comando
+    Scanner teclado = new Scanner(System.in);
+
+    //Lendo um valor inteiro:
+    int n;
+
+    System.out.printf("Informe um número para a tabuada: ");
+    n = teclado.nextInt();
+    
+    //Lendo um valor real:
+    float preco;
+
+    System.out.printf("Informe o preço da mercadoria = R$ ");
+    preco = teclado.nextFloat();
+    
+    //	Lendo um valor real:
+    double salario;
+
+    System.out.printf("Informe o salário do Funcionário = R$ ");
+    salario = teclado.nextDouble();
+    
+    //	Lendo uma String, usado na leitura de palavras simples que não usam o caractere de espaço (ou barra de espaço):
+    String s;
+
+    System.out.printf("Informe uma palavra simples:\n");
+    s = teclado.next();
+    
+    //	Lendo uma String, usado na leitura de palavras compostas, por exemplo, Pato Branco:
+    String s;
+
+    System.out.printf("Informe uma cadeia de caracteres:\n");
+    s = teclado.nextLine();
+    
+    //	Na leitura consecutiva de valores numéricos e String deve-se esvaziar o buffer do teclado antes da leitura do valor String, por exemplo:
+    int n;
+    String s;
+
+    System.out.printf("Informe um Número Inteiro: ");
+    n = teclado.nextInt();
+
+    teclado.nextLine(); // esvazia o buffer do teclado
+
+    System.out.printf("Informe uma cadeia de caracteres:\n");
+    s = teclado.nextLine();
+    
+  }
+}
+```
+
+### JOptionPane
+
+[^Bacala]
+
+
+
+- Até agora vimos o método `System.out.println` para escrever informações na tela (console).
+- A linguagem Java oferece diversas formas de interação com o usuário, a grande maioria em janelas.
+- Para evitar a criação de uma interface completa, pode-se utilizar as chamadas caixas de diálogo. 
+
+- JOptionPane Oferece caixas de diálogo predefinidas que permitem aos programas exibir mensagens aos usuários;
+
+
+- exibir uma caixa de mensagem para informar o usuário, usamos o método showMessageDialog(...): 
+
+```java
+import javax.swing.JOptionPane;
+public class Main {
+    public static void main (String arg[]) {
+        JOptionPane.showMessageDialog(null, "Olá JOptionPane");
+        System.exit(0); 
+    } 
+} 
+```
+[Veja Rodando](https://replit.com/@LeandroIFBA/JOptionPane#Main.java)
+
+- Há uma outra forma de chamada para o método showMessageDialog, a qual permite melhorarmos o visual da caixa de mensagem: 
+
+```java
+JOptionPane.showMessageDialog(null,"Esta é uma mensagem", "Atenção",  JOptionPane.WARNING_MESSAGE);
+```
+
+- JOptionPane.PLAIN_MESSAGE
+    - nenhum ícone
+- JOptionPane.ERROR_MESSAGE
+    - ícone de erro
+- JOptionPane.INFORMATION_MESSAGE
+    - ícone de informação
+- JOptionPane.WARNING_MESSAGE
+    - ícone de aviso
+- JOptionPane.QUESTION_MESSAGE
+    - ícone de interrogação
+
+#### System.exit
+
+```java
+//...
+System.exit(0);
+//...
+
+```
+
+- System.exit(0) é necessário em programas com interface gráfica, terminando o aplicativo Java.
+- O retorno Zero('0') para o método exit() indica que o programa finalizou com sucesso.
+- Valores diferentes de zero significam erros na execução e podem ser tratados por aplicativos que chamaram o programa Java.
+
+### showInputDialog.
+
+-exibir uma caixa de entrada
+-retorna sempre a String digitada pelo usuário. 
+
+```java
+String nome;
+nome = JOptionPane.showInputDialog("Digite o seu nome");
+JOptionPane.showMessageDialog(null,"Seu nome é "+nome);
+```
+
+- Variação mais completa:
+```java
+nome = JOptionPane.showInputDialog(null, "Por favor, digite o seu nome", "Atenção", JOptionPane.INFORMATION_MESSAGE);
+```
+
+#### [Exercício](../Exercicios/Java/JOption)
+
 
 !!!include(src/ref.md)!!!
