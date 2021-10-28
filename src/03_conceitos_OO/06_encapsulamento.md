@@ -83,7 +83,7 @@ public class Pessoa {
   public String getName() {
     return nome;
   }
-  // Setset
+  // Set
   public void setNome(String novoNome) {
     this.nome = novoNome;
   }
@@ -95,7 +95,7 @@ O método *set* pega um parâmetro ( novoNome) e o atribui ao atributo *nome*.
 
 A palavra-chave *this* é usada para se referir ao objeto atual.
 
-No entanto, como o atribui *name* é declarada como private, não podemos acessá-la de fora desta classe:
+No entanto, como o atributo *name* é declarada como private, não podemos acessá-la de fora desta classe:
 
 ```java
 public class Main {
