@@ -56,7 +56,8 @@ module.exports = {
           {
             text: 'Praticar',
             items: [
-              { text: 'Exercícios Java', link: '/Exercicios/Java/' }
+              { text: 'Exercícios Java', link: '/Exercicios/Java/' },
+              { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
             ]
           }
     //  {
@@ -86,7 +87,6 @@ module.exports = {
       '/02_java/',
       '/02_java/01_codificando',
       '/03_conceitos_OO/',
-      '/03_conceitos_OO/01_abstracao',
       '/03_conceitos_OO/02_objeto',
       '/03_conceitos_OO/03_classe',
       '/03_conceitos_OO/04_dominio_aplicacao.md',
