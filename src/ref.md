@@ -35,3 +35,6 @@
 
 [^Bacala]:Bacalá, Sílvio. Página do Professor Sílvio Bacalá Júnior. [http://www.facom.ufu.br/~bacala/POO/](http://www.facom.ufu.br/~bacala/POO/)
 
+[^UFF]: Leandro A. F. Fernandes, Marcos Lage, Isabel Rosseti. 2ª Lista de Exercícios Orientação a Objetos. Universidade Federal Fluminense, Instituto de Computação, Departamento de Ciência da Computação, Programação de Computadores II
+
+[^Jenkov]:Jakob Jenkov. Tutorials for Software Developers and Technopreneurs! [http://tutorials.jenkov.com/](http://tutorials.jenkov.com/). (Acessado em 03/11/2021) 

@@ -665,4 +665,34 @@ nome = JOptionPane.showInputDialog(null, "Por favor, digite o seu nome", "Atenç
 #### [Exercício](../Exercicios/Java/JOption)
 
 
+
+## Enum
+
+[^Jenkov]
+
+Um Java Enum é um tipo especial do Java usado para definir coleções de constantes. Mais precisamente, um tipo de enum Java é um tipo especial de classe Java. Um enum pode conter constantes, métodos, etc. Enums Java foram adicionados no Java 5.
+
+### Exemplo Enum
+
+Aqui está um exemplo simples de enum Java:
+
+```java
+public enum Level {
+    HIGH,
+    MEDIUM,
+    LOW
+}
+```
+Observe a palavra `enum` é usada no lugar de `class` ou `interface`. A palavra-chave enum em Java sinaliza ao compilador Java que essa definição de tipo é um enum.
+
+Você pode se referir às constantes no enum acima assim:
+
+```java
+Level level = Level.HIGH;
+```
+
+Observe como a variável level é do tipo Level que é o tipo enum Java definido no exemplo acima. A variável level pode tomar uma das Level constantes enum como valor ( HIGH, MEDIUM ou LOW). Nesse caso, level é definido como HIGH.
+
+
+
 !!!include(src/ref.md)!!!
