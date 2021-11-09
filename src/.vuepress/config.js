@@ -57,7 +57,14 @@ module.exports = {
             text: 'Praticar',
             items: [
               { text: 'Exercícios Java', link: '/Exercicios/Java/' },
+              { text: 'Modelagem', items: [
               { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
+              { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
+              ] },
+              { text: 'Herança', items: [
+                { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
+                { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+              ] },
             ]
           }
     //  {
@@ -93,7 +100,7 @@ module.exports = {
       '/03_conceitos_OO/05_assossiacao',
       '/03_conceitos_OO/06_encapsulamento',
       //'/03_conceitos_OO/07_pacotes',
-      //'/03_conceitos_OO/08_Heranca',
+      '/03_conceitos_OO/08_Heranca',
       //'/03_conceitos_OO/09_polimorfismo',
       //'/03_conceitos_OO/10_abstratas_interface.md',
       

@@ -36,7 +36,7 @@ public class Morcego extends Mamifero{
     - Quais as características de morcego?
         - altura
         - peso
-        - tamanho_presa
+        - tamanhoPresa
     - Quais ações o morcego pode fazer?
         - mamar
         - voar
@@ -44,7 +44,7 @@ public class Morcego extends Mamifero{
 
 ```java
 Mamifero animalMamifero = new Morcego();
-Mamifero batman = new Mamifero();//erro
+Morcego batman = new Mamifero();//erro
 ```
 
 - Com base no que foi dito até aqui podemos deduzir que o item 2 deve causar um erro já que não é possível garantir que todo mamífero seja um morcego
