@@ -62,7 +62,7 @@ animalMamifero.voar();//erro
 ```java
 Mamifero animalMamifero = new Morcego();
 animalMamifero.mamar();
-Morcego batman = (Morcego).animalMamifero;
+Morcego batman = (Morcego)animalMamifero;
 batman.voar();
 ```
 - Este tipo de operação recebe o nome de **TYPE CAST**
@@ -87,6 +87,25 @@ Mamifero <|-- Morcego
 
 <figcaption> UML Herança Morcego e Mamifero.</figcaption>
 </figure>
+
+<figure>
+
+@startuml Criando um objeto a partir da subclasse
+
+label "new Morcego()"
+
+rectangle "Morcego" #palegreen;line:green;text:green{
+label "altura\npeso\nmamar" #palegreen;text:green
+rectangle "Mamifero" #aliceblue;line:blue;text:blue{
+label "tamanhoPresa\nvoar" #aliceblue;text:blue   
+}
+} 
+
+@enduml
+
+<figcaption>Criando um objeto a partir da subclasse.</figcaption>
+</figure>
+
 
  ## Outros exemplos
 
@@ -170,6 +189,25 @@ Funcionario <|-- Gerente
 </figure>
 
 
+<figure>
+
+@startuml Criando um objeto a partir da subclasse
+
+label "new Gerente()"
+
+rectangle "Gerente" #palegreen;line:green;text:green{
+label "senha\nnumeroDeFuncionariosGerenciados\nautentica" #palegreen;text:green
+rectangle "Funcionario" #aliceblue;line:blue;text:blue{
+label "nome\ncpf\nsalario" #aliceblue;text:blue   
+}
+} 
+
+@enduml
+
+<figcaption>Criando um objeto a partir da subclasse.</figcaption>
+</figure>
+
+
 ```java
 class TestaGerente {
     public static void main(String[] args) {
@@ -203,13 +241,13 @@ class Funcionario {
 
 Então porque usar private? Depois de um tempo programando orientado a objetos, você vai começar a sentir que nem sempre é uma boa ideia deixar que a classe filha acesse os atributos da classe mãe, pois isso quebra um pouco a ideia de que só aquela classe deveria manipular seus atributos. Essa é uma discussão um pouco mais avançada.
 
-Além disso, não só as subclasses, mas também as outras classes, podem acessar os atributos protected, que veremos mais a frente (mesmo pacote). Veja outras alternativas ao protected no exercício de discussão em sala de aula juntamente com o instrutor.
+Além disso, não só as subclasses, mas também as outras classes, podem acessar os atributos protected, que veremos mais a frente (mesmo pacote).
 :::
 
 
 Da mesma maneira, podemos ter uma classe `Diretor` que estenda `Gerente` e a classe `Presidente` pode estender diretamente de `Funcionario`.
 
-Fique claro que essa é uma decisão de negócio. Se `Diretor` vai estender de `Gerente` ou não, vai depender se,para você, `Diretor` **é um** `Gerente`.
+Fique claro que essa é uma decisão de negócio. Se `Diretor` vai estender de `Gerente` ou não, vai depender se, para você, `Diretor` **é um** `Gerente`.
 
 Uma classe pode ter várias filhas, mas pode ter apenas uma mãe, é a chamada herança simples do java.
 
@@ -383,7 +421,7 @@ class SeguroDeVeiculo extends Servico {
 
 A classe genérica é denominada super classe, classe base ou classe mãe. As classes específicas são denominadas sub classes, classes derivadas ou classes filhas.
 
-Quando o operador new é aplicado em uma sub classe, o objeto construído possuirá os atributos e métodos definidos na sub classe e na super classe.
+Quando o operador `new` é aplicado em uma sub classe, o objeto construído possuirá os atributos e métodos definidos na sub classe e na super classe.
 
 <figure>
 
@@ -581,7 +619,7 @@ class Emprestimo extends Servico {
 Dessa forma, quando o valor padrão do preço dos serviços é alterado, basta modificar o método
 na classe `Servico`.
 
-#### Construtores e Herança
+## Construtores e Herança
 
 Quando temos uma hierarquia de classes, as chamadas dos construtores são mais complexas do que o normal. Pelo menos um construtor de cada classe de uma mesma sequência hierárquica deve ser chamado ao instanciar um objeto. Por exemplo, quando um objeto da classe Emprestimo é criado, pelo menos um construtor da própria classe Emprestimo e um da classe Servico devem ser executados. Além disso, os construtores das classes mais genéricas são chamados antes dos construtores das classes específicas.
 
@@ -603,8 +641,16 @@ class Emprestimo extends Servico {
 }
 ```
 
-Por padrão, todo construtor chama o construtor sem argumentos da classe mãe se não existir
-nenhuma chamada de construtor explícita.
+Por padrão, todo construtor chama o construtor sem argumentos da classe mãe se não existir nenhuma chamada de construtor explícita.
+
+```java
+class TesteConstrutor {
+    public static void main(String[] args) {
+        new Emprestimo();
+    }
+}
+```
+
 
 :::::: col-wrapper
 ::: col-half
