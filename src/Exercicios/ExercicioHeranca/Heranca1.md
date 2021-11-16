@@ -31,3 +31,35 @@ sidebar: false
     
     <<< src/Exercicios/ExercicioHeranca/code/code2.java
 
+
+
+@startuml Criando um objeto a partir da subclasse
+
+label "new Cachorro()"
+
+rectangle "Cachorro" #palegreen;line:green;text:green{
+    rectangle "Mamifero" #aliceblue;line:blue;text:blue{
+        label "mamar" #aliceblue;text:blue   
+        rectangle "Animal" #aliceblue;line:red;text:red{
+            label "mover" #aliceblue;text:red   
+        }
+    }
+} 
+
+@enduml
+
+@startuml Criando um objeto a partir da subclasse
+
+label "new Morcego()"
+
+rectangle "Morcego" #palegreen;line:green;text:green{
+    rectangle "Mamifero" #aliceblue;line:blue;text:blue{
+        label "mamar" #aliceblue;text:blue   
+        rectangle "Animal" #aliceblue;line:red;text:red{
+            label "mover" #aliceblue;text:red   
+        }
+    }
+} 
+
+@enduml
+
