@@ -28,6 +28,7 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress-theme-ououe": "^1.5.3"
   }
 }
