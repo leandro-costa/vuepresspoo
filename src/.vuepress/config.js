@@ -65,6 +65,9 @@ module.exports = {
                 { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
                 { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
               ] },
+              { text: 'Polimorfismo', items: [
+                { text: 'Sistema Bancario', link: '/Exercicios/SistemaBancario' }
+              ] },
             ]
           }
     //  {
