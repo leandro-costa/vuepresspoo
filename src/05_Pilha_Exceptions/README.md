@@ -1,12 +1,5 @@
 
-# Pilha de Execução
-Pilha de Execução
-O método main chama metodo1
-O método metodo1 chama o metodo2
-Cada um desses métodos pode ter suas próprias variáveis locais, sendo que, por exemplo, o metodo1 não enxerga as variáveis declaradas dentro do main
-Pilha de Execução
-Toda invocação de método é empilhada em uma estrutura de dados que isola a área de memória de cada um
-Quando um método termina (retorna), ele volta para o método que o invocou. Ele descobre isso através da pilha de execução (stack )
+
 Pilha de Execução
 Pilha de Execução
 Executando o código uma exceção é lançada
@@ -17,7 +10,7 @@ Pilha de Execução
 Quando um erro (exceção) ocorre, o JVM entra em estado de alerta e procura dento do metodo se existe algum tratamento especial para o problema
 Como o metodo2 não tem nenhum tratamento a JVM interrompo sua execução e volta um nível na pilha e verifica novamente
 Como o metodo1 também não faz nenhum tratamento a JVM sobe mais um nivel até chegar no main
-Como o main também não faz nenhum trabamento a Thread morre
+Como o main também não faz nenhum tratamento a Thread morre
 Exception
 O tratamento de erros em Java é feito em tempo de execução através do tratamento de exceção. 
 Exceções são classes que seguem o modelo O.O. e são lançadas quando o sistema encontra um problema. 

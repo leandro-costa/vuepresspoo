@@ -33,7 +33,7 @@ public class TesteUnitario {
         assertEquals(aluno, pessoa);
     }
 
-    //TODO outros testes
+    //TODO: outros testes
     @Test
     public void professorEqualsPessoa() {
         
