@@ -315,7 +315,7 @@ class ContaPoupanca extends Conta {
 }
 ```
 
-Se uma classe concreta derivada da classe Conta não possuir uma implementação do método `imprimeExtratoDetalhado()` ela não compilará.
+Se uma classe concreta derivada da classe `Conta` não possuir uma implementação do método `imprimeExtratoDetalhado()` ela não compilará.
 
 ```java
 // ESSA CLASSE NÃO COMPILA
@@ -323,6 +323,7 @@ class ContaPoupanca extends Conta {
 }
 ```
 
+## Interface
 
 #### Padronização
 
@@ -442,7 +443,6 @@ Por exemplo, suponha duas árvores de herança independentes
 
 <figure>
 
-```plantuml
 @startuml
 class Cliente
 class PessoaFisica extends Cliente
@@ -453,11 +453,9 @@ class Gerente extends Funcionario
 class Seguranca extends Funcionario
 
 @enduml
-```
 
 <figcaption>Duas árvores de herança independentes.</figcaption>
 </figure>
-
 
 Suponha que os gerentes e as empresas possam acessar o sistema do banco com um nome de usuário e uma senha. Seria interessante utilizar um único método para implementar a autenticação desses dois tipos de objetos. Mas, qual seria o tipo de parâmetro deste método? Lembrando que ele deve aceitar gerentes e empresas.
 
@@ -474,7 +472,6 @@ De acordo com as árvores de herança, não há polimorfismo entre objetos da cl
 
 <figure>
 
-```plantuml
 @startuml
 class Cliente
 class PessoaFisica extends Cliente
@@ -487,13 +484,24 @@ class Seguranca extends Funcionario
 interface Usuario
 
 @enduml
-```
 
 <figcaption>Obtendo mais polimorfismo.</figcaption>
 </figure>
 
 
 Agora, conseguimos definir o que o método autentica() deve receber como parâmetro para trabalhar tanto com gerentes quanto com empresas. Ele deve receber um parâmetro do tipo Usuario.
+
+
+<<< src/03_conceitos_OO/code/Usuario.java
+
+<<< src/03_conceitos_OO/code/Cliente.java
+<<< src/03_conceitos_OO/code/PessoaFisica.java
+<<< src/03_conceitos_OO/code/Empresa.java
+
+<<< src/03_conceitos_OO/code/Funcionario.java
+<<< src/03_conceitos_OO/code/Gerente.java
+<<< src/03_conceitos_OO/code/Seguranca.java
+
 
 ```java
 class AutenticadorDeUsuario {
