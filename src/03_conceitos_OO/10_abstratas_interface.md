@@ -511,4 +511,46 @@ class AutenticadorDeUsuario {
 }
 ```
 
+##### Mais sobre herança e interface
+
+```java
+public interface Conta {
+    public double getSaldo();
+    public void deposita(double valor);
+    public void saca(double valor);
+    public void atualiza(double taxaSelic);
+}
+
+class ContaCorrente implements Conta {
+// ...
+}
+class ContaPoupanca implements Conta {
+// ...
+}
+``` 
+
+Às vezes, é interessante criarmos uma interface que herda de outras interfaces: essas, são chamadas subinterfaces. Essas, nada mais são do que um agrupamento de obrigações para a classe que a implementar
+
+```java
+interface ContaTributavel extends Conta, Tributavel {
+
+}
+```
+Dessa maneira, quem for implementar essa nova interface precisa implementar todos os métodos herdados das suas superinterfaces (e talvez ainda novos métodos declarados dentro dela):
+
+```java
+class ContaCorrente implements ContaTributavel {
+// métodos
+}
+
+``` 
+
+```java
+Conta c = new ContaCorrente();
+Tributavel t = new ContaCorrente();
+```
+Perceba que o código pode parecer estranho, pois a interface não declara método algum, só herda os
+métodos abstratos declarados nas outras interfaces. Ao mesmo tempo que uma interface pode herdar de mais de uma outra interface, classes só podem possuir uma classe mãe (herança simples).
+
+
 !!!include(src/ref.md)!!!
