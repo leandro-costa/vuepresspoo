@@ -69,6 +69,9 @@ module.exports = {
               { text: 'Polimorfismo', items: [
                 { text: 'Sistema Bancario', link: '/Exercicios/SistemaBancario/' }
               ] },
+              { text: 'Exception', items: [
+                { text: 'Exception', link: '/Exercicios/ExercicioException/' }
+              ] },
             ]
           }
     //  {
@@ -107,6 +110,7 @@ module.exports = {
       '/03_conceitos_OO/08_Heranca',
       '/03_conceitos_OO/09_polimorfismo',
       '/03_conceitos_OO/10_abstratas_interface.md',
+      '/05_Exceptions/'
       
     ]
 

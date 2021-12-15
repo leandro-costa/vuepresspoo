@@ -695,10 +695,10 @@ Observe como a variável level é do tipo Level que é o tipo enum Java definido
 
 
 
-# Pilha de Execução
+## Pilha de Execução
 
 ```java
-class TesteErro {
+class TestePilha {
     public static void main(String[] args) {
         System.out.println("inicio do main");
         metodo1();
@@ -731,7 +731,8 @@ Cada um desses métodos pode ter suas próprias variáveis locais, sendo que, po
 Toda invocação de método é empilhada em uma estrutura de dados que isola a área de memória de cada um. Quando um método termina (retorna), ele volta para o método que o invocou. Ele descobre isso através da pilha de execução **(stack)**
 
 
-```plantuml
+<figure>
+
 @startuml
 
 skinparam nodesep 1
@@ -747,5 +748,7 @@ m2 -[hidden]-> m1
 m1 -[hidden]-> m
 
 @enduml
-```
+
+<figcaption>Representação de uma pilha de execução.</figcaption>
+</figure>
 !!!include(src/ref.md)!!!
