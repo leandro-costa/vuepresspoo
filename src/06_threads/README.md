@@ -6,9 +6,9 @@
 - Multithreading implica em duas ou mais tarefas rodando de forma concorrente (aparentemente em paralelo) dentro de um mesmo programa.
 - Alguns programas necessitam fazer várias tarefas que requerem recursos computacionais diversos. Se estas tarefas podem ser feitas independentemente, então é possível usar threads para que o programa não fique limitado a performance dos recursos lentos (I/O).
 
-```plantuml
-@startgantt
+<figure>
 
+@startuml
 [T1] lasts 5 days
 [T2] lasts 3 days
 [T2] starts at [T1]'s end
@@ -29,16 +29,15 @@
 [T6] displays on same row as [T2]
 [T6] starts at [T5]'s end
 
-	
+@enduml
 
-@endgantt
-```
-
+<figcaption>Exemplo de uso de tempo do processador pelas Threads.</figcaption>
+</figure>
 <br>
 
-```plantuml
-@startuml
+<figure>
 
+@startuml
 state nascimento
 state pronta
 state executando
@@ -57,10 +56,10 @@ bloqueada --> pronta : fim I/O
 esperando --> pronta : notify()
 dormindo --> pronta : fim tempo 
 
-
 @enduml
-```
 
+<figcaption>Diagrama de estado de uma Thread.</figcaption>
+</figure>
 - Existem duas formas para criar um thread: 
     - Estendendo a classe Thread
     - Implementando a interface Runnable. 
