@@ -55,7 +55,7 @@ fim do metodo1
 fim do main
 ```
 
-::: question ?
+::: tip ?
 - Modificando o try para dentro do for qual será o comportamento?
 - E na chamada do metodo2?
 - E na chamada do metodo1?

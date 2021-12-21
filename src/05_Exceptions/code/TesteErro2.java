@@ -15,7 +15,7 @@ class TesteErro2 {
         System.out.println("inicio do metodo2");
         int[] array = new int[10];
         try {
-            for (int i = 0; i <= 15; i++) {
+            for (int i = 0; i < 10; i++) {
                 array[i] = i;
                 System.out.println(i);
             }

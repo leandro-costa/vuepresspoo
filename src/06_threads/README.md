@@ -62,11 +62,12 @@ dormindo --> pronta : fim tempo
 ```
 
 - Existem duas formas para criar um thread: 
-    - Extendendo a classe Thread
+    - Estendendo a classe Thread
     - Implementando a interface Runnable. 
-- Nos dois casos é necessário sobrescrever o método run() que é o " main()" do thread. 
+- Nos dois casos é necessário sobrescrever o método `run()` que é o " main()" do thread. 
 - O método run deve conter a execução que irá rodar pelo tempo de vida do thread. Quando o método terminar, o thread morre. 
-- Para iniciar o thread é necessário chamar o métod o start() . 
+
+- Para iniciar o thread é necessário chamar o método `start()` . 
 - É a maquina virtual quem controla a execução e o ciclo de vida do thread. 
 
 ## Herdando a classe Thread
@@ -117,61 +118,54 @@ public class TesteThread{
 - Métodos sincronizados são úteis em situações em que os métodos podem manipular o estado de um objeto de formas que podem corromper o estado, se executados simultaneamente. 
 
 ```java
+//...
 public void metodo() {
  synchronized (this) {
  // conteudo do metodo
  }
 }
+//...
+
 public synchronized void metodo() {
  // conteudo do metodo
 }
+
+//...
 ```
 
-Estados de uma Thread
-Nova Thread
-Rodando
-Não Rodando
-Morta
-Thread
+## Estados de uma Thread
 
-Nova Thread
-Quando uma Thread é criada mas não foi chamado o start()
-Rodando
-Quando o método start() é chamado em uma nova thread ela altera o seu estado para em execução é chamando o método run()
+- Nova Thread
+    - Quando uma Thread é criada mas não foi chamado o start()
+- Rodando
+    - Quando o método start() é chamado em uma nova thread ela altera o seu estado para em execução é chamando o método run()
+- Não Execução
+    - Uma thread interrompe sua execução quando um quatro seguintes eventos ocorrem:
+        - Quando o método sleep() é chamado e ele dorme por um período de tempo especificado
+        - Quando o método suspend() é invocado
+        - Quando o método wait () é chamado e a thread espera para a notificação de um recurso livre ou aguarda a conclusão de outra thread ou espera para adquirir um bloqueio de um objeto.
+        - A thread está bloqueado em I / O e aguarda a sua conclusão
 
-
-Threads
-Não Execução
-Uma thread interrompe sua execução quando um quatro seguintes eventos ocorrem:
-Quando o método sleep() é chamado e ele dorme por um período de tempo especificado
-Quando o método suspend() é invocado
-Quando o método wait () é chamado e a thread espera para a notificação de um recurso livre ou aguarda a conclusão de outra thread ou espera para adquirir um bloqueio de um objeto.
-A thread está bloqueado em I / O e aguarda a sua conclusão
-Threads
+## Acessando informações da Threads
 Thread.currentThread() pode retornar uma saída como Thread [threadA, 5, main]
-Sendo
-nome da Thread
-prioridade da thread 
-nome do grupo a que pertence
-Threads
-Prioridade de Execução
-Nas threads a prioridade pode ser setada a qualquer momento
-setPriority()
-getPriority()
-Thread 
-MIN_PRIORITY (0)
-NORM_PRIORITY (5)
-MAX_PRIORITY (10)
+- Sendo
+    - nome da Thread
+    - prioridade da thread 
+    - nome do grupo a que pertence
+## Prioridade de Execução
+- Nas threads a prioridade pode ser setada a qualquer momento
+    - setPriority()
+    - getPriority()
+- Thread 
+    - MIN_PRIORITY (0)
+    - NORM_PRIORITY (5)
+    - MAX_PRIORITY (10)
 
-Threads
-Dormir e acordar
-A classe thread contém um método estático chamado sleep () que faz a thread em execução no momento pause sua execução e mude para o estado de sono. A thread vai dormir por pelo menos o tempo especificado em seu parâmetro, antes de entrar no estado executável. 
-
-Threads
-Waiting and Notifying
-Esperando e notificando fornecer os meios de comunicação entre as thread que sincroniza sobre o mesmo objeto. 
-As threads executam os métodos wait() e notify() (ou notifyAll()) no objeto compartilhado para esta finalidade. 
-Threads
-Waiting and Notifying
-O notifyAll (), notify () e wait () são métodos da classe Object. Estes métodos podem ser chamados apenas a partir de dentro de um contexto sincronizado (método sincronizado ou bloco sincronizado), caso contrário, a chamada irá resultar em um IllegalMonitorStateException. 
-O notifyAll () método acorda todas as threads em espera no recurso. Nesta situação, as threads despertadas competem para o recurso. Uma threads recebe o recurso e os outros vão voltar a esperar.
+## Gerenciando as Threads
+- Dormir e acordar
+    - A classe thread contém um método estático chamado sleep () que faz a thread em execução no momento pause sua execução e mude para o estado de sono. A thread vai dormir por pelo menos o tempo especificado em seu parâmetro, antes de entrar no estado executável. 
+- Waiting and Notifying
+    - Esperando e notificando fornecer os meios de comunicação entre as thread que sincroniza sobre o mesmo objeto. 
+    - As threads executam os métodos wait() e notify() (ou notifyAll()) no objeto compartilhado para esta finalidade. 
+    - O notifyAll (), notify () e wait () são métodos da classe Object. Estes métodos podem ser chamados apenas a partir de dentro de um contexto sincronizado (método sincronizado ou bloco sincronizado), caso contrário, a chamada irá resultar em um IllegalMonitorStateException. 
+    - O notifyAll () método acorda todas as threads em espera no recurso. Nesta situação, as threads despertadas competem para o recurso. Uma threads recebe o recurso e os outros vão voltar a esperar.
