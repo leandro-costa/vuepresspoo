@@ -532,6 +532,12 @@ class ContaPoupanca implements Conta {
 Às vezes, é interessante criarmos uma interface que herda de outras interfaces: essas, são chamadas subinterfaces. Essas, nada mais são do que um agrupamento de obrigações para a classe que a implementar
 
 ```java
+interface  Tributavel {
+//...
+}
+```
+
+```java
 interface ContaTributavel extends Conta, Tributavel {
 
 }
@@ -546,11 +552,24 @@ class ContaCorrente implements ContaTributavel {
 ``` 
 
 ```java
+ContaTributavel ct = new ContaCorrente();
 Conta c = new ContaCorrente();
 Tributavel t = new ContaCorrente();
 ```
+
 Perceba que o código pode parecer estranho, pois a interface não declara método algum, só herda os
 métodos abstratos declarados nas outras interfaces. Ao mesmo tempo que uma interface pode herdar de mais de uma outra interface, classes só podem possuir uma classe mãe (herança simples).
 
+<figure>
+
+@startuml
+interface Conta
+interface  Tributavel
+interface ContaTributavel extends Conta, Tributavel
+class ContaCorrente implements ContaTributavel
+@enduml
+
+<figcaption>Representação da herança entre interfaces.</figcaption>
+</figure>
 
 !!!include(src/ref.md)!!!
