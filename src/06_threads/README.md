@@ -60,6 +60,7 @@ dormindo --> pronta : fim tempo
 
 <figcaption>Diagrama de estado de uma Thread.</figcaption>
 </figure>
+
 - Existem duas formas para criar um thread: 
     - Estendendo a classe Thread
     - Implementando a interface Runnable. 

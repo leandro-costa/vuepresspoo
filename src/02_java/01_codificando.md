@@ -751,4 +751,9 @@ m1 -[hidden]-> m
 
 <figcaption>Representação de uma pilha de execução.</figcaption>
 </figure>
+
+!!!include(src/06_threads/README.md)!!!
+
+
+
 !!!include(src/ref.md)!!!
