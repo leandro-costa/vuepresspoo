@@ -1,3 +1,13 @@
+---
+title: Avaliação 3
+display: home
+tag: poo
+category: avaliacao
+sidebar: false
+---
+
+# Avaliação 
+
 Analisando o processo de conversão de um numero inteiro para o seu correspondente texto por extenso percebemos que existe muita coisa em comum quando são adicionados novos dígitos.
 
 1. Crie uma família de classes (utilize herança) para transformar um número inteiro em seu correspondente texto por extenso sendo possível executar o código abaixo.

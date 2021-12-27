@@ -1,6 +1,11 @@
 ---
+title: Avaliação
+display: home
+tag: poo
+category: avaliacao
 sidebar: false
 ---
+
 
 # 2021.1 POO Final 
 
