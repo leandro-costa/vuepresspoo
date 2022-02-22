@@ -59,6 +59,22 @@ li > ol > li {
     list-style: lower-alpha;
 }
 
+@media print {
+
+  .navbar{
+    position: absolute;
+  }
+  aside{
+    display: none;
+  }
+  .page {
+    padding-left: 0rem;
+  }
+  p, ul, ol {
+    line-height: 1.25;
+  }
+}
+
 .custom-block
   &.col-wrapper
     @media (min-width: 992px)
