@@ -197,7 +197,7 @@ public class Bicicleta {
   - Métodos de instância podem acessar variáveis de instância e métodos de instância diretamente.
   - Métodos de instância podem acessar variáveis de classe e métodos de classe diretamente.
   - Métodos de classe podem acessar variáveis de classe e métodos de classe diretamente.
-  - Métodos de classe não podem acessar variáveis de instância ou métodos de instância diretamente, eles devem usar uma referência de objeto. Além disso, métodos de classe não pode usar a palavra-chave this.
+  - Métodos de classe não podem acessar variáveis de instância ou métodos de instância diretamente, eles devem usar uma referência de objeto. Além disso, métodos de classe não pode usar a palavra-chave `this`.
 
 ### Constantes
 
