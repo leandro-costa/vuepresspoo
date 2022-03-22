@@ -361,7 +361,7 @@ int[] idades = new int[10];
 O que fazemos foi criar uma array de int de 10 posições e atribuir o endereço no qual ela foi criada. Podemos ainda acessar as posições do array:
 
 ```java
-idades[5] = 10;
+idades[5] = 8;
 ```
 <figure>
 
@@ -369,7 +369,7 @@ idades[5] = 10;
 title
   idades
   | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
-  |  |  |  |  |  | 10 |  |  |  |  |
+  |  |  |  |  |  | 8 |  |  |  |  |
 end title
 
 @enduml
@@ -401,8 +401,8 @@ Para modificar o conteúdo de um array, devemos escolher uma ou mais posições 
 
 ```java
 int[] numeros = new int[100];
-numeros [0] = 136;
-numeros [99] = 17;
+numeros[0] = 136;
+numeros[99] = 17;
 ```
 
 Também podemos definir os valores de cada posição de um array no momento da sua criação utilizando as sintaxes abaixo:
@@ -497,11 +497,11 @@ Nas bibliotecas da plataforma Java, existem métodos que realizam algumas tarefa
 Considere um array de String criado para armazenar nomes de pessoas. Podemos ordenar esses nomes através do método `Arrays.sort()`.
 
 ```java
-String [] nomes = new String []{" rafael cosentino ", " jonas hirata ", " marcelo martins "};
-Arrays.sort(nomes) ;
+String[] nomes = new String[]{"rafael cosentino", "jonas hirata", "marcelo martins"};
+Arrays.sort(nomes);
 
 for( String nome : nomes ) {
-    System.out.println(nome) ;
+    System.out.println(nome);
 }
 ```
 
@@ -512,7 +512,7 @@ Analogamente, também podemos ordenar números.
 Para copiar o conteúdo de um array para outro com maior capacidade, podemos utilizar o método `Arrays.copyOf()`.
 
 ```java
-String[] nomes = new String[] {" rafael ", " jonas ", " marcelo "};
+String[] nomes = new String[] {"rafael", "jonas", "marcelo"};
 String[] nomesDuplicados = Arrays.copyOf( nomes , 10) ;
 ```
 
@@ -646,7 +646,7 @@ System.exit(0);
 - O retorno Zero('0') para o método exit() indica que o programa finalizou com sucesso.
 - Valores diferentes de zero significam erros na execução e podem ser tratados por aplicativos que chamaram o programa Java.
 
-### showInputDialog.
+### showInputDialog
 
 -exibir uma caixa de entrada
 -retorna sempre a String digitada pelo usuário. 
