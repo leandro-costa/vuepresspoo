@@ -12,7 +12,7 @@ sidebar: false
     1. Uma movimentação que possui uma descrição, um valor e uma informação se ela é uma movimentação de crédito ou débito. 
     1. Um banco que armazene um conjunto de contas e forneça métodos que permitam que sejam feitos criações de conta, exclusão de contas, saques (uma conta corrente só pode fazer saques desde que o valor não exceda o limite de saque‐limite + saldo negativo), depósitos, emissão de saldo e extrato e transferência entre contas.
 
-1. Escreva uma classe que represente um país. Um país tem como atributos o seu nome, o nome da capital, sua dimensão em Km2 e uma lista de países com os quais ele faz fronteira. Represente a classe e forneça os seguintes construtores e método: 
+1. Escreva uma classe que represente um país. Um país tem como atributos o seu nome, o nome da capital, sua dimensão em Km<sup>2</sup> e uma lista de países com os quais ele faz fronteira. Represente a classe e forneça os seguintes construtores e método: 
     1. Construtor que inicialize o nome, capital e a dimensão do país;
     1. Métodos de acesso (obter/get) para as propriedades indicadas no item (a); 
     1. Um método que permita verificar se dois países são iguais. Dois países são iguais se tiverem o mesmo nome e a mesma capital. A assinatura deste método deve ser: 
