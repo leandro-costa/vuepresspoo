@@ -282,7 +282,7 @@ while (condicao) {
 // aqui o j não existe mais, mas o i continua dentro do escopo
 ```
 
-No bloco acima, a variável `j` pára de existir quando termina o bloco onde ela foi declarada. Se você tentar acessar uma variável fora de seu escopo, ocorrerá um erro de compilação.
+No bloco acima, a variável `j` para de existir quando termina o bloco onde ela foi declarada. Se você tentar acessar uma variável fora de seu escopo, ocorrerá um erro de compilação.
 
 O mesmo vale para um if:
 ```java
@@ -355,7 +355,7 @@ Isso pode se tornar um problema quando precisamos mudar a quantidade de variáve
 Para facilitar esse tipo de caso podemos declarar um **vetor (array)** de inteiros:
 
 ```java
-int[] idades;
+int[] idades = new int[10];
 ```
 
 O que fazemos foi criar uma array de int de 10 posições e atribuir o endereço no qual ela foi criada. Podemos ainda acessar as posições do array:
