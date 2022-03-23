@@ -69,3 +69,6 @@ Não copie e cole de um exercício já existente! Aproveite para praticar.
     4 8 12 16
 
     n n*2 n*3 .... n*n
+
+
+!!!include(src/ref.md)!!!
