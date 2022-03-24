@@ -59,6 +59,7 @@ module.exports = {
               { text: 'Exercícios Java', items: [
               { text: 'Tipos Primitivos', link: '/Exercicios/Java/TiposPrimitivos.md' },
               { text: 'Exercicios Caelum', link: '/Exercicios/Java/Caelum.md' },
+              { text: 'Exercicios K19', link: '/Exercicios/Java/ExerciciosK19.md' },                
               { text: 'JOptionPane', link: '/Exercicios/Java/JOption.md' },
               ] },
               { text: 'Modelagem', items: [
