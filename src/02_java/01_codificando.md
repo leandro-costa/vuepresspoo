@@ -648,8 +648,8 @@ System.exit(0);
 
 ### showInputDialog
 
--exibir uma caixa de entrada
--retorna sempre a String digitada pelo usuário. 
+- Exibir uma caixa de entrada
+- Retorna sempre a String digitada pelo usuário. 
 
 ```java
 String nome;
