@@ -56,7 +56,10 @@ module.exports = {
           {
             text: 'Praticar',
             items: [
-              { text: 'Exercícios Java', link: '/Exercicios/Java/' },
+              { text: 'Exercícios Java', items: [
+              { text: 'JOptionPane', link: '/Exercicios/Java/' },
+              { text: 'Exercicios Caelum', link: '/Exercicios/Java/Caelum.md' },
+              ] },
               { text: 'Modelagem', items: [
               { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
               { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
