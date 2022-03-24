@@ -51,14 +51,15 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit',
     //lastUpdated: true,
-    
+
     nav: [
           {
             text: 'Praticar',
             items: [
               { text: 'Exercícios Java', items: [
-              { text: 'JOptionPane', link: '/Exercicios/Java/' },
+              { text: 'Tipos Primitivos', link: '/Exercicios/Java/TiposPrimitivos.md' },
               { text: 'Exercicios Caelum', link: '/Exercicios/Java/Caelum.md' },
+              { text: 'JOptionPane', link: '/Exercicios/Java/JOption.md' },
               ] },
               { text: 'Modelagem', items: [
               { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
