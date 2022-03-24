@@ -56,7 +56,7 @@ Não copie e cole de um exercício já existente! Aproveite para praticar.
    - se x é par, x = x / 2
    - se x é impar, x = 3 * x + 1
    - imprime x
-   - O programa deve parar quando x tiver o valor nal de 1. Por exemplo, para x = 13, a saída será: 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+   - O programa deve parar quando x tiver o valor final de 1. Por exemplo, para x = 13, a saída será: 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
 
 1. (opcional) Imprima a seguinte tabela, usando fors encadeados:
 
