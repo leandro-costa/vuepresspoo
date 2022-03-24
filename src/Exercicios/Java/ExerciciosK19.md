@@ -2,7 +2,9 @@
 sidebar: false
 ---
 
-# Exercícios: Fixação de sintaxe  K19
+# Exercícios: Fixação de sintaxe K19
+
+[^k19oo]
 
 1. Crie um programa que exiba o seu nome no Console 100 vezes.
 1. Faça um programa que percorra todos os números de 1 até 100. Para os números ímpares, deve ser exibido um "*" e para os números pares "**". Veja o exemplo abaixo:
@@ -47,3 +49,5 @@ sidebar: false
     ***
     ****
     ```    
+    
+    !!!include(src/ref.md)!!!
