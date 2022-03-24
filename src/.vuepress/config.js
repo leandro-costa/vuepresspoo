@@ -48,8 +48,8 @@ module.exports = {
     repo: 'leandro-costa/vuepresspoo',
     //repoLabel: '',
     docsDir: 'src',
-    //editLinks: true,
-    //editLinkText: 'Edit!',
+    editLinks: true,
+    editLinkText: 'Edit',
     //lastUpdated: true,
     
     nav: [
