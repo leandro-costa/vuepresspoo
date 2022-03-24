@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Collections framework | Programação Orientada a Objetos</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <link rel="icon" href="/vuepresspoo/logo.png">
+    <link rel="manifest" href="/vuepresspoo/manifest.json">
+    <link rel="apple-touch-icon" href="/vuepresspoo/icon-192x192.png">
+    <link rel="mask-icon" href="/vuepresspoo/icon-192x192.png" color="#3eaf7c">
+    <meta name="description" content="Material para as aulas da disciplina de Programação Orientada a Objetos">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icon-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/vuepresspoo/assets/css/0.styles.fe2619a7.css" as="style"><link rel="preload" href="/vuepresspoo/assets/js/app.e47ac4e5.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/2.3ac662f1.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/24.228cce00.js" as="script"><link rel="preload" href="/vuepresspoo/assets/js/3.d3a2ab93.js" as="script"><link rel="prefetch" href="/vuepresspoo/assets/js/10.78d57f82.js"><link rel="prefetch" href="/vuepresspoo/assets/js/11.b7039460.js"><link rel="prefetch" href="/vuepresspoo/assets/js/12.8171b6ba.js"><link rel="prefetch" href="/vuepresspoo/assets/js/13.dc61533c.js"><link rel="prefetch" href="/vuepresspoo/assets/js/14.7ca1862e.js"><link rel="prefetch" href="/vuepresspoo/assets/js/15.0efde943.js"><link rel="prefetch" href="/vuepresspoo/assets/js/16.74ec3d79.js"><link rel="prefetch" href="/vuepresspoo/assets/js/17.5f5c7de5.js"><link rel="prefetch" href="/vuepresspoo/assets/js/18.10f1c80a.js"><link rel="prefetch" href="/vuepresspoo/assets/js/19.24ce0223.js"><link rel="prefetch" href="/vuepresspoo/assets/js/20.75399a50.js"><link rel="prefetch" href="/vuepresspoo/assets/js/21.07790d9d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/22.3992ba58.js"><link rel="prefetch" href="/vuepresspoo/assets/js/23.b8f46a1c.js"><link rel="prefetch" href="/vuepresspoo/assets/js/25.807f5f9e.js"><link rel="prefetch" href="/vuepresspoo/assets/js/26.3c175da7.js"><link rel="prefetch" href="/vuepresspoo/assets/js/27.9400d3f7.js"><link rel="prefetch" href="/vuepresspoo/assets/js/28.54c724c1.js"><link rel="prefetch" href="/vuepresspoo/assets/js/29.fb47ce2f.js"><link rel="prefetch" href="/vuepresspoo/assets/js/30.b851c1ea.js"><link rel="prefetch" href="/vuepresspoo/assets/js/31.2d00a758.js"><link rel="prefetch" href="/vuepresspoo/assets/js/32.3b6e49e5.js"><link rel="prefetch" href="/vuepresspoo/assets/js/33.8bfb5c6e.js"><link rel="prefetch" href="/vuepresspoo/assets/js/34.7e21646a.js"><link rel="prefetch" href="/vuepresspoo/assets/js/35.6bb5b5f8.js"><link rel="prefetch" href="/vuepresspoo/assets/js/36.bf4a1c45.js"><link rel="prefetch" href="/vuepresspoo/assets/js/37.330f75b3.js"><link rel="prefetch" href="/vuepresspoo/assets/js/38.e8fb87e7.js"><link rel="prefetch" href="/vuepresspoo/assets/js/39.cdd678aa.js"><link rel="prefetch" href="/vuepresspoo/assets/js/4.0458222d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/40.d4658e42.js"><link rel="prefetch" href="/vuepresspoo/assets/js/41.57525ad5.js"><link rel="prefetch" href="/vuepresspoo/assets/js/42.d4dde262.js"><link rel="prefetch" href="/vuepresspoo/assets/js/43.4572602d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/44.c5e476cb.js"><link rel="prefetch" href="/vuepresspoo/assets/js/45.f8f01d24.js"><link rel="prefetch" href="/vuepresspoo/assets/js/46.f0acae7e.js"><link rel="prefetch" href="/vuepresspoo/assets/js/5.a07ae67d.js"><link rel="prefetch" href="/vuepresspoo/assets/js/6.5ce0bf89.js"><link rel="prefetch" href="/vuepresspoo/assets/js/7.b35e2896.js"><link rel="prefetch" href="/vuepresspoo/assets/js/8.65860218.js"><link rel="prefetch" href="/vuepresspoo/assets/js/9.2472c6ed.js">
+    <link rel="stylesheet" href="/vuepresspoo/assets/css/0.styles.fe2619a7.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepresspoo/" class="home-link router-link-active"><!----> <span class="site-name">Programação Orientada a Objetos</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Praticar" class="dropdown-title"><span class="title">Praticar</span> <span class="arrow down"></span></button> <button type="button" aria-label="Praticar" class="mobile-dropdown-title"><span class="title">Praticar</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepresspoo/Exercicios/Java/" class="nav-link">
+  Exercícios Java
+</a></li><li class="dropdown-item"><h4>
+          Modelagem
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioModelagem/Modelagem1.html" class="nav-link">
+  Modelagem 1
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioModelagem/Modelagem2.html" class="nav-link">
+  Modelagem 2
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Herança
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca1.html" class="nav-link">
+  Herança 1
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca2.html" class="nav-link">
+  Herança 2
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca3.html" class="nav-link">
+  Herança 3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Polimorfismo
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/SistemaBancario/" class="nav-link">
+  Sistema Bancario
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Exception
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioException/" class="nav-link">
+  Exception
+</a></li></ul></li></ul></div></div> <a href="https://github.com/leandro-costa/vuepresspoo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Praticar" class="dropdown-title"><span class="title">Praticar</span> <span class="arrow down"></span></button> <button type="button" aria-label="Praticar" class="mobile-dropdown-title"><span class="title">Praticar</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepresspoo/Exercicios/Java/" class="nav-link">
+  Exercícios Java
+</a></li><li class="dropdown-item"><h4>
+          Modelagem
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioModelagem/Modelagem1.html" class="nav-link">
+  Modelagem 1
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioModelagem/Modelagem2.html" class="nav-link">
+  Modelagem 2
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Herança
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca1.html" class="nav-link">
+  Herança 1
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca2.html" class="nav-link">
+  Herança 2
+</a></li><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioHeranca/Heranca3.html" class="nav-link">
+  Herança 3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Polimorfismo
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/SistemaBancario/" class="nav-link">
+  Sistema Bancario
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Exception
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vuepresspoo/Exercicios/ExercicioException/" class="nav-link">
+  Exception
+</a></li></ul></li></ul></div></div> <a href="https://github.com/leandro-costa/vuepresspoo" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/vuepresspoo/home.html" class="sidebar-link">Programação Orientada a Objetos</a></li><li><a href="/vuepresspoo/01_paradigmas/" class="sidebar-link">Linguagens e paradigmas de programação</a></li><li><a href="/vuepresspoo/02_java/" class="sidebar-link">Java</a></li><li><a href="/vuepresspoo/02_java/01_codificando.html" class="sidebar-link">Codificando com JAVA</a></li><li><a href="/vuepresspoo/03_conceitos_OO/" class="sidebar-link">Paradigma de Programação OO</a></li><li><a href="/vuepresspoo/03_conceitos_OO/02_objeto.html" class="sidebar-link">Objeto</a></li><li><a href="/vuepresspoo/03_conceitos_OO/03_classe.html" class="sidebar-link">Classe</a></li><li><a href="/vuepresspoo/03_conceitos_OO/04_dominio_aplicacao.html" class="sidebar-link">Estereótipo de uma Classe em UML</a></li><li><a href="/vuepresspoo/03_conceitos_OO/05_assossiacao.html" class="sidebar-link">Associações</a></li><li><a href="/vuepresspoo/03_conceitos_OO/07_pacotes.html" class="sidebar-link">Pacotes</a></li><li><a href="/vuepresspoo/03_conceitos_OO/06_encapsulamento.html" class="sidebar-link">Encapsulamento</a></li><li><a href="/vuepresspoo/03_conceitos_OO/08_Heranca.html" class="sidebar-link">Herança</a></li><li><a href="/vuepresspoo/03_conceitos_OO/09_polimorfismo.html" class="sidebar-link">Polimorfismo</a></li><li><a href="/vuepresspoo/03_conceitos_OO/10_abstratas_interface.html" class="sidebar-link">Classes Abstratas</a></li><li><a href="/vuepresspoo/05_Exceptions/" class="sidebar-link">Exceptions</a></li><li><a href="/vuepresspoo/06_threads/" class="sidebar-link">Threads</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="collections-framework"><a href="#collections-framework" class="header-anchor">#</a> Collections framework</h1> <h2 id="caelum"><a href="#caelum" class="header-anchor">#</a> Caelum</h2> <p><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p> <ul><li>Arrays são trabalhosos, utilizar estrutura de dados</li></ul> <p>Manipulá arrays é bastante trabalhoso. Essa dificuldade aparece em diversos momentos:</p> <ul><li>não podemos redimensionar um array em Java;</li> <li>é impossível buscar diretamente por um determinado elemento cujo índice não se sabe;</li> <li>não conseguimos saber quantas posições do array já foram populadas sem criar, para isso, métodos auxiliares.</li></ul> <h2 id="referencias"><a href="#referencias" class="header-anchor">#</a> Referências</h2> <hr class="footnotes-sep"> <section class="footnotes"><ol class="footnotes-list"><li id="fn1" class="footnote-item"><p>Caelum. Java e Orientação a Objetos - Curso fj-11. <a href="#fnref1" class="footnote-backref">↩︎</a></p></li></ol></section></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/leandro-costa/vuepresspoo/edit/master/src/04_colecoes/README.md" target="_blank" rel="noopener noreferrer">Edit</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/vuepresspoo/assets/js/app.e47ac4e5.js" defer></script><script src="/vuepresspoo/assets/js/2.3ac662f1.js" defer></script><script src="/vuepresspoo/assets/js/24.228cce00.js" defer></script><script src="/vuepresspoo/assets/js/3.d3a2ab93.js" defer></script>
+  </body>
+</html>
