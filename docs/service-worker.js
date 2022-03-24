@@ -27,71 +27,71 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "01_paradigmas/index.html",
-    "revision": "fb2bf1a781cf550b7e34988dccbb533d"
+    "revision": "98a07261f8863c1bc2b230baa053002b"
   },
   {
     "url": "02_java/01_codificando.html",
-    "revision": "7a01e0a5496ae29137f5872182e5c86e"
+    "revision": "3d83922714e463e6924ace871f06486e"
   },
   {
     "url": "02_java/index.html",
-    "revision": "47d7fb7416c72d42cf91fb9c4248f41d"
+    "revision": "02b8097830e5584941cf9cba02b92935"
   },
   {
     "url": "03_conceitos_OO/02_objeto.html",
-    "revision": "47205c1b036af0be2e34b966a92a2de6"
+    "revision": "8937e37594b50c2982b04882a9ad3023"
   },
   {
     "url": "03_conceitos_OO/03_classe.html",
-    "revision": "30259d9623ba635fd4bba065fef215d6"
+    "revision": "a1a4de62ef3ad74aa95577890da2841e"
   },
   {
     "url": "03_conceitos_OO/04_dominio_aplicacao.html",
-    "revision": "bfded1d0262d1b108084227e7e4c50a4"
+    "revision": "49c1b5bee3837d02a595db43f830296d"
   },
   {
     "url": "03_conceitos_OO/05_assossiacao.html",
-    "revision": "d0b7be53c96175b82ba9ae630b95b06d"
+    "revision": "6b0ce8af86318975416b37df7d8232a8"
   },
   {
     "url": "03_conceitos_OO/06_encapsulamento.html",
-    "revision": "a7e4c009a93d6c95c2f697f7af947954"
+    "revision": "80939eec5f25b43cdaabe542557a459e"
   },
   {
     "url": "03_conceitos_OO/07_pacotes.html",
-    "revision": "b3f08f0bd5707975fd5f0c322bd57c38"
+    "revision": "89edd86659caf58e18b87f234ebf53f2"
   },
   {
     "url": "03_conceitos_OO/08_Heranca.html",
-    "revision": "d5b8be2745d4c4e94482fa334f3907c9"
+    "revision": "d8bc920dd96586b28c040de42e002852"
   },
   {
     "url": "03_conceitos_OO/09_polimorfismo.html",
-    "revision": "e5ab6d1c464612089ff601bde79c392a"
+    "revision": "46fdfb4a31f8781b87d529401ca27c4f"
   },
   {
     "url": "03_conceitos_OO/10_abstratas_interface.html",
-    "revision": "6b235f67d2d419b35cfc7d96b4829fdd"
+    "revision": "c71f7083011369f7b728d9e7faab0a84"
   },
   {
     "url": "03_conceitos_OO/index.html",
-    "revision": "27748afc3a8cc789e2f3afe65926b005"
+    "revision": "d64fd27050bf793230d43f97d20e089c"
   },
   {
     "url": "04_colecoes/index.html",
-    "revision": "56c3173194f6aaf3198221c3a8838939"
+    "revision": "89127cbe05e3a729ea30d3aca6732aae"
   },
   {
     "url": "05_Exceptions/index.html",
-    "revision": "0a058eb359c4a872dbbc8e38d15507d3"
+    "revision": "6a62e3135cb27ec99e9727ddf554abeb"
   },
   {
     "url": "06_threads/index.html",
-    "revision": "35f8a1f0a20840eda2a369d83e9898e6"
+    "revision": "ee12f47f1c9b7a05bc9a98f5e06e1b25"
   },
   {
     "url": "404.html",
-    "revision": "8c11497c4c3048f80fe59c1777f2907b"
+    "revision": "64d71c2ac12a8683d5fb6c41ed6add5e"
   },
   {
     "url": "assets/css/0.styles.fe2619a7.css",
@@ -214,52 +214,56 @@ self.__precacheManifest = [
     "revision": "903ddd0d238e34438fad7c8d3f893f5e"
   },
   {
-    "url": "assets/js/36.bf4a1c45.js",
-    "revision": "e6af6ca9c80ab55c297efef791226558"
+    "url": "assets/js/36.415947d6.js",
+    "revision": "0d1cf215b8576c0588bef730363ec20e"
   },
   {
-    "url": "assets/js/37.70e3d553.js",
-    "revision": "7cfb7f3d861906d839893c3f34e7a2d0"
+    "url": "assets/js/37.3ec84fc7.js",
+    "revision": "2beddb3faad580d1c465fe57baf52f07"
   },
   {
-    "url": "assets/js/38.e8fb87e7.js",
-    "revision": "eba77e658ad7c3a16a960d47ca4177e5"
+    "url": "assets/js/38.837129d4.js",
+    "revision": "e24ee152529b7b83b4c3c87ae12058a8"
   },
   {
-    "url": "assets/js/39.cdd678aa.js",
-    "revision": "555583575cb6ae24f8e4d160cc0ad7aa"
+    "url": "assets/js/39.3e915e28.js",
+    "revision": "3a9e9bd966d4aa29bf37e1cb3c45ebe1"
   },
   {
-    "url": "assets/js/4.0458222d.js",
-    "revision": "1ca49aca16ecb8cf0d5e26ebf5496e34"
+    "url": "assets/js/4.33d66a2a.js",
+    "revision": "45d5d0ad7ca617cd4e2ca6d466104c85"
   },
   {
-    "url": "assets/js/40.d4658e42.js",
-    "revision": "bea1e2087d6eaa13954231b8f4cfb316"
+    "url": "assets/js/40.fbe4f930.js",
+    "revision": "8320bbc0cacfcbedbd51fe2dffc0fb3d"
   },
   {
-    "url": "assets/js/41.57525ad5.js",
-    "revision": "0978b1ea200a9b69325f20d767a75a65"
+    "url": "assets/js/41.b65c3f43.js",
+    "revision": "1882d5ad99f219f469047a43ff627560"
   },
   {
-    "url": "assets/js/42.d4dde262.js",
-    "revision": "0fc18c1e4fb46466eb76f3b92b9735e7"
+    "url": "assets/js/42.ea8e31f4.js",
+    "revision": "dcae6aef6423d93c0568b6d3dbdca62d"
   },
   {
-    "url": "assets/js/43.4572602d.js",
-    "revision": "8f68c2b1e69808e3f14ba462a7d722e9"
+    "url": "assets/js/43.4078a6de.js",
+    "revision": "73976151fef7e17a4af12290d9bee39c"
   },
   {
-    "url": "assets/js/44.c5e476cb.js",
-    "revision": "1d862bad498afc11fadbe454fbaf610a"
+    "url": "assets/js/44.af4666f3.js",
+    "revision": "7069546024d3a5fe3c21162b878d91ba"
   },
   {
-    "url": "assets/js/45.f8f01d24.js",
-    "revision": "9c76b737bfa4575d931b6d336a18bf8d"
+    "url": "assets/js/45.a26ce99c.js",
+    "revision": "9a7a1194ce0df806d2495df344a3aa95"
   },
   {
-    "url": "assets/js/46.f0acae7e.js",
-    "revision": "1ccbaa38c9aae3b20323f1a602f305d5"
+    "url": "assets/js/46.5dbf988e.js",
+    "revision": "c9d5187b65438b8edf48f8015dfb52c9"
+  },
+  {
+    "url": "assets/js/47.ae2f8ed4.js",
+    "revision": "c88e71a07e68f7d97cbfe83dbf2b86b4"
   },
   {
     "url": "assets/js/5.a07ae67d.js",
@@ -278,80 +282,84 @@ self.__precacheManifest = [
     "revision": "46b0d16a51491e2f5325feecf973155a"
   },
   {
-    "url": "assets/js/9.2472c6ed.js",
-    "revision": "f26fa9889c2fb8acb7f00ad5d99e3eb2"
+    "url": "assets/js/9.b85343e6.js",
+    "revision": "4a1cd0da66c25b9ad98876a78af31a8e"
   },
   {
-    "url": "assets/js/app.1cc96567.js",
-    "revision": "f41f2a178bd0716b1b8d44ba4bb117e7"
+    "url": "assets/js/app.afe69fab.js",
+    "revision": "3a887a82527fad1236d19a3aa278780a"
   },
   {
     "url": "avaliacao/POO_Avaliacao.html",
-    "revision": "5e4e5c034d17f4b5a9a0a4ca1747ec9e"
+    "revision": "2da37eba283518cc97f2436c6fc70865"
   },
   {
     "url": "avaliacao/POO_Avaliacao2.html",
-    "revision": "35bde355828dd0031ba0aa93694b51ef"
+    "revision": "a1cee1f3d6451479256a6495d984dd49"
   },
   {
     "url": "avaliacao/POO_Avaliacao3.html",
-    "revision": "3354d8fd5012a2a5c0feb508896a7442"
+    "revision": "871c9c6aee38d371f243829fdfb9a778"
   },
   {
     "url": "avaliacao/POO_Final.html",
-    "revision": "589be4992e117344f1dd6e168707172d"
+    "revision": "2501672c12049198b53dabeb40a8d58a"
   },
   {
     "url": "Exercicios/ExercicioException/index.html",
-    "revision": "4cb6f72f7a5d6fad1c182b3faf17b9f5"
+    "revision": "f693e7c9a4adfab6058291a6ab9faf64"
   },
   {
     "url": "Exercicios/ExercicioHeranca/Heranca1.html",
-    "revision": "5bcacc097f97fae98a73caa650d55db8"
+    "revision": "828d2f1ace18aa9e07dd50b80a7e2ca0"
   },
   {
     "url": "Exercicios/ExercicioHeranca/Heranca2.html",
-    "revision": "3b43a5849378e9ccfe5f5c1dd530e6dc"
+    "revision": "cc853429e742b15ed9257ad810713d34"
   },
   {
     "url": "Exercicios/ExercicioHeranca/Heranca3.html",
-    "revision": "0877d86c24b1bfda79e281e8a42d182f"
+    "revision": "2c493c9dca63acd27dfafe02da271c68"
   },
   {
     "url": "Exercicios/ExercicioModelagem/Modelagem1.html",
-    "revision": "4eb3217c375fe746540017f071f3438b"
+    "revision": "023ce337b3a487e1388bff65d1fa6033"
   },
   {
     "url": "Exercicios/ExercicioModelagem/Modelagem2.html",
-    "revision": "0dd745bc14ab40779b5c66979f2fdeba"
+    "revision": "5d681147f7bf44d405395dfce42d066a"
   },
   {
     "url": "Exercicios/ExercicioModelagem/Modelagem4.html",
-    "revision": "314a70b21e75e83d2661ff620a852f91"
+    "revision": "d6603882cd8628840fe459a3431f1de4"
   },
   {
     "url": "Exercicios/ExercicioModelagem/Modelagem5.html",
-    "revision": "772fe20bdaf2a7eaad6ad41eaacc0de9"
+    "revision": "7d8abceec83452b048f7bb37a6679edf"
   },
   {
     "url": "Exercicios/Java/Caelum.html",
-    "revision": "f4aa96c5067422cb8e861e4009fd6ef2"
+    "revision": "2d528480ce65aac8d11ffe9524482e2f"
+  },
+  {
+    "url": "Exercicios/Java/ExerciciosK19.html",
+    "revision": "1fc3ac0e900e9091243da6ba433ab1c8"
   },
   {
     "url": "Exercicios/Java/JOption.html",
-    "revision": "aefa67369a39a56e05060accc5aab63c"
+    "revision": "338a9e6084e0c67f168a8fbc422492c0"
   },
   {
     "url": "Exercicios/Java/TiposPrimitivos.html",
-    "revision": "3b8c475dbb22ceb53c2cdb78c7e722fa"
+    "revision": "bb22bd4571c0c42aeee48c11bd07618c"
   },
   {
     "url": "Exercicios/SistemaBancario/index.html",
-    "revision": "fb69bb19528fb50e62712cf673a16711"
+    "revision": "d904259fef5782dfd739ae36a5141729"
   },
   {
     "url": "home.html",
-    "revision": "a4763c54f95cdfd58d3647f01cf39729"
+    "revision": "3f6a2817e26bdcda44c4114052183e0f"
   },
   {
     "url": "icon-192x192.png",
@@ -371,7 +379,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1c1fa17796cbda48fd655239d11f71e9"
+    "revision": "9cff70c3a9996dee2133d35daa758279"
   },
   {
     "url": "logo.png",
@@ -379,7 +387,7 @@ self.__precacheManifest = [
   },
   {
     "url": "ref.html",
-    "revision": "716fbf5173ae67022737c27f2278c9ed"
+    "revision": "d6cc014b6c9b610dc8433e58617e6227"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
