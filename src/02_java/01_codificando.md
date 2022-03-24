@@ -752,7 +752,7 @@ m1 -[hidden]-> m
 <figcaption>Representação de uma pilha de execução.</figcaption>
 </figure>
 
- [Exercícios para praticar](/Exercicios/java/Caelum.md).
+ [Exercícios para praticar](/Exercicios/Java/Caelum.md).
 
 
 
