@@ -64,12 +64,12 @@ module.exports = {
                             { text: 'JOptionPane', link: '/Exercicios/Java/JOption.md' },
                         ]
                     },
-                    //{
-                    //    text: 'Modelagem', items: [
-                    //        { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
-                    //        { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
-                    //    ]
-                    //},
+                    {
+                        text: 'Modelagem', items: [
+                            { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
+                            { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
+                        ]
+                    },
                     //{
                     //    text: 'Herança', items: [
                     //        { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
