@@ -101,6 +101,7 @@ module.exports = {
             '/03_conceitos_OO/',
             '/03_conceitos_OO/02_objeto',
             '/03_conceitos_OO/03_classe',
+            '/03_conceitos_OO/03_Construtor_sobrecarga',
             '/03_conceitos_OO/04_dominio_aplicacao.md',
             //'/03_conceitos_OO/05_assossiacao',
             //'/03_conceitos_OO/07_pacotes',
