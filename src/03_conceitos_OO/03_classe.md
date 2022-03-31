@@ -21,37 +21,31 @@
 <figure>
 
 @startuml
+left to right direction
+map "Especificação \nde uma conta" as conta{
+}
+map conta1{
+  numero =>1
+  cliente => Fulano
+  saldo =>100
+  limite =>0
+}
+map conta2{
+  numero =>2
+  cliente =>Beltrano
+  saldo =>90
+  limite =>10
+}
+map conta3{
+  numero =>3
+  cliente =>Cicrano
+  saldo =>900
+  limite =>0
+}
 
-rectangle "Especificação \nde uma conta" as conta
-
-rectangle Obj1[
-    |numero|              |
-|cliente| |
-|saldo| |
-|limite| |
-] 
-
-rectangle Obj2[
-    |numero|              |
-|cliente| |
-|saldo| |
-|limite| |
-]
-
-rectangle Obj3[
-    |numero|              |
-|cliente| |
-|saldo| |
-|limite| |
-]
-
-conta -> Obj1
-conta -> Obj2
-conta -> Obj3
-
-Obj1 --[hidden]> Obj2
-Obj2 --[hidden]> Obj3
-
+conta --> conta1 : new
+conta --> conta2 : new
+conta --> conta3 : new
 @enduml
 
 <figcaption> Representação de vários objetos de uma mesma estrutura.</figcaption>
