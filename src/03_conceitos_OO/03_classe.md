@@ -241,10 +241,10 @@ class Programa{
 @startuml
 
 rectangle "Memoria"{
-    rectangle "Conta" as c1m
     rectangle "Conta" as c2m
-    rectangle "c1" as c1
+    rectangle "Conta" as c1m
     rectangle "c2" as c2
+    rectangle "c1" as c1
     c2m<--c2
     c1m<--c1
 }
