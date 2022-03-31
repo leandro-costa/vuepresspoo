@@ -245,8 +245,8 @@ rectangle "Memoria"{
     rectangle "Conta" as c2m
     rectangle "c1" as c1
     rectangle "c2" as c2
-    c1m<--c1
     c2m<--c2
+    c1m<--c1
 }
 
 @enduml  
