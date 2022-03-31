@@ -328,8 +328,8 @@ public static void main(String args[]) {
 ```java
 class Conta {
   //...
-  boolean equals(Object obj){
-    return this.cliente.equals(((Conta)obj).cliente) && this.saldo == (((Conta)obj).saldo);
+  public boolean equals(Conta outraConta) {
+    return this.cliente.equals(outraConta.cliente) && this.saldo == outraConta.saldo;
   }
   //...
   
