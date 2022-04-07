@@ -11,9 +11,9 @@ sidebar: false
     1. Construtor que inicialize o nome, capital e a dimensão do país;
     1. Métodos de acesso (obter/get) para as propriedades indicadas no item (a); 
     1. Um método que permita verificar se dois países são iguais. Dois países são iguais se tiverem o mesmo nome e a mesma capital. A assinatura deste método deve ser: 
-    ```java
-    public boolean equals(final Pais outro);
-    ```
+        ```java
+        public boolean equals(final Pais outro);
+        ```
     1. Um método que define quais outros países fazem fronteira (note que um país não pode fazer fronteira com ele mesmo); 
     1. Um método que retorne a lista de países que fazem fronteira; 
     1. Um método que receba um outro país como parâmetro e retorne uma lista de vizinhos comuns aos dois países.
