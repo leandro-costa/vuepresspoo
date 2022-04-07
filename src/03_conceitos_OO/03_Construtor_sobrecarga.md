@@ -106,10 +106,10 @@ class Conta{
 class Programa{
   public static void main(String[] args){
     Conta minhaConta1;
-    minhaConta1 = new Conta();
-    minhaConta1.cliente = "Leandro1";
+    minhaConta1 = new Conta(1, "Leandro1");
+    minhaConta1.saldo = 100;
     Conta minhaConta2;
-    minhaConta2 = new Conta("Leandro2");   
+    minhaConta2 = new Conta(2, "Leandro2", 100, 0);   
   }
 }
 ```
