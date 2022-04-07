@@ -85,13 +85,18 @@ public int operar(char op, int v1, int v2){
 ```java
 class Conta{
   //...
-  Conta(){
-    this.limite = 100;
+  Conta(int numero, String cliente, double saldo, double limite){
+    this.numero = numero;
+    this.cliente = cliente;
+    this.saldo = saldo;
+    this.limite = limite;
   }
 
-  Conta(String cliente){
+  Conta(int numero, String cliente){
+    this.numero = numero;
     this.cliente = cliente;
-    this.limite = 100;
+    this.saldo = 0;
+    this.limite = 0;
   }
   //...
 }
