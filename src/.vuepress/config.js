@@ -68,14 +68,14 @@ module.exports = {
                         text: 'Modelagem', items: [
                             { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
                             { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
-                            { text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' },
                             { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
-                            { text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
                         ]
                     },
                     //{
                     //    text: 'Herança', items: [
                     //        { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
+                    //{ text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' },
+                    //{ text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
                     //        { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' },
                     //        { text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
                     //    ]
