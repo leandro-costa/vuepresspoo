@@ -68,6 +68,9 @@ module.exports = {
                         text: 'Modelagem', items: [
                             { text: 'Modelagem 1', link: '/Exercicios/ExercicioModelagem/Modelagem1.md' },
                             { text: 'Modelagem 2', link: '/Exercicios/ExercicioModelagem/Modelagem2.md' },
+                            { text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' },
+                            { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
+                            { text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
                         ]
                     },
                     //{
