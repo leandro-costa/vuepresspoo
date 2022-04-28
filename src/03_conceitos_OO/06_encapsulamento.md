@@ -80,7 +80,7 @@ A sintaxe para ambos é que eles começam com *get* ou *set* seguido pelo nome d
 public class Pessoa {
   private String nome; // private = acesso restrito
   // Get
-  public String getName() {
+  public String getNome() {
     return nome;
   }
   // Set

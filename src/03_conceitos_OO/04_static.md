@@ -49,6 +49,27 @@ public class Bicicleta {
   }
 }
 ```
+
+<figure>
+
+@startuml 
+
+label "new Bicicleta()"
+
+rectangle "classe" #palegreen;line:green;text:green{
+    label "numeroDeBicicletas" #palegreen;text:green
+    rectangle "instância1" #aliceblue;line:blue;text:blue{
+        label "id:1\nvelocidade:1" #aliceblue;text:blue   
+    }
+    rectangle "instância:2" #aliceblue;line:blue;text:blue{
+        label "id2\nvelocidade:2" #aliceblue;text:blue   
+    }
+} 
+
+@enduml
+
+<figcaption>Atributos de classe e de instância.</figcaption>
+</figure>
 ### Métodos estáticos
 - A linguagem de programação Java suporta métodos estáticos, bem como variáveis estáticas. 
 - Os métodos estáticos, que têm o modificador static em suas declarações, deve ser chamado com o nome da classe, sem a necessidade de criação de uma instância da classe
