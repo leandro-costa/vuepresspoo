@@ -62,7 +62,7 @@ rectangle "classe" #palegreen;line:green;text:green{
         label "id:1\nvelocidade:1" #aliceblue;text:blue   
     }
     rectangle "instância:2" #aliceblue;line:blue;text:blue{
-        label "id2\nvelocidade:2" #aliceblue;text:blue   
+        label "id:2\nvelocidade:2" #aliceblue;text:blue   
     }
 } 
 
