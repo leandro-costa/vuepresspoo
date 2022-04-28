@@ -70,6 +70,7 @@ rectangle "classe" #palegreen;line:green;text:green{
 
 <figcaption>Atributos de classe e de instância.</figcaption>
 </figure>
+
 ### Métodos estáticos
 - A linguagem de programação Java suporta métodos estáticos, bem como variáveis estáticas. 
 - Os métodos estáticos, que têm o modificador static em suas declarações, deve ser chamado com o nome da classe, sem a necessidade de criação de uma instância da classe
