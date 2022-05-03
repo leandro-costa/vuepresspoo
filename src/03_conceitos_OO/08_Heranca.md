@@ -95,9 +95,9 @@ Mamifero <|-- Morcego
 label "new Morcego()"
 
 rectangle "Morcego" #palegreen;line:green;text:green{
-label "altura\npeso\nmamar" #palegreen;text:green
+label "tamanhoPresa\nvoar()" #palegreen;text:green   
 rectangle "Mamifero" #aliceblue;line:blue;text:blue{
-label "tamanhoPresa\nvoar" #aliceblue;text:blue   
+label "altura\npeso\nmamar()" #aliceblue;text:blue
 }
 } 
 
