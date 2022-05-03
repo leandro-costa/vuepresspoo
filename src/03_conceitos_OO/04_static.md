@@ -50,6 +50,17 @@ public class Bicicleta {
 }
 ```
 
+```java
+public class Main {
+    public static void main (String arg[]) {
+      Bicicleta bicicleta1 = new Bicicleta();
+      bicicleta1.setVelocidade(1);
+      Bicicleta bicicleta2 = new Bicicleta();
+      bicicleta2.setVelocidade(2);
+    }
+}
+```
+
 <figure>
 
 @startuml 

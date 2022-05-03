@@ -110,7 +110,7 @@ module.exports = {
             '/03_conceitos_OO/05_assossiacao',
             '/03_conceitos_OO/06_encapsulamento',
             '/03_conceitos_OO/04_static.md',
-            //'/03_conceitos_OO/08_Heranca',
+            '/03_conceitos_OO/08_Heranca',
             //'/03_conceitos_OO/09_polimorfismo',
             //'/03_conceitos_OO/10_abstratas_interface.md',
             //'/05_Exceptions/',
