@@ -68,7 +68,7 @@ public class Main {
 label "new Bicicleta()"
 
 rectangle "classe" #palegreen;line:green;text:green{
-    label "numeroDeBicicletas" #palegreen;text:green
+    label "numeroDeBicicletas:2" #palegreen;text:green
     rectangle "instância1" #aliceblue;line:blue;text:blue{
         label "id:1\nvelocidade:1" #aliceblue;text:blue   
     }
