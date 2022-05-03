@@ -71,15 +71,15 @@ module.exports = {
                             { text: 'Modelagem 4', link: '/Exercicios/ExercicioModelagem/Modelagem4.md' },
                         ]
                     },
-                    //{
-                    //    text: 'Herança', items: [
-                    //        { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' },
-                    //{ text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' },
-                    //{ text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' },
-                    //        { text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' },
-                    //        { text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
-                    //    ]
-                    //},
+                    {
+                        text: 'Herança', items: [
+                          { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' }
+                         ,{ text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' }
+                         ,{ text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' }
+                    //     ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+                    //     ,{ text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
+                        ]
+                    },
                     //{
                     //    text: 'Polimorfismo', items: [
                     //        { text: 'Sistema Bancario', link: '/Exercicios/SistemaBancario/' }
