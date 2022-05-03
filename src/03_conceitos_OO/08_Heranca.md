@@ -196,7 +196,7 @@ Funcionario <|-- Gerente
 label "new Gerente()"
 
 rectangle "Gerente" #palegreen;line:green;text:green{
-label "senha\nnumeroDeFuncionariosGerenciados\nautentica" #palegreen;text:green
+label "senha\nnumeroDeFuncionariosGerenciados\nautentica()" #palegreen;text:green
 rectangle "Funcionario" #aliceblue;line:blue;text:blue{
 label "nome\ncpf\nsalario" #aliceblue;text:blue   
 }
@@ -255,10 +255,10 @@ Uma classe pode ter várias filhas, mas pode ter apenas uma mãe, é a chamada h
 <figure>
 
 @startuml
-Funcionario <|-- Diretor
 Funcionario <|-- Engenheiro
 Funcionario <|-- Secretario
 Funcionario <|-- Gerente
+Gerente <|-- Diretor
 
 @enduml
 
