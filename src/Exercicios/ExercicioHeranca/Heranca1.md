@@ -32,8 +32,10 @@ sidebar: false
     <<< src/Exercicios/ExercicioHeranca/code/code2.java
 
 
+<figure>
 
-@startuml Criando um objeto a partir da subclasse
+
+@startuml 
 
 label "new Cachorro()"
 
@@ -48,7 +50,12 @@ rectangle "Cachorro" #palegreen;line:green;text:green{
 
 @enduml
 
-@startuml Criando um objeto a partir da subclasse
+<figcaption>Criando um objeto Cachorro.</figcaption>
+</figure>
+
+<figure>
+
+@startuml 
 
 label "new Morcego()"
 
@@ -62,4 +69,7 @@ rectangle "Morcego" #palegreen;line:green;text:green{
 } 
 
 @enduml
+
+<figcaption>Criando um objeto Morcego.</figcaption>
+</figure>
 
