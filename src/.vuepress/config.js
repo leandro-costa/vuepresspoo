@@ -76,7 +76,9 @@ module.exports = {
                           { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' }
                          ,{ text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' }
                          ,{ text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' }
-                    //     ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+                         ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
+                         ,{ text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
+                         //     ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
                     //     ,{ text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
                         ]
                     },
@@ -111,8 +113,8 @@ module.exports = {
             '/03_conceitos_OO/06_encapsulamento',
             '/03_conceitos_OO/04_static.md',
             '/03_conceitos_OO/08_Heranca',
-            //'/03_conceitos_OO/09_polimorfismo',
-            //'/03_conceitos_OO/10_abstratas_interface.md',
+            '/03_conceitos_OO/09_polimorfismo',
+            '/03_conceitos_OO/10_abstratas_interface.md',
             //'/05_Exceptions/',
             //'/06_threads/'
 

@@ -10,7 +10,7 @@ Uma `Instituicao` de ensino está desenvolvendo um sistema acadêmico onde cada 
 
 Além disso, na `Instituicao` deverá existir `Turma` com no máximo 40 `AlunoMatriculado` e apenas um professor. Cada `AlunoMatriculado` deverá conter um `Aluno`, a quantidade de faltas e 3 notas. 
 
-A quantidade de `Turma` deve ser definida no momento em que a `Instituicao` for construída bem como seu nome. Seu modelo de classe deve ser possível rodar a simulação abaixo e exibir o mesmo resultado.
+A quantidade de `Turma` deve ser definida no momento em que a `Instituicao` for construída bem como seu nome. 
 
 Seu modelo de classe deve ser possível rodar a simulação abaixo e exibir o mesmo resultado.
 
