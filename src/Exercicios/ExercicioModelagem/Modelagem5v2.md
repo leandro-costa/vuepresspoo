@@ -14,7 +14,7 @@ A quantidade de `Turma` deve ser definida no momento em que a `Instituicao` for 
 
 Seu modelo de classe deve ser possível rodar a simulação abaixo e exibir o mesmo resultado.
 
-<<< src/Exercicios/ExercicioModelagem/Modelagem5/Principal.java
+<<< src/Exercicios/ExercicioModelagem/Modelagem5/Principal2.java
 
 Saída:
 

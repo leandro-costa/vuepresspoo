@@ -76,6 +76,7 @@ module.exports = {
                           { text: 'Herança 1', link: '/Exercicios/ExercicioHeranca/Heranca1.md' }
                          ,{ text: 'Modelagem 3', link: '/Exercicios/ExercicioModelagem/Modelagem3.md' }
                          ,{ text: 'Modelagem 5', link: '/Exercicios/ExercicioModelagem/Modelagem5.md' }
+                         ,{ text: 'Modelagem 5v2', link: '/Exercicios/ExercicioModelagem/Modelagem5v2.md' }
                          ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
                          ,{ text: 'Herança 3', link: '/Exercicios/ExercicioHeranca/Heranca3.md' }
                          //     ,{ text: 'Herança 2', link: '/Exercicios/ExercicioHeranca/Heranca2.md' }
