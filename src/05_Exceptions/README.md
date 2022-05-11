@@ -1,3 +1,19 @@
+<ul>
+    <li><a href="https://www.w3schools.blog/exception-handling-in-java">Exception handling</a></li>
+    <li><a href="https://www.w3schools.blog/try-and-catch-blocks-in-java">try and catch blocks</a></li>
+    <li><a href="https://www.w3schools.blog/multiple-catch-blocks-in-java">Multiple catch blocks</a></li>
+    <li><a href="https://www.w3schools.blog/nested-try-block-in-java">Nested try block</a></li>
+    <li><a href="https://www.w3schools.blog/finally-in-java">Finally</a></li>
+    <li><a href="https://www.w3schools.blog/throw-in-java">throw</a></li>
+    <li><a href="https://www.w3schools.blog/throws-keyword-in-java">throws</a></li>
+    <li><a href="https://www.w3schools.blog/exception-propagation-in-java">Exception propagation</a></li>
+    <li><a href="https://www.w3schools.blog/exception-handling-with-method-overriding">Exception handling with method
+            overriding</a></li>
+    <li><a href="https://www.w3schools.blog/custom-exception-in-java">Custom exception</a></li>
+    <li><a href="https://www.w3schools.blog/commonly-used-exception-methods-of-throwable-class-in-java">Throwable
+            class</a></li>
+</ul>
+
 # Exceptions
 
 Considerando o que foi visto em [Pilha de execução](../02_java/01_codificando.html#pilha-de-execucao).

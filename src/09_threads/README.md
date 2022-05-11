@@ -1,3 +1,34 @@
+<ul>
+    <li><a href="https://www.w3schools.blog/thread-life-cycle-in-java">Thread life cycle</a></li>
+    <li><a href="https://www.w3schools.blog/way-of-creating-thread-in-java">Way of creating thread</a></li>
+    <li><a href="https://www.w3schools.blog/better-way-to-create-a-thread-in-java">Which is a better way to create a
+            thread?</a></li>
+    <li><a href="https://www.w3schools.blog/methods-of-thread-class">Methods of Thread class</a></li>
+    <li><a href="https://www.w3schools.blog/thread-start-vs-run-method">Difference between thread start and run
+            method</a></li>
+    <li><a href="https://www.w3schools.blog/why-we-call-start-method-in-thread">Why we call start method in thread?</a>
+    </li>
+    <li><a href="https://www.w3schools.blog/override-start-method-in-thread">Can we override start method?</a></li>
+    <li><a href="https://www.w3schools.blog/override-run-method-in-thread">Can we override run method?</a></li>
+    <li><a href="https://www.w3schools.blog/start-a-thread-twice">Is it possible to start a thread twice?</a></li>
+    <li><a href="https://www.w3schools.blog/thread-scheduling-in-java">Thread scheduling</a></li>
+    <li><a href="https://www.w3schools.blog/thread-priority-in-java">Thread priority</a></li>
+    <li><a href="https://www.w3schools.blog/naming-a-thread-in-java">Naming a thread</a></li>
+    <li><a href="https://www.w3schools.blog/joining-a-thread-in-java">What is join method?</a></li>
+    <li><a href="https://www.w3schools.blog/get-current-thread-in-java">How to get current thread?</a></li>
+    <li><a href="https://www.w3schools.blog/daemon-thread-in-java">Daemon thread</a></li>
+    <li><a href="https://www.w3schools.blog/call-run-method-directly">Can we call run method directly?</a></li>
+    <li><a href="https://www.w3schools.blog/yield-sleep-thread-methods">What is the difference between sleep and yield
+            method?</a></li>
+    <li><a href="https://www.w3schools.blog/deadlock-in-java">Deadlock</a></li>
+    <li><a href="https://www.w3schools.blog/starvation-in-java">Starvation</a></li>
+    <li><a href="https://www.w3schools.blog/inter-thread-communication-in-java">Inter-thread communication</a></li>
+    <li><a href="https://www.w3schools.blog/synchronization-in-java">Synchronization</a></li>
+    <li><a href="https://www.w3schools.blog/synchronized-method-in-java">Synchronized method</a></li>
+    <li><a href="https://www.w3schools.blog/static-synchronization-in-java">Static synchronization</a></li>
+    <li><a href="https://www.w3schools.blog/synchronized-block-in-java">Synchronized block</a></li>
+</ul>
+
 # Threads
 - Threads são linhas de execuções que realizam tarefas simultâneas (caso tenhamos mais de 1 processador) ou de forma a compartilhar o processamento. 
 - Cada thread é como um programa individual que tem total poder sobre a CPU.

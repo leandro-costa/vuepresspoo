@@ -116,6 +116,8 @@ module.exports = {
             '/03_conceitos_OO/08_Heranca',
             '/03_conceitos_OO/09_polimorfismo',
             '/03_conceitos_OO/10_abstratas_interface.md',
+            //'/04_colecoes/',
+            //'/05_Generics/',
             //'/05_Exceptions/',
             //'/06_threads/'
 
