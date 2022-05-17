@@ -86,6 +86,13 @@ module.exports = {
                             { text: 'Sistema Bancario', link: '/Exercicios/SistemaBancario/' }
                         ]
                     },
+                    {
+                        text: 'Abstract', items: [
+                            { text: 'Exercicios Abstract', link: '/Exercicios/ExercicioAbstract/' }
+                        ]
+                    },
+
+                    
                     //{
                     //    text: 'Exception', items: [
                     //        { text: 'Exception', link: '/Exercicios/ExercicioException/' }

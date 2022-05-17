@@ -4,7 +4,7 @@ sidebar: false
 
 # Sistema Bancário (Polimorfismo)
 
-[^Takenami]
+adapitado de [^Takenami]
 
 1. Criar uma classe abstrata chamada `Operacao` com o atributo valor do tipo double e um método abstrato chamado `operar()` que retornará um valor do tipo double.
 1. Crie uma classe `Debito` e outra `Credito` que herda as caraterísticas de `Operacao.` O construtor de `Debito` e `Credito` deve receber o valor da operação e atribuir este valor a variável definida em `Operacao` (superclasse). Estas classes (`Debito` e `Credito`) devem ter um método `operar()` que deve ser programado de acordo com sua finalidade: `operar()` da classe `Debito` retorna o valor negativo pois a operação deve ser um debito enquanto a o método `operar()` de `Credito` retorna o valor positivo.
@@ -14,23 +14,25 @@ sidebar: false
 
     ```java
     public class Banco {
-        Correntista c1, c2, c3;
+        private Correntista[] correntistas;
+        private int qtdCorrentista;
 
-        public Banco(String correntista1, String correntista2, String correntista3) {
-            c1 = new Correntista(correntista1);
-            c2 = new Correntista(correntista2);
-            c3 = new Correntista(correntista3);
+
+        public Banco() {
+            this.correntistas = new Correntista[10];
+            this.qtdCorrentista = 0;
+        }
+
+        public void addCorrentista(String nome){
+            correntistas[qtdCorrentista++] = new Correntista(nome);
         }
 
         public Correntista getCorrentista(String nome) {
-            if (c1.getNome().equals(nome)) {
-                return c1;
-            }
-            if (c2.getNome().equals(nome)) {
-                return c2;
-            }
-            if (c3.getNome().equals(nome)) {
-                return c3;
+
+            for (int i = 0; i < qtdCorrentista; i++) {
+                if (correntistas[i].getNome().equals(nome)) {
+                    return correntistas[i];
+                }                
             }
             return null;
         }
