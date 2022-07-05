@@ -33,7 +33,8 @@ class Conta{
 - A classe chamada é instanciada
 - Memória é alocada
 - Os passos definidos dentro do método construtor da classe são executados
-  - Construtor é um método especial para criar e inicializar novas instâncias da classe. Construtores podem ser sobrecarregados
+  - Construtor é um método especial para criar e inicializar novas instâncias da classe. 
+  - Construtores podem ser sobrecarregados
 
 
 ```java
@@ -66,7 +67,7 @@ public int somar(int v1, int v2){
 } 
 
 public int operar(int v1, int v2){ 
-    return somar(v1, v2); 
+    return operar('+', v1, v2); 
 } 
 
 public int operar(char op, int v1, int v2){ 

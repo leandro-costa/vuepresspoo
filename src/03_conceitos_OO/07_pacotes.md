@@ -111,4 +111,18 @@ class Main {
   }
 }
 ```
+## Usar uma classe sem import
 
+Para utilizar uma classe sem a palavra reservada `import` você pode referenciar a classe pelo nome completo (pacote.nomeClasse). Exemplo:
+
+```java{3}
+class Main {
+  public static void main(String[] args) {
+    java.util.Scanner scanner = new java.util.Scanner(System.in);
+    System.out.println("Informe o nome");
+
+    String nome = scanner.nextLine();
+    System.out.println("nome é : " + nome);
+  }
+}
+```
