@@ -251,7 +251,7 @@ class ContaCorrente extends Conta {
 Para cada conta do domínio do banco devemos criar um objeto da classe correspondente ao tipo da conta. Por exemplo, se existe uma conta poupança no domínio do banco devemos criar um objeto da classe `ContaPoupanca`.
 
 ```java
-ContaPoupanca cp = new ContaPoupanca () ;
+ContaPoupanca cp = new ContaPoupanca();
 ```
 
 Faz sentido criar objetos da classe `ContaPoupanca` pois existem contas poupança no domínio do banco. Dizemos que a classe `ContaPoupanca` é uma classe concreta pois criaremos objetos a partir dela.
@@ -274,7 +274,7 @@ Todo código que tenta criar um objeto de uma classe abstrata não compila.
 
 ```java
 // Erro de compilação
-Conta c = new Conta () ;
+Conta c = new Conta();
 ```
 
 #### Métodos Abstratos
@@ -295,7 +295,7 @@ abstract class Conta {
     // Atributos
     // Construtores
     // Métodos
-    public abstract void imprimeExtratoDetalhado () ;
+    public abstract void imprimeExtratoDetalhado();
 }
 ```
 
@@ -304,10 +304,10 @@ As classes concretas que derivam direta ou indiretamente da classe Conta devem p
 ```java
 class ContaPoupanca extends Conta {
     private int diaDoAniversario ;
-    public void imprimeExtratoDetalhado () {
+    public void imprimeExtratoDetalhado(){
         System.out.println("EXTRATO DETALHADO DE CONTA POUPANÇA") ;
         SimpleDateFormat sdf = new SimpleDateFormat ("dd/MM/yyyy HH:mm:ss") ;
-        Date agora = new Date () ;
+        Date agora = new Date();
         System.out.println("DATA:"+sdf.format(agora));
         System.out.println("SALDO:"+this.getSaldo());
         System.out.println("ANIVERSÁRIO:"+this.diaDoAniversario);
@@ -402,7 +402,7 @@ Se uma classe implementa uma interface, podemos aplicar a ideia do polimorfismo 
 Como exemplo, suponha que a classe ContaCorrente implemente a interface Conta. Podemos guardar a referência de um objeto do tipo ContaCorrente em uma variável do tipo Conta.
 
 ```java
-Conta c = new ContaCorrente () ;
+Conta c = new ContaCorrente();
 ```
 
 Além disso, podemos passar uma variável do tipo ContaCorrente para um método que o parâmetro seja do tipo Conta.
@@ -545,16 +545,16 @@ interface ContaTributavel extends Conta, Tributavel {
 Dessa maneira, quem for implementar essa nova interface precisa implementar todos os métodos herdados das suas superinterfaces (e talvez ainda novos métodos declarados dentro dela):
 
 ```java
-class ContaCorrente implements ContaTributavel {
+class ContaInvestimento implements ContaTributavel {
 // métodos
 }
 
 ``` 
 
 ```java
-ContaTributavel ct = new ContaCorrente();
-Conta c = new ContaCorrente();
-Tributavel t = new ContaCorrente();
+ContaTributavel ct = new ContaInvestimento();
+Conta c = new ContaInvestimento();
+Tributavel t = new ContaInvestimento();
 ```
 
 Perceba que o código pode parecer estranho, pois a interface não declara método algum, só herda os
@@ -566,10 +566,16 @@ métodos abstratos declarados nas outras interfaces. Ao mesmo tempo que uma inte
 interface Conta
 interface  Tributavel
 interface ContaTributavel extends Conta, Tributavel
-class ContaCorrente implements ContaTributavel
+class ContaInvestimento implements ContaTributavel
 @enduml
 
 <figcaption>Representação da herança entre interfaces.</figcaption>
 </figure>
+
+### Interfaces = Classe Abstratas 
+
+Em algumas linguagens de programação não existe o conceito de `interface`. 
+
+A `interface` é um tipo específico de classe abstrata onde existe apenas as definições de comportamentos.
 
 !!!include(src/ref.md)!!!

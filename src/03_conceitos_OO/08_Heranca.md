@@ -547,7 +547,7 @@ Suponha que o valor da taxa administrativa do serviço de empréstimo é diferen
 ```java
 class Emprestimo extends Servico {
     // ATRIBUTOS
-    public double calculaTaxaDeEmprestimo () {
+    public double calculaTaxaDeEmprestimo(){
         return this.valor * 0.1;
     }
 }
@@ -564,7 +564,7 @@ Seria mais seguro "substituir" a implementação do método `calculaTaxa()` herd
 ```java
 class Emprestimo extends Servico {
     // ATRIBUTOS
-    public double calculaTaxa () {
+    public double calculaTaxa(){
         return this.valor * 0.1;
     }
 }
@@ -582,7 +582,7 @@ do serviço. Por exemplo, o preço do serviço de empréstimo é 5 reais mais um
 ```java
 class Emprestimo extends Servico {
     // ATRIBUTOS
-    public double calculaTaxa () {
+    public double calculaTaxa(){
         return 5 + this.valor * 0.1;
     }
 }
@@ -591,8 +591,8 @@ class Emprestimo extends Servico {
 ```java
 class SeguraDeVeiculo extends Servico {
 // ATRIBUTOS
-    public double calculaTaxa () {
-        return 5 + this.veiculo.getTaxa () * 0.05;
+    public double calculaTaxa(){
+        return 5 + this.veiculo.getTaxa()* 0.05;
     }
 }
 ```
@@ -601,7 +601,7 @@ Se o valor fixo dos serviços for atualizado, todas as classes específicas deve
 
 ```java
 class Servico {
-    public double calculaTaxa () {
+    public double calculaTaxa(){
         return 5 ;
     }
 }
@@ -610,8 +610,8 @@ class Servico {
 ```java
 class Emprestimo extends Servico {
 // ATRIBUTOS
-    public double calculaTaxa () {
-        return super.calculaTaxa () + this.valor * 0.1;
+    public double calculaTaxa(){
+        return super.calculaTaxa()+ this.valor * 0.1;
     }
 }
 ```
@@ -626,7 +626,7 @@ Quando temos uma hierarquia de classes, as chamadas dos construtores são mais c
 ```java
 class Servico {
     // ATRIBUTOS
-    public Servico () {
+    public Servico(){
         System.out.println("Servico");
     }
 }
@@ -635,7 +635,7 @@ class Servico {
 ```java
 class Emprestimo extends Servico {
     // ATRIBUTOS
-    public Emprestimo () {
+    public Emprestimo(){
         System.out.println("Emprestimo");
     }
 }

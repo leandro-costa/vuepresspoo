@@ -1,19 +1,3 @@
-<ul>
-    <li><a href="https://www.w3schools.blog/exception-handling-in-java">Exception handling</a></li>
-    <li><a href="https://www.w3schools.blog/try-and-catch-blocks-in-java">try and catch blocks</a></li>
-    <li><a href="https://www.w3schools.blog/multiple-catch-blocks-in-java">Multiple catch blocks</a></li>
-    <li><a href="https://www.w3schools.blog/nested-try-block-in-java">Nested try block</a></li>
-    <li><a href="https://www.w3schools.blog/finally-in-java">Finally</a></li>
-    <li><a href="https://www.w3schools.blog/throw-in-java">throw</a></li>
-    <li><a href="https://www.w3schools.blog/throws-keyword-in-java">throws</a></li>
-    <li><a href="https://www.w3schools.blog/exception-propagation-in-java">Exception propagation</a></li>
-    <li><a href="https://www.w3schools.blog/exception-handling-with-method-overriding">Exception handling with method
-            overriding</a></li>
-    <li><a href="https://www.w3schools.blog/custom-exception-in-java">Custom exception</a></li>
-    <li><a href="https://www.w3schools.blog/commonly-used-exception-methods-of-throwable-class-in-java">Throwable
-            class</a></li>
-</ul>
-
 # Exceptions
 
 Considerando o que foi visto em [Pilha de execução](../02_java/01_codificando.html#pilha-de-execucao).
@@ -261,20 +245,52 @@ O bloco `finally` sempre será executado, salvo em raras situações.
 
 De forma geral ele é a garantia de que seu código irá liberar recursos ocupados mesmo que ocorram exceções (Exceptions) ou o método contendo o `try` retorne prematuramente (`return`).
 
+::: tip 🔥
+
 Os únicos momentos em que o `finally` não será chamado são:
 
 1. Se você chamar System.exit() ou
 1. um outro thread interromper o atual (através do método interrupt()) ou
 1. Se a JVM der crash antes.
 
+:::
 
-O bloco try deve ser precedido por um catch ou finalliy
-O finally quer dizer que dando erro ou não o trecho de código compreendido nele será executado
-O catch será executa somente se naquele trecho dentro do try resultar em algum erro
+- O bloco `try` deve ser precedido por um `catch` ou `finalliy`
+- O `finally` quer dizer que dando erro ou não o trecho de código compreendido nele será executado
+- O `catch` será executa somente se naquele trecho dentro do try resultar em algum erro
 
 
-Exception
-Exception
-RuntimeException é a exception mãe de todas as exceptions não verificadas
-IllegalArgumentException é uma exceção do pacote do java que podemos utilizar para tratar valores indevidos para chamadas de métodos
+::: tip 🔥
 
+`RuntimeException` é a exception mãe de todas as exceptions não verificadas
+
+:::
+
+::: tip 🔥
+
+`IllegalArgumentException` é uma exceção do pacote do java que podemos utilizar para tratar valores indevidos para chamadas de métodos
+
+:::
+
+
+[Exercício](/Exercicios/ExercicioException/)
+
+
+<!--
+<ul>
+    <li><a href="https://www.w3schools.blog/exception-handling-in-java">Exception handling</a></li>
+    <li><a href="https://www.w3schools.blog/try-and-catch-blocks-in-java">try and catch blocks</a></li>
+    <li><a href="https://www.w3schools.blog/multiple-catch-blocks-in-java">Multiple catch blocks</a></li>
+    <li><a href="https://www.w3schools.blog/nested-try-block-in-java">Nested try block</a></li>
+    <li><a href="https://www.w3schools.blog/finally-in-java">Finally</a></li>
+    <li><a href="https://www.w3schools.blog/throw-in-java">throw</a></li>
+    <li><a href="https://www.w3schools.blog/throws-keyword-in-java">throws</a></li>
+    <li><a href="https://www.w3schools.blog/exception-propagation-in-java">Exception propagation</a></li>
+    <li><a href="https://www.w3schools.blog/exception-handling-with-method-overriding">Exception handling with method
+            overriding</a></li>
+    <li><a href="https://www.w3schools.blog/custom-exception-in-java">Custom exception</a></li>
+    <li><a href="https://www.w3schools.blog/commonly-used-exception-methods-of-throwable-class-in-java">Throwable
+            class</a></li>
+</ul>
+
+-->

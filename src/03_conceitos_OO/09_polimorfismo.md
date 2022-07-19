@@ -25,7 +25,7 @@
     <figcaption>UML da relação entre Figura, Circulo, Retangulo e Quadrado.</figcaption>
     </figure>
 
-    - Círculo, Retângulo e Quadrado são do tipo figura. 
+    - `Círculo`, `Retangulo` e `Quadrado` são do tipo `Figura`. 
         - Método desenhar()
     - O resultado depende do tipo de figura que receber a mensagem
 
@@ -323,7 +323,7 @@ class Gerente extends Funcionario
 Como está explícito no código que todo gerente é um funcionário então podemos criar um objeto da classe `Gerente` e tratá-lo como um objeto da classe `Funcionario` também.
 ```java
 // Criando um objeto da classe Gerente
-Gerente g = new Gerente () ;
+Gerente g = new Gerente();
 // Tratando um gerente como um objeto da classe Funcionario
 Funcionario f = g ;
 ```
