@@ -138,7 +138,7 @@ module.exports = {
             md.use(require("markdown-it-deflist"))
             md.use(require("markdown-it-katex"))
             md.use(require("markdown-it-include"))
-            md.use(require("markdown-it-task-lists"))
+            md.use(require("markdown-it-task-lists"))            
         },
         lineNumbers: true
 

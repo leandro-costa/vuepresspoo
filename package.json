@@ -28,7 +28,6 @@
     "vuepress": "^1.5.3"
   },
   "dependencies": {
-    "markdown-it-table-captions": "^1.0.4",
     "markdown-it-task-lists": "^2.1.1",
     "vuepress-theme-ououe": "^1.5.3"
   }

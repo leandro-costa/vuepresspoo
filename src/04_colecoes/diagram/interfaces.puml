@@ -1,0 +1,26 @@
+
+@startuml
+interface Iterable
+interface Collection 
+interface Set implements Collection 
+interface List implements Collection 
+interface Queue implements Collection 
+
+interface Set implements Iterable 
+interface List implements Iterable 
+interface Queue implements Iterable 
+
+interface SortedSet implements Set
+
+class HashSet implements Set
+class LinkedHashSet implements Set
+
+class TreeSet implements SortedSet
+
+class ArrayList implements List
+class Vector implements List
+class LinkedList implements List
+
+class PriorityQueue implements Queue
+
+@enduml

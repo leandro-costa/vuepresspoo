@@ -1,0 +1,12 @@
+
+@startuml
+
+interface Map
+interface SortedMap implements Map 
+
+class HashMap implements Map 
+class Hashtable implements Map 
+class Properties implements Map 
+class TreeMap  implements SortedMap 
+
+@enduml
